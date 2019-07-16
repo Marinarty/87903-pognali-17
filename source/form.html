@@ -1,115 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>«Погнали?» - поиск попутчиков для путешествий</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
-        <ul class="nav__item site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="nav__item user-block">
-          <li class="user-block__item">
-            <a class="user-block__login button button--login" href="login.html">Авторизация</a>
-          </li>
-          <li class="user-block__item">
-            <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="user-block__item">
-            <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-          <ul class="nav__item social social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Instagram</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
-        <main class="main-page">
-          <h1 class="title">Направления</h1>
-          <div class="user-info container">
-              <div class="user-info__level level">
-                <span class="level__number">80</span>
-                <span class="level__text">левел</span>
-              </div>
-              <img src="http://placehold.it/100x100" width="100" height="100" alt="Петя Демин" class="user-info__photo">
-              <button class="user-info__change-photo button">Изменить фото</button>
-              <fieldset class="user-info__hashtags">
-                <legend class="user-info__tags">Тэги</legend>
-                <textarea name="tags" id="tags" cols="30" rows="5">#бургер #бар #футбол #концерт #крафт</textarea>
-              </fieldset>
-              <fieldset class="user-info__transports">
-                  <legend class="user-info__transport">Транспорт</legend>
-                  <input type="checkbox" id="plane" name="transport[]" value="самолет" checked>
-                  <label tabindex="0" for="plane">Самолет</label>
-                  <input type="checkbox" id="bus" name="transport[]" value="автобус" checked>
-                  <label tabindex="0" for="bus">Автобус</label>
-                  <input type="checkbox" id="cycle" name="transport[]" value="велосипед">
-                  <label tabindex="0" for="cycle">Велосипед</label>
-                  <input type="checkbox" id="walk" name="transport[]" value="пешком" checked>
-                  <label tabindex="0" for="walk">Пешком</label>
-              </fieldset>
-          </div>
-          <section class="user-plans">
-            <div class="container user-plans__container">
-              <h2 class="user-plans__title">Мои планы:</h2>
-              <div class="user-plans__item">
-                <span class="user-plans__destinations">1. Франция, Италия</span>
-                <span class="user-plans__buddies-number">3 попутчика</span>
-                <span class="user-plans__dates">26 мар - 29 мар</span>
-                <a href="#" class="user-plans__change-plan">Изменить</a>
-              </div>
-              <div class="user-plans__item">
-                  <span class="user-plans__destinations">1. Тайланд, Индонезия</span>
-                  <span class="user-plans__buddies-number">1 попутчик</span>
-                  <span class="user-plans__dates">1 июл - 15 июл</span>
-                  <a href="#" class="user-plans__change-plan">Изменить</a>
-                </div>
-            </div>
-          </section>
-          <section class="add-plan">
-            <div class="container add-plan__container">
-              <h2 class="add-plan__title">Добавить план:</h2>
-              <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
-              <fieldset class="add-plan__step duration">
-                <legend class="add-plan__step-title">Шаг 1. Даты пребывания</legend>
-                <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность</p>
-                <span class="duration__buddies">Ищу попутчиков:</span><span class="duration__persons">чел.</span>
-                <button class="duration__minus" type="button">+</button>
-                <input id='buddies-number' type="number" name="buddies-number" value="2">
-                <button class="duration__plus" type="button">-</button>
-                <span class="duration__lenth">Длительность:</span><span class="duration__days">дн.</span>
-                <button class="duration__minus" type="button">+</button>
-                <input id='days-number' type="number" name="days-number" value="2">
-                <button class="duration__plus" type="button">-</button>
-          <input type="checkbox" id="children" name="children[]" value="с детьми" checked>
-          <label tabindex="0" for="children">Можно с детьми</label>
-          <div class="calendar">
-            <a href="#" class="calendar__pages calendar__pages--back">Назад</a>
-            <span class="calendar__date">Март 2019</span>
-            <a href="#" class="calendar__name calendar__pages--next">Вперед</a>
-            <table class="country-filter__letters">
+
+<head>
+  <meta charset="utf-8">
+  <title>«Погнали?» - поиск попутчиков для путешествий</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">Открыть меню</button>
+      <ul class="nav__item site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="nav__item user-block">
+        <li class="user-block__item">
+          <a class="user-block__login button button--login" href="login.html">Авторизация</a>
+        </li>
+        <li class="user-block__item">
+          <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="user-block__item">
+          <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="nav__item social social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-page">
+    <h1 class="title">Направления</h1>
+    <div class="user-info container">
+      <div class="user-info__level level">
+        <span class="level__number">80</span>
+        <span class="level__text">левел</span>
+      </div>
+      <img src="http://placehold.it/100x100" width="100" height="100" alt="Петя Демин" class="user-info__photo">
+      <button class="user-info__change-photo button">Изменить фото</button>
+      <fieldset class="user-info__hashtags">
+        <legend class="user-info__tags">Тэги</legend>
+        <textarea name="tags" id="tags" cols="30" rows="5">#бургер #бар #футбол #концерт #крафт</textarea>
+      </fieldset>
+      <fieldset class="user-info__transports">
+        <legend class="user-info__transport">Транспорт</legend>
+        <input type="checkbox" id="plane" name="transport[]" value="самолет" checked>
+        <label tabindex="0" for="plane">Самолет</label>
+        <input type="checkbox" id="bus" name="transport[]" value="автобус" checked>
+        <label tabindex="0" for="bus">Автобус</label>
+        <input type="checkbox" id="cycle" name="transport[]" value="велосипед">
+        <label tabindex="0" for="cycle">Велосипед</label>
+        <input type="checkbox" id="walk" name="transport[]" value="пешком" checked>
+        <label tabindex="0" for="walk">Пешком</label>
+      </fieldset>
+    </div>
+    <section class="user-plans">
+      <div class="container user-plans__container">
+        <h2 class="user-plans__title">Мои планы:</h2>
+        <div class="user-plans__item">
+          <span class="user-plans__destinations">1. Франция, Италия</span>
+          <span class="user-plans__buddies-number">3 попутчика</span>
+          <span class="user-plans__dates">26 мар - 29 мар</span>
+          <a href="#" class="user-plans__change-plan">Изменить</a>
+        </div>
+        <div class="user-plans__item">
+          <span class="user-plans__destinations">1. Тайланд, Индонезия</span>
+          <span class="user-plans__buddies-number">1 попутчик</span>
+          <span class="user-plans__dates">1 июл - 15 июл</span>
+          <a href="#" class="user-plans__change-plan">Изменить</a>
+        </div>
+      </div>
+    </section>
+    <section class="add-plan">
+      <div class="container add-plan__container">
+        <h2 class="add-plan__title">Добавить план:</h2>
+        <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
+          <fieldset class="add-plan__step duration" name="step1">
+            <legend class="add-plan__step-title">Шаг 1. Даты пребывания</legend>
+            <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+            <span class="duration__buddies">Ищу попутчиков:</span><span class="duration__persons">чел.</span>
+            <button class="duration__minus" type="button">+</button>
+            <input id='buddies-number' type="number" name="buddies-number" value="2">
+            <button class="duration__plus" type="button">-</button>
+            <span class="duration__lenth">Длительность:</span><span class="duration__days">дн.</span>
+            <button class="duration__minus" type="button">+</button>
+            <input id='days-number' type="number" name="days-number" value="2">
+            <button class="duration__plus" type="button">-</button>
+            <input type="checkbox" id="children" name="children[]" value="с детьми" checked>
+            <label tabindex="0" for="children">Можно с детьми</label>
+            <div class="calendar">
+              <a href="#" class="calendar__pages calendar__pages--back">Назад</a>
+              <span class="calendar__date">Март 2019</span>
+              <a href="#" class="calendar__name calendar__pages--next">Вперед</a>
+              <table class="country-filter__letters">
                 <tr>
                   <td>П</td>
                   <td>В</td>
@@ -165,50 +167,157 @@
                   <td>30</td>
                 </tr>
                 <tr>
-                    <td>31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                  </tr>
+                  <td>31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
               </table>
-          </div>
-          <a href="" class="add-plan__next step-button">Следующий шаг</a>
-              </fieldset>
-
-
-
-            </form>
-
             </div>
-          </section>
-        </main>
-        <footer class="page-footer">
-            <div class="container page-footer__container">
-            <a class="page-footer__logo">
-              <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
-            </a>
-            <div class="page-footer__social-links social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">Facebook</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">Instagram</a>
-                </li>
-              </ul>
+            <a href="#step2" class="add-plan__next">Следующий шаг</a>
+          </fieldset>
+          <fieldset class="add-plan__step" name="step2">
+            <legend class="add-plan__step-title">Шаг 2. Маршрут</legend>
+            <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+            <div class="countries-select">
+              <div class="countries-select__item">
+                <select name="country" class="countries-select__choose-country">
+                  <option value="Bosnia and Herzegovina">Босния и Герцеговина</option>
+                </select>
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Босния и Герцеговина" class="countries-select__flag">
+                <button class="countries-select__delete"></button>
+              </div>
+              <div class="countries-select__item">
+                <select name="country" class="countries-select__choose-country">
+                  <option value="Czech Republic">Чехия</option>
+                </select>
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Чехия" class="countries-select__flag">
+                <button class="countries-select__delete"></button>
+              </div>
+              <div class="countries-select__item">
+                <select name="country" class="countries-select__choose-country">
+                  <option value="choose country">Выберите страну</option>
+                </select>
+                <button class="countries-select__delete"></button>
+              </div>
+              <div class="countries-select__item">
+                <button class="countries-select__add-country">Добавить страну</button>
+              </div>
             </div>
-            <div class="page-footer__copyright copyright">
-              <span class="copyright__text">Разработано:</span>
-              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+            <a href="#step3" class="add-plan__next">Следующий шаг</a>
+            <a href="#step1" class="add-plan__next add-plan__next--back">Шаг назад</a>
+          </fieldset>
+          <fieldset class="add-plan__step amusements" name="step3">
+            <legend class="add-plan__step-title">Шаг 3. Развлечения</legend>
+            <p class="add-plan__desc">Наконец, расскажите о своих планах времяпрепровождения. Можно писать в свободной
+              форме и ставить тэги.</p>
+            <div class="amusements__item">
+              <div class="amusements__wrapper">
+                <p class="amusements__country">Босния и Герцеговина</p>
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Босния и Герцеговина" class="amusements__flag">
+              </div>
+              <textarea name="Bosnia and Herzegovina" id="amusements1" cols="30" rows="10">План действий</textarea>
             </div>
-          </div>
-          </footer>
-    </header>
-  </body>
+            <div class="amusements__item">
+              <div class="amusements__wrapper">
+                <p class="amusements__country">Чехия</p>
+                <img src="http://placehold.it/35x24" width="35" height="24" alt="Чехия" class="amusements__flag">
+              </div>
+              <textarea name="Czech Republic" id="amusements2" cols="30" rows="10">Пить пиво и лазить по старым замкам, насдлаждаться архитектурой и вот это все.</textarea>
+            </div>
+          </fieldset>
+          <button type="submit" class="add-plan__next add-plan--submit">Отправить</button>
+          <a href="#step2" class="add-plan__next add-plan__next--back">Шаг назад</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <a class="page-footer__logo"><img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+      <div class="page-footer__social-links social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+      </div>
+    </div>
+  </footer>
+  <section class="country-filter country-filter--modal modal">
+    <div class="container country-filter__container">
+      <h2 class="country-filter__title">Выберите страну</h2>
+      <button class="country-filter__close"></button>
+      <table class="country-filter__letters">
+        <tr>
+          <td>А</td>
+          <td>Б</td>
+          <td>В</td>
+          <td>Г</td>
+          <td>Д</td>
+        </tr>
+        <tr>
+          <td>Е</td>
+          <td>Ё</td>
+          <td>Ж</td>
+          <td>З</td>
+          <td>И</td>
+        </tr>
+        <tr>
+          <td>Й</td>
+          <td>К</td>
+          <td>Л</td>
+          <td>М</td>
+          <td>Н</td>
+        </tr>
+        <tr>
+          <td>О</td>
+          <td>П</td>
+          <td>Р</td>
+          <td>С</td>
+          <td>Т</td>
+        </tr>
+        <tr>
+          <td>У</td>
+          <td>Ф</td>
+          <td>Х</td>
+          <td>Ц</td>
+          <td>Ч</td>
+        </tr>
+        <tr>
+          <td>Ш</td>
+          <td>Щ</td>
+          <td>Э</td>
+          <td>Ю</td>
+          <td>Я</td>
+        </tr>
+      </table>
+      <ul class="country-filter__countries countries-list-list">
+        <li class="countries-list__item">Афганистан</li>
+        <li class="countries-list__item">Албания</li>
+        <li class="countries-list__item">Алжир</li>
+        <li class="countries-list__item">Андорра</li>
+        <li class="countries-list__item">Аргентина</li>
+        <li class="countries-list__item">Армения</li>
+        <li class="countries-list__item">Австралия</li>
+        <li class="countries-list__item">Австрия</li>
+        <li class="countries-list__item">Азербайджан</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
 </html>
