@@ -1,167 +1,350 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>«Погнали?» - поиск попутчиков для путешествий</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
-        <ul class="nav__item site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a>Попутчики</a>
-          </li>
+
+<head>
+  <meta charset="utf-8">
+  <title>«Погнали?» - поиск попутчиков для путешествий</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">Открыть меню</button>
+      <ul class="nav__item site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="nav__item user-block">
+        <li class="user-block__item">
+          <a class="user-block__login button button--login" href="login.html">Авторизация</a>
+        </li>
+        <li class="user-block__item">
+          <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="user-block__item">
+          <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="nav__item social social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-page">
+    <h1 class="title">Попутчики</h1>
+    <section class="country-filter">
+      <div class="container country-filter__container">
+        <h2 class="country-filter__title">Фильтрация по странам</h2>
+        <button class="country-filter__open"></button>
+        <ul class="country-filter__continents contitnents-list">
+          <li class="continents-list__item continents-list__item--active">Европа</li>
+          <li class="continents-list__item">Азия</li>
+          <li class="continents-list__item">Америка</li>
+          <li class="continents-list__item">Острова</li>
         </ul>
-        <ul class="nav__item user-block">
-          <li class="user-block__item">
-            <a class="user-block__login button button--login" href="login.html">Авторизация</a>
-          </li>
-          <li class="user-block__item">
-            <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="user-block__item">
-            <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
+        <table class="country-filter__letters">
+          <tr>
+            <td>А</td>
+            <td>Б</td>
+            <td>В</td>
+            <td>Г</td>
+            <td>Д</td>
+          </tr>
+          <tr>
+            <td>Е</td>
+            <td>Ё</td>
+            <td>Ж</td>
+            <td>З</td>
+            <td>И</td>
+          </tr>
+          <tr>
+            <td>Й</td>
+            <td>К</td>
+            <td>Л</td>
+            <td>М</td>
+            <td>Н</td>
+          </tr>
+          <tr>
+            <td>О</td>
+            <td>П</td>
+            <td>Р</td>
+            <td>С</td>
+            <td>Т</td>
+          </tr>
+          <tr>
+            <td>У</td>
+            <td>Ф</td>
+            <td>Х</td>
+            <td>Ц</td>
+            <td>Ч</td>
+          </tr>
+          <tr>
+            <td>Ш</td>
+            <td>Щ</td>
+            <td>Э</td>
+            <td>Ю</td>
+            <td>Я</td>
+          </tr>
+        </table>
+        <ul class="country-filter__countries countries-list-list">
+          <li class="countries-list__item">Афганистан</li>
+          <li class="countries-list__item">Албания</li>
+          <li class="countries-list__item">Алжир</li>
+          <li class="countries-list__item">Андорра</li>
+          <li class="countries-list__item">Аргентина</li>
+          <li class="countries-list__item">Армения</li>
+          <li class="countries-list__item">Австралия</li>
+          <li class="countries-list__item">Австрия</li>
+          <li class="countries-list__item">Азербайджан</li>
         </ul>
-        <div class="nav__item social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Instagram</a>
-            </li>
-          </ul>
+      </div>
+    </section>
+    <section class="buddies-search container">
+      <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
+      <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
+        <fieldset class="buddies-search__hobby">
+          <legend class="buddies-search__criteria">Хобби</legend>
+          <input type="checkbox" id="sport" name="hobby[]" value="спорт" checked>
+          <label tabindex="0" for="sport">Спорт</label>
+          <input type="checkbox" id="photo" name="hobby[]" value="фотография" checked>
+          <label tabindex="0" for="photo">Фотография</label>
+          <input type="checkbox" id="networks" name="hobby[]" value="соцсети">
+          <label tabindex="0" for="networks">Соцсети</label>
+        </fieldset>
+        <fieldset class="buddies-search__music">
+          <legend class="buddies-search__criteria">Музыка</legend>
+          <input type="checkbox" id="rock" name="music[]" value="рок" checked>
+          <label tabindex="0" for="rock">Тяжелый рок</label>
+          <input type="checkbox" id="rap" name="music[]" value="рэп" checked>
+          <label tabindex="0" for="rap">Русский рэп</label>
+          <input type="checkbox" id="eurodance" name="music[]" value="евродэнс">
+          <label tabindex="0" for="eurodance">Евроденс</label>
+        </fieldset>
+        <fieldset class="buddies-search__food">
+          <legend class="buddies-search__criteria">Еда</legend>
+          <input type="checkbox" id="boul" name="food[]" value="боул" checked>
+          <label tabindex="0" for="boul">Боул</label>
+          <input type="checkbox" id="falafel" name="food[]" value="фалафель" checked>
+          <label tabindex="0" for="falafel">Фалафель</label>
+          <input type="checkbox" id="shawarma" name="food[]" value="шаверма">
+          <label tabindex="0" for="shawarma">Шаверма</label>
+        </fieldset>
+        <fieldset class="buddies-search__transport">
+          <legend class="buddies-search__criteria">Транспорт</legend>
+          <input type="checkbox" id="plane" name="transport[]" value="самолет" checked>
+          <label tabindex="0" for="plane">Самолет</label>
+          <input type="checkbox" id="bus" name="transport[]" value="автобус" checked>
+          <label tabindex="0" for="bus">Автобус</label>
+          <input type="checkbox" id="cycle" name="transport[]" value="велосипед">
+          <label tabindex="0" for="cycle">Велосипед</label>
+          <input type="checkbox" id="walk" name="transport[]" value="пешком" checked>
+          <label tabindex="0" for="walk">Пешком</label>
+        </fieldset>
+        <fieldset class="buddies-search__level level">
+          <legend>Левел</legend>
+          <div class="level____price-controls visually-hidden">
+            <input type="text" name="level-from" value="30">
+            <input type="text" name="level-till" value="100">
+          </div>
+          <div class="level__range-controls">
+            <div class="level__range-scale">
+              <div class="level__range-bar"></div>
+            </div>
+            <div tabindex="0" class="level__range-toggle level__range-toggle--min"></div>
+            <div tabindex="0" class="level__range-toggle level__range-toggle--max"></div>
+          </div>
+        </fieldset>
+        <button type="submit" class="buddies-search__show">Показать</button>
+      </form>
+    </section>
+    <section class="travel-buddies container">
+      <h2 class="visually-hidden">Выбрать попутчика</h2>
+      <article class="travel-buddies__item">
+        <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Таня Фирсова" class="travel-buddies__photo travel-buddies__photo--popular"></a>
+        <div class="travel-buddies__user-wrapper">
+          <span class="travel-buddies__likes">1,5 M</span>
+          <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Таня Фирсова</a></h4>
         </div>
-      </nav>
-    </header>
-        <main class="main-page">
-          <h1 class="title">Попутчики</h1>
-          <section class="travel-buddies">
-            <h2 class="visually-hidden">Выбрать попутчика</h2>
-            <article class="travel-buddies__item">
-              <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Таня Фирсова" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-              <span class="travel-buddies__likes">1,5 M</span>
-              <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Таня Фирсова</a></h4>
-              <p class="travel-buddies__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <div class="travel-buddies__countries-to-visit">
-                <p class="travel-buddies__text">Хочет посетить:</p>
-<!-- так себе название для класса -->
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Sri-Lanka" class="travel-buddies__flags"><span class="travel-buddies__country">Шри Ланка</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Thailand" class="travel-buddies__flags"><span class="travel-buddies__country">Тайланд</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Seychelles" class="travel-buddies__flags"><span class="travel-buddies__country">Сейшелы</span>
-              </div>
-              <p class="travel-buddies__text">Транспорт:</p>
-              <ul class="travel-buddies__transport transport-list">
-                <li clas="transport-list__item transport-list__item--plane">Самолет</li>
-                <li clas="transport-list__item transport-list__item--bus">Автобус</li>
-                <li clas="transport-list__item transport-list__item--cycle">Велосипед</li>
-                <li clas="transport-list__item transport-list__item--walk">Пешком</li>
-              </ul>
-              <p class="travel-buddies__text">Левел:</p>
-              <button class="travel-buddies__invite button">Позвать!</button>
-            </article>
-            <article class="travel-buddies__item">
-              <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Петя Демин" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-              <span class="travel-buddies__likes">150</span>
-              <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Петя Демин</a></h4>
-              <p class="travel-buddies__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-              <div class="travel-buddies__countries-to-visit">
-                <p class="travel-buddies__text">Хочет посетить:</p>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Belgium" class="travel-buddies__flags"><span class="travel-buddies__country">Бельгия</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Czech Republic" class="travel-buddies__flags"><span class="travel-buddies__country">Чехия</span>
-              </div>
-              <p class="travel-buddies__text">Транспорт:</p>
-              <ul class="travel-buddies__transport transport-list">
-                <li clas="transport-list__item transport-list__item--plane">Самолет</li>
-                <li clas="transport-list__item transport-list__item--bus">Автобус</li>
-                <li clas="transport-list__item transport-list__item--cycle">Велосипед</li>
-                <li clas="transport-list__item transport-list__item--walk">Пешком</li>
-              </ul>
-              <p class="travel-buddies__text">Левел:</p>
-              <button class="travel-buddies__invite button">Позвать!</button>
-            </article>
-            <article class="travel-buddies__item">
-              <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Марк Смолов" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-              <span class="travel-buddies__likes">1700</span>
-              <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Марк Смолов</a></h4>
-              <p class="travel-buddies__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              <div class="travel-buddies__countries-to-visit">
-                <p class="travel-buddies__text">Хочет посетить:</p>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="USA" class="travel-buddies__flags"><span class="travel-buddies__country">США</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Australia" class="travel-buddies__flags"><span class="travel-buddies__country">Австралия</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Dominican Republic" class="travel-buddies__flags"><span class="travel-buddies__country">Доминикана</span>
-              </div>
-              <p class="travel-buddies__text">Транспорт:</p>
-              <ul class="travel-buddies__transport transport-list">
-                <li clas="transport-list__item transport-list__item--plane">Самолет</li>
-                <li clas="transport-list__item transport-list__item--bus">Автобус</li>
-                <li clas="transport-list__item transport-list__item--cycle">Велосипед</li>
-                <li clas="transport-list__item transport-list__item--walk">Пешком</li>
-              </ul>
-              <p class="travel-buddies__text">Левел:</p>
-              <button class="travel-buddies__invite button">Позвать!</button>
-            </article>
-            <article class="travel-buddies__item">
-              <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Лариса Роговая" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-              <span class="travel-buddies__likes">23</span>
-              <h4><a href="#" class="travel-buddies__name travel-buddies__name--onfline">Лариса Роговая</a></h4>
-              <p class="travel-buddies__hashtags">#образование #карьера #учеба #линкедин</p>
-              <div class="travel-buddies__countries-to-visit">
-                <p class="travel-buddies__text">Хочет посетить:</p>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="UK" class="travel-buddies__flags"><span class="travel-buddies__country">Великобритания</span>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Germany" class="travel-buddies__flags"><span class="travel-buddies__country">Германия</span>
-              </div>
-              <p class="travel-buddies__text">Транспорт:</p>
-              <ul class="travel-buddies__transport transport-list">
-                <li clas="transport-list__item transport-list__item--plane">Самолет</li>
-                <li clas="transport-list__item transport-list__item--bus">Автобус</li>
-                <li clas="transport-list__item transport-list__item--cycle">Велосипед</li>
-                <li clas="transport-list__item transport-list__item--walk">Пешком</li>
-              </ul>
-              <p class="travel-buddies__text">Левел:</p>
-              <button class="travel-buddies__invite button">Позвать!</button>
-            </article>
-            <a href="#" class="travel-buddies__show-all button">Показать всех</a>
-            <button class="travel-buddies__show-more">Показать еще</button>
-            <a href="#" class="travel-buddies__pages travel-buddies__pages--back">Лариса Роговая</a>
-            <a href="#" class="travel-buddies__name travel-buddies__pages--next">Лариса Роговая</a>
-          </section>
-        </main>
-        <footer class="page-footer">
-          <a class="page-footer__logo">
-            <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
-          </a>
-          <div class="page-footer__social-links social social--footer">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Facebook</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Instagram</a>
-              </li>
+        <p class="travel-buddies__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+        <div class="travel-buddies__countries-to-visit">
+          <p class="travel-buddies__text">Хочет посетить:</p>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Sri-Lanka" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Шри Ланка</span>
+          </div>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Thailand" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Тайланд</span>
+          </div>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Seychelles" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Сейшелы</span>
+          </div>
+        </div>
+        <div class="travel-buddies__wrapper">
+          <div class="travel-buddies__transports">
+            <p class="travel-buddies__text">Транспорт:</p>
+            <ul class="travel-buddies__transport transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
+              <li class="transport-list__item transport-list__item--bus">Автобус</li>
+              <li class="transport-list__item transport-list__item--cycle">Велосипед</li>
+              <li class="transport-list__item transport-list__item--walk">Пешком</li>
             </ul>
           </div>
-          <div class="page-footer__copyright copyright">
-            <span class="copyright__text">Разработано:</span>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+          <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">99</span></p>
+        </div>
+        <button class="travel-buddies__invite button">Позвать!</button>
+      </article>
+      <article class="travel-buddies__item">
+        <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Петя Демин" class="travel-buddies__photo travel-buddies__photo--popular"></a>
+        <div class="travel-buddies__user-wrapper">
+          <span class="travel-buddies__likes">150</span>
+          <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Петя Демин</a></h4>
+        </div>
+        <p class="travel-buddies__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+        <div class="travel-buddies__countries-to-visit">
+          <p class="travel-buddies__text">Хочет посетить:</p>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Belgium" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Бельгия</span>
           </div>
-        </footer>
-  </body>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Czech Republic"
+              class="travel-buddies__flags">
+            <span class="travel-buddies__country">Чехия</span>
+          </div>
+        </div>
+        <div class="travel-buddies__wrapper">
+          <div class="travel-buddies__transports">
+            <p class="travel-buddies__text">Транспорт:</p>
+            <ul class="travel-buddies__transport transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
+              <li class="transport-list__item transport-list__item--bus transport-list__item--active">Автобус</li>
+              <li class="transport-list__item transport-list__item--cycle">Велосипед</li>
+              <li class="transport-list__item transport-list__item--walk transport-list__item--active">Пешком</li>
+            </ul>
+          </div>
+          <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">80</span></p>
+        </div>
+        <button class="travel-buddies__invite button">Позвать!</button>
+      </article>
+      <article class="travel-buddies__item">
+        <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Марк Смолов" class="travel-buddies__photo travel-buddies__photo--popular"></a>
+        <div class="travel-buddies__user-wrapper">
+          <span class="travel-buddies__likes">1700</span>
+          <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Марк Смолов</a></h4>
+        </div>
+        <p class="travel-buddies__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+        <div class="travel-buddies__countries-to-visit">
+          <p class="travel-buddies__text">Хочет посетить:</p>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="USA" class="travel-buddies__flags">
+            <span class="travel-buddies__country">США</span>
+          </div>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Australia" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Австралия</span>
+          </div>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Dominican Republic"
+              class="travel-buddies__flags">
+            <span class="travel-buddies__country">Доминикана</span>
+          </div>
+        </div>
+        <div class="travel-buddies__wrapper">
+          <div class="travel-buddies__transports">
+            <p class="travel-buddies__text">Транспорт:</p>
+            <ul class="travel-buddies__transport transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
+              <li class="transport-list__item transport-list__item--bus">Автобус</li>
+              <li class="transport-list__item transport-list__item--cycle transport-list__item--active">Велосипед</li>
+              <li class="transport-list__item transport-list__item--walk">Пешком</li>
+            </ul>
+          </div>
+          <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">25</span></p>
+        </div>
+        <button class="travel-buddies__invite button">Позвать!</button>
+      </article>
+      <article class="travel-buddies__item">
+        <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Лариса Роговая" class="travel-buddies__photo travel-buddies__photo--popular"></a>
+        <div class="travel-buddies__user-wrapper">
+          <span class="travel-buddies__likes">23</span>
+          <h4><a href="#" class="travel-buddies__name travel-buddies__name--onfline">Лариса Роговая</a></h4>
+        </div>
+        <p class="travel-buddies__hashtags">#образование #карьера #учеба #линкедин</p>
+        <div class="travel-buddies__countries-to-visit">
+          <p class="travel-buddies__text">Хочет посетить:</p>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="UK" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Великобритания</span>
+          </div>
+          <div class="travel-buddies__countries-wrapper">
+            <img src="http://placehold.it/35x24" width="35" height="24" alt="Germany" class="travel-buddies__flags">
+            <span class="travel-buddies__country">Германия</span>
+          </div>
+        </div>
+        <div class="travel-buddies__wrapper">
+          <div class="travel-buddies__transports">
+            <p class="travel-buddies__text">Транспорт:</p>
+            <ul class="travel-buddies__transport transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
+              <li class="transport-list__item transport-list__item--bus transport-list__item--active">Автобус</li>
+              <li class="transport-list__item transport-list__item--cycle">Велосипед</li>
+              <li class="transport-list__item transport-list__item--walk">Пешком</li>
+            </ul>
+          </div>
+          <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">50</span></p>
+        </div>
+        <button class="travel-buddies__invite button">Позвать!</button>
+      </article>
+      <a href="#" class="travel-buddies__show-all button">Показать всех</a>
+      <button class="travel-buddies__show-more">Показать еще</button>
+      <div class="travel-buddies__arrows">
+        <a href="#" class="travel-buddies__pages travel-buddies__pages--back">Назад</a>
+        <a href="#" class="travel-buddies__name travel-buddies__pages--next">Вперед</a>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
+      </a>
+      <div class="page-footer__social-links social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
