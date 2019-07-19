@@ -54,12 +54,14 @@
     </nav>
   </header>
   <main class="main-page">
+    <div class="container">
     <h1 class="title">Попутчики</h1>
+  </div>
     <section class="country-filter">
       <div class="container country-filter__container">
         <h2 class="country-filter__title">Фильтрация по странам</h2>
         <button class="country-filter__open"></button>
-        <ul class="country-filter__continents contitnents-list">
+        <ul class="country-filter__continents continents-list">
           <li class="continents-list__item continents-list__item--active">Европа</li>
           <li class="continents-list__item">Азия</li>
           <li class="continents-list__item">Америка</li>
@@ -109,20 +111,22 @@
             <td>Я</td>
           </tr>
         </table>
-        <ul class="country-filter__countries countries-list-list">
-          <li class="countries-list__item">Афганистан</li>
-          <li class="countries-list__item">Албания</li>
-          <li class="countries-list__item">Алжир</li>
-          <li class="countries-list__item">Андорра</li>
-          <li class="countries-list__item">Аргентина</li>
-          <li class="countries-list__item">Армения</li>
-          <li class="countries-list__item">Австралия</li>
-          <li class="countries-list__item">Австрия</li>
-          <li class="countries-list__item">Азербайджан</li>
+        <ul class="country-filter__countries countries-list">
+          <li class="countries-list__item"><a class="countries-list__link">Афганистан</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Албания</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Алжир</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Андорра</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Аргентина</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Армения</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Австралия</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Австрия</a></li>
+          <li class="countries-list__item"><a class="countries-list__link">Азербайджан</a></li>
         </ul>
+        <button class="country-filter__close">Свернуть</button>
       </div>
     </section>
-    <section class="buddies-search container">
+    <section class="buddies-search">
+      <div class="container buddies-search__container">
       <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
       <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
         <fieldset class="buddies-search__hobby">
@@ -179,6 +183,7 @@
         </fieldset>
         <button type="submit" class="buddies-search__show">Показать</button>
       </form>
+    </div>
     </section>
     <section class="travel-buddies container">
       <h2 class="visually-hidden">Выбрать попутчика</h2>
@@ -216,7 +221,7 @@
           </div>
           <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">99</span></p>
         </div>
-        <button class="travel-buddies__invite button">Позвать!</button>
+        <button class="travel-buddies__invite button button--rounded">Позвать!</button>
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Петя Демин" class="travel-buddies__photo travel-buddies__photo--popular"></a>
@@ -249,7 +254,7 @@
           </div>
           <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">80</span></p>
         </div>
-        <button class="travel-buddies__invite button">Позвать!</button>
+        <button class="travel-buddies__invite button button--rounded">Позвать!</button>
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Марк Смолов" class="travel-buddies__photo travel-buddies__photo--popular"></a>
@@ -286,7 +291,7 @@
           </div>
           <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">25</span></p>
         </div>
-        <button class="travel-buddies__invite button">Позвать!</button>
+        <button class="travel-buddies__invite button button--rounded">Позвать!</button>
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Лариса Роговая" class="travel-buddies__photo travel-buddies__photo--popular"></a>
@@ -318,7 +323,7 @@
           </div>
           <p class="travel-buddies__text">Левел: <span class="travel-buddies__level">50</span></p>
         </div>
-        <button class="travel-buddies__invite button">Позвать!</button>
+        <button class="travel-buddies__invite button button--rounded">Позвать!</button>
       </article>
       <a href="#" class="travel-buddies__show-all button">Показать всех</a>
       <button class="travel-buddies__show-more">Показать еще</button>
@@ -329,29 +334,27 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container page-footer__container">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
-      </a>
-      <div class="page-footer__social-links social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Instagram</a>
-          </li>
-        </ul>
+      <div class="container page-footer__container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
+        </a>
+          <ul class="page-footer__social__list social">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Instagram</a>
+            </li>
+          </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+        </div>
       </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
