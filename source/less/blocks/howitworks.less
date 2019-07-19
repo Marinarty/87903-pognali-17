@@ -1,41 +1,38 @@
 .howitworks {
   padding-bottom: 40px;
 
-  background-color: #192144;
+  background-color: @blue;
 }
 
 .howitworks__list {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
+  .nolist();
 }
 
 .howitworks__item {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #161c35;
+  color: @dark-blue;
   padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 25px;
   padding-right: 90px;
 
   &--step1 {
-    background-color: #ff8d30;
+    background-color: @dark-orange;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
 
   &--step2 {
-    background-color: #ffa530;
+    background-color: @mid-orange;
   }
 
   &--step3 {
-    background-color: #ffbd30;
+    background-color: @orange;
   }
 
   &--step4 {
-    background-color: #ffd74b;
+    background-color: @yellow;
   }
 }

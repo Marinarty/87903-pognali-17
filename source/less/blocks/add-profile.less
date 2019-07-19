@@ -1,7 +1,7 @@
 .add-profile {
   color: #444444;
 
-  background-color: #edeff6;
+  background-color: @light-grey;
 }
 
 .add-profile__container {
@@ -11,16 +11,11 @@
 .add-profile__title {
   width: 150px;
 
-  font-size: 24px;
-  line-height: 24px;
-  color: #ff8d30;
+  .title();
 }
 
 .add-profile__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .nolist();
 }
 
 .add-profile__option,
@@ -35,7 +30,7 @@
 }
 
 .add-profile__button {
-  color: #192144;
+  color: @blue;
   font-size: 16px;
   line-height: 16px;
 }

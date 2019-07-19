@@ -4,16 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>«Погнали?» - поиск попутчиков для путешествий</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
+    <div class="container">
     <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+    <button class="header__menu-buttom" type="button">Открыть меню</button>
+  </div>
     <nav class="nav">
-      <button class="nav__toggle" type="button">Открыть меню</button>
+        <div class="container nav__container">
       <ul class="nav__item site-list">
         <li class="site-list__item">
-          <a href="#" class="site-list__link">О сервисе</a>
+          <a href="index.html" class="site-list__link">О сервисе</a>
         </li>
         <li class="site-list__item">
           <a href="form.html" class="site-list__link">Направления</a>
@@ -24,7 +30,7 @@
       </ul>
       <ul class="nav__item user-block">
         <li class="user-block__item">
-          <a class="user-block__login button button--login" href="login.html">Авторизация</a>
+          <a class="user-block__login button button--rounded" href="login.html">Авторизация</a>
         </li>
         <li class="user-block__item">
           <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
@@ -44,6 +50,7 @@
           <a class="social__link social__link--instagram" href="#">Instagram</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
   <main class="main-page">

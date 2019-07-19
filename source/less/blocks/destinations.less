@@ -1,8 +1,10 @@
 .destinations {
+  display: flex;
   padding-top: 60px;
-  color: #444444;
 
-  background-color: #edeff6;
+  color: @dark-grey;
+
+  background-color: @light-grey;
 }
 
 .destinations__container {
@@ -13,14 +15,14 @@
 }
 
 .destinations__item {
+  margin-bottom: 30px;
+
   border-radius: 10px;
   overflow: hidden;
 }
 
 .destinations__title {
-  font-size: 24px;
-  line-height: 24px;
-  color: #ff8d30;
+  .title();
 }
 
 .destinations__desc {
@@ -32,14 +34,14 @@
 .destinations__wrapper {
   padding: 25px;
 
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .destinations__country {
   margin: 0;
   padding: 0;
 
-  color: #161c35;
+  color: @dark-blue;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -50,6 +52,11 @@
   margin: 0;
   padding: 0;
 
-  color: rgba(68, 68, 68, 0.3);
+  color: @mid-grey;
   font-weight: 500;
+}
+
+.destinations__show-all {
+  display: block;
+  margin-bottom: 30px;
 }
