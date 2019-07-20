@@ -4,13 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>«Погнали?» - поиск попутчиков для путешествий</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
+    <div class="container">
     <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+    <button class="header__menu-buttom" type="button">Открыть меню</button>
+  </div>
     <nav class="nav">
-      <button class="nav__toggle" type="button">Открыть меню</button>
+        <div class="container nav__container">
       <ul class="nav__item site-list">
         <li class="site-list__item">
           <a href="#" class="site-list__link">О сервисе</a>
@@ -24,7 +30,7 @@
       </ul>
       <ul class="nav__item user-block">
         <li class="user-block__item">
-          <a class="user-block__login button button--login" href="login.html">Авторизация</a>
+          <a class="user-block__login button button--rounded" href="login.html">Авторизация</a>
         </li>
         <li class="user-block__item">
           <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
@@ -44,24 +50,29 @@
           <a class="social__link social__link--instagram" href="#">Instagram</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
   <main class="main">
+    <div class="intro">
+      <div class="container">
     <h1 class="visually-hidden">«Погнали?» - поиск попутчиков для путешествий</h1>
-    <p class="intro">В путешествие с крутыми попутчиками</p>
-    <div class="contacts">
-      <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
-      <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <a class="contacts__login button button--login" href="login.html">Авторизация</a>
+    <p class="intro__title">В путешествие с крутыми попутчиками!</p>
+  </div>
+  </div>
+    <div class="contacts container">
+      <a class="contacts__tel button" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="contacts__email button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <a class="contacts__login button button--rounded" href="login.html">Авторизация</a>
     </div>
-    <div class="blockquote">
+    <div class="blockquote container">
       <q class="blockquote__text">Лучшее приложение, что я видел в жизни!</q>
       <cite class="blockquote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
     </div>
     <section class="howitworks">
       <div class="container howitworks__container">
         <h2 class="visually-hidden">Как работает приложение</h2>
-        <ol>
+        <ol class="howitworks__list">
           <li class="howitworks__item howitworks__item--step1">
             <span>Выберите направление</span>
           </li>
@@ -87,42 +98,53 @@
       </div>
     </section>
     <section class="destinations">
-      <div class="container destinations__container">
+      <div class="container">
+        <div class="destinations__container">
         <h2 class="destinations__title">Направления</h2>
         <p class="destinations__desc">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
           бы отправиться и чем можно там заняться.</p>
+          </div>
         <article class="destinations__item destinations__item--thai">
           <img src="http://placehold.it/270x110" width="270" height="110" alt="Таиланд" class="destinations__country-image">
           <img src="http://placehold.it/35x24" width="35" height="24" alt="Thai" class="destinations__flags">
+          <div class="destinations__wrapper">
           <h4 class="destinations__country">Тайланд</h4>
           <p class="destinations__visitors">18321</p>
           <p class="destinations__slogan">Джунгли зовут!</p>
+        </div>
         </article>
         <article class="destinations__item destinations__item--france">
           <img src="http://placehold.it/270x110" width="270" height="110" alt="Франция" class="destinations__country-image">
           <img src="http://placehold.it/35x24" width="35" height="24" alt="France" class="destinations__flags">
+          <div class="destinations__wrapper">
           <h4 class="destinations__country">Франция</h4>
           <p class="destinations__visitors">12518</p>
           <p class="destinations__slogan">Трэ бьен, манифик!</p>
+          </div>
         </article>
         <article class="destinations__item destinations__item--czech-republic">
           <img src="http://placehold.it/270x110" width="270" height="110" alt="Чехия" class="destinations__country-image">
           <img src="http://placehold.it/35x24" width="35" height="24" alt="Czech Republic" class="destinations__flags">
+          <div class="destinations__wrapper">
           <h4 class="destinations__country">Чехия</h4>
           <p class="destinations__visitors">5326</p>
           <p class="destinations__slogan">Закоулки старой Европы</p>
+          </div>
         </article>
         <a href="#" class="destinations__show-all button">Показать все</a>
       </div>
     </section>
     <section class="travel-buddies">
-      <div class="container travel-buddies__container">
-        <h2 class="visually-hidden">Попутчики</h2>
+      <div class="container">
+        <div class="travel-buddies__container">
+        <h2 class="travel-buddies__title">Попутчики</h2>
         <p class="travel-buddies__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
           пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="travel-buddies__desc travel-buddies__desc--bold">Теперь можно легко найти единомышленников!</p>
+        </div>
         <article class="travel-buddies__item">
           <img src="http://placehold.it/270x270" width="270" height="270" alt="Таня Фирсова" class="travel-buddies__photo">
+          <div class="travel-buddies__wrapper">
           <div class="travel-buddies__countries-to-visit">
             <img src="http://placehold.it/35x24" width="35" height="24" alt="Sri-Lanka" class="travel-buddies__flags">
             <img src="http://placehold.it/35x24" width="35" height="24" alt="Seychelles" class="travel-buddies__flags">
@@ -140,6 +162,7 @@
             <li class="transport-list__item transport-list__item--cycle">Велосипед</li>
             <li class="transport-list__item transport-list__item--walk">Пешком</li>
           </ul>
+        </div>
         </article>
         <article class="travel-buddies__item">
           <img src="http://placehold.it/270x270" width="270" height="270" alt="Петя Демин" class="travel-buddies__photo">
@@ -164,8 +187,9 @@
       </div>
     </section>
     <section class="add-profile">
-      <div class="container add-profile">
-        <h2 class="add-profile__intro">Добавьте свой профиль</h2>
+      <div class="container">
+        <div class="add-profile__container">
+        <h2 class="add-profile__title">Добавьте свой профиль</h2>
         <ul class="add-profile__list">
           <li class="add-profile__item add-profile__item--option1">
             <p class="add-profile__option">Базовое размещение</p>
@@ -182,11 +206,13 @@
         </ul>
         <button class="add-profile__button">Показать тарифы для бизнеса</button>
       </div>
+    </div>
     </section>
     <section class="sign-up container">
+      <div class="sign-up__container">
       <h2 class="visually-hidden">Регистрация</h2>
       <h2 class="sign-up__title">Заинтересовались?</h2>
-      <p class="sign-up__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрироованы? Тогда скорее <a href="#" class="sign-up__login">авторизуйтесь</a>.</p>
+      <p class="sign-up__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="sign-up__login">авторизуйтесь</a>.</p>
       <input type="email" class="sign-up__email" placeholder="Email" id="email" required>
       <button class="sign-up__button batton" type="submit">Зарегистрироваться</button>
       <div class="contacts contacts--sign-up">
@@ -194,11 +220,12 @@
         <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
         <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
+    </div>
     </section>
     <div class="on-map">
       <div class="container on-map__container">
         <span class="on-map__address">ул. Большая Конюшенная, 19/8</span>
-        <a href="#" class="on-map__itinerary button">Проложить маршрут</a>
+        <a href="#" class="on-map__itinerary button button--outline">Проложить маршрут</a>
       </div>
       <div class="om-map__map"></div>
     </div>
@@ -208,8 +235,7 @@
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий">
       </a>
-      <div class="page-footer__social-links social">
-        <ul class="social__list">
+        <ul class="page-footer__social__list social">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">Facebook</a>
           </li>
@@ -220,10 +246,9 @@
             <a class="social__link social__link--instagram" href="#">Instagram</a>
           </li>
         </ul>
-      </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
       </div>
     </div>
   </footer>
