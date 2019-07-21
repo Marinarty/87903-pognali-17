@@ -1,0 +1,44 @@
+.header__container {
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.header--menu-open {
+  background-color: white;
+}
+
+.header__nav,
+.header__login-btn,
+.header__contacts,
+.header__social-links {
+  display: none;
+}
+
+
+
+.header--menu-open .header__nav,
+.header--menu-open .header__login-btn,
+.header--menu-open .header__contacts,
+.header--menu-open .header__social-links {
+  display: block;
+}
+
+
+@media (@tablet-width) {
+  .header--menu-open .header__login-btn {
+    display: none;
+  }
+
+  .header__login-btn {
+    display: block;
+  }
+}
+
+
+@media (@desktop-width) {
+  .header__menu-btn {
+    display: none;
+  }
+}
