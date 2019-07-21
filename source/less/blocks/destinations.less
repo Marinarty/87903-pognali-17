@@ -1,5 +1,7 @@
 .destinations {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 60px;
 
   color: @dark-grey;
@@ -58,4 +60,27 @@
 .destinations__show-all {
   display: block;
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .destinations__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .destinations__wrapper {
+    flex-grow: 1;
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .destinations__global-container {
+    display: flex;
+  }
+
+  .destinations__container {
+    order: 1;
+  }
 }

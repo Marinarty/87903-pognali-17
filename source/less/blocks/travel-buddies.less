@@ -62,3 +62,31 @@
   box-shadow: none;
   border: none;
 }
+
+@media (min-width: @tablet-width) {
+  .travel-buddies__desc {
+    width: 450px;
+  }
+
+  .travel-buddies__articles-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-buddies__global-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .travel-buddies__articles-wrapper {
+    justify-content: space-between;
+  }
+
+  .travel-buddies__show-all {
+    margin-top: -100px;
+  }
+}
