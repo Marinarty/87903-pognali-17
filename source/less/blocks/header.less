@@ -5,6 +5,17 @@
   justify-content: space-between;
 }
 
+.header-wrapper {
+  display: none;
+  align-items: center;
+}
+
+.header__return {
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .header--menu-open {
   background-color: @white;
 }
@@ -46,6 +57,11 @@
 
   .header--menu-open .header__nav {
     width: 100%;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

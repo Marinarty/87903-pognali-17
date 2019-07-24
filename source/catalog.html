@@ -11,35 +11,28 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
     <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
-    <button class="header__menu-buttom" type="button">Открыть меню</button>
-  </div>
-    <nav class="nav">
-        <div class="container nav__container">
+    <button class="header__menu-btn" type="button">Меню</button>
+    <nav class="header__nav nav">
       <ul class="nav__item site-list">
         <li class="site-list__item">
-          <a href="index.html" class="site-list__link">О сервисе</a>
+          <a href="#" class="site-list__link">О сервисе</a>
         </li>
         <li class="site-list__item">
           <a href="form.html" class="site-list__link">Направления</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Попутчики</a>
+          <a href="catalog.html" class="site-list__link">Попутчики</a>
         </li>
       </ul>
-      <ul class="nav__item user-block">
-        <li class="user-block__item">
-          <a class="user-block__login button button--rounded" href="login.html">Авторизация</a>
-        </li>
-        <li class="user-block__item">
-          <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
-        </li>
-        <li class="user-block__item">
-          <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-      <ul class="nav__item social social__list">
+    </nav>
+        <a class="header__login-btn button button--rounded" href="login.html">Авторизация</a>
+      <div class="header__contacts contacts contacts--header">
+          <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <ul class="header__social-links social">
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">Facebook</a>
         </li>
@@ -50,23 +43,24 @@
           <a class="social__link social__link--instagram" href="#">Instagram</a>
         </li>
       </ul>
-      </div>
-    </nav>
+    </div>
+    <div class="header-wrapper container">
+      <h1 class="header__title">Попутчики</h1>
+      <a class="header__return" href="index.html">На главную</a>
+    </div>
   </header>
   <main class="main-page">
-    <div class="container">
-    <h1 class="title">Попутчики</h1>
-  </div>
     <section class="country-filter">
-      <div class="container country-filter__container">
+      <div class="country-filter__container container">
         <h2 class="country-filter__title">Фильтрация по странам</h2>
-        <button class="country-filter__open"></button>
+        <button class="country-filter__open">Свернуть</button>
         <ul class="country-filter__continents continents-list">
           <li class="continents-list__item continents-list__item--active">Европа</li>
           <li class="continents-list__item">Азия</li>
           <li class="continents-list__item">Америка</li>
           <li class="continents-list__item">Острова</li>
         </ul>
+      <div class="country-filter__wrapper container">
         <table class="country-filter__letters">
           <tr>
             <td>А</td>
@@ -122,11 +116,14 @@
           <li class="countries-list__item"><a class="countries-list__link">Австрия</a></li>
           <li class="countries-list__item"><a class="countries-list__link">Азербайджан</a></li>
         </ul>
+      </div>
         <button class="country-filter__close">Свернуть</button>
       </div>
+      </div>
     </section>
+    <div class="buddies-container container">
     <section class="buddies-search">
-      <div class="container buddies-search__container">
+      <div class="buddies-search__container container">
       <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
       <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
         <fieldset class="buddies-search__hobby">
@@ -189,11 +186,11 @@
       <h2 class="visually-hidden">Выбрать попутчика</h2>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Таня Фирсова" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-        <div class="travel-buddies__user-wrapper">
+        <div class="travel-buddies__user-info">
           <span class="travel-buddies__likes">1,5 M</span>
           <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Таня Фирсова</a></h4>
-        </div>
         <p class="travel-buddies__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+      </div>
         <div class="travel-buddies__countries-to-visit">
           <p class="travel-buddies__text">Хочет посетить:</p>
           <div class="travel-buddies__countries-wrapper">
@@ -225,11 +222,11 @@
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Петя Демин" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-        <div class="travel-buddies__user-wrapper">
+        <div class="travel-buddies__user-info">
           <span class="travel-buddies__likes">150</span>
           <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Петя Демин</a></h4>
-        </div>
         <p class="travel-buddies__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+      </div>
         <div class="travel-buddies__countries-to-visit">
           <p class="travel-buddies__text">Хочет посетить:</p>
           <div class="travel-buddies__countries-wrapper">
@@ -258,11 +255,11 @@
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Марк Смолов" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-        <div class="travel-buddies__user-wrapper">
+        <div class="travel-buddies__user-info">
           <span class="travel-buddies__likes">1700</span>
           <h4><a href="#" class="travel-buddies__name travel-buddies__name--offline">Марк Смолов</a></h4>
-        </div>
         <p class="travel-buddies__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+      </div>
         <div class="travel-buddies__countries-to-visit">
           <p class="travel-buddies__text">Хочет посетить:</p>
           <div class="travel-buddies__countries-wrapper">
@@ -295,11 +292,11 @@
       </article>
       <article class="travel-buddies__item">
         <a href="#"><img src="http://placehold.it/70x70" width="70" height="70" alt="Лариса Роговая" class="travel-buddies__photo travel-buddies__photo--popular"></a>
-        <div class="travel-buddies__user-wrapper">
+        <div class="travel-buddies__user-info">
           <span class="travel-buddies__likes">23</span>
           <h4><a href="#" class="travel-buddies__name travel-buddies__name--onfline">Лариса Роговая</a></h4>
-        </div>
         <p class="travel-buddies__hashtags">#образование #карьера #учеба #линкедин</p>
+      </div>
         <div class="travel-buddies__countries-to-visit">
           <p class="travel-buddies__text">Хочет посетить:</p>
           <div class="travel-buddies__countries-wrapper">
@@ -325,13 +322,20 @@
         </div>
         <button class="travel-buddies__invite button button--rounded">Позвать!</button>
       </article>
-      <a href="#" class="travel-buddies__show-all button">Показать всех</a>
       <button class="travel-buddies__show-more">Показать еще</button>
+      <ul class="travel-buddies__pagination pagination">
+          <li><a class="pagination__item  pagination__item--current" aria-label="Страница 1">1</a></li>
+          <li><a href="#" class="pagination__item" aria-label="Страница 2">2</a></li>
+          <li><a href="#" class="pagination__item" aria-label="Страница 3">3</a></li>
+          <li><a href="#" class="pagination__item" aria-label="Страница 4">4</a></li>
+          <li><a href="#" class="pagination__item" aria-label="Страница 5">5</a></li>
+        </ul>
       <div class="travel-buddies__arrows">
         <a href="#" class="travel-buddies__pages travel-buddies__pages--back">Назад</a>
         <a href="#" class="travel-buddies__name travel-buddies__pages--next">Вперед</a>
       </div>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
       <div class="container page-footer__container">
@@ -355,6 +359,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
