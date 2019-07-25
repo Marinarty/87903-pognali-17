@@ -3,3 +3,67 @@
 
   background-color: @light-grey;
 }
+
+.user-info__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-info__change-photo {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .user-info__change-photo {
+    order: 4;
+  }
+
+  .user-info__level {
+    order: 1;
+  }
+
+  .user-info__photo {
+    order: 3;
+  }
+
+  .user-info__hashtags {
+    order: 5;
+  }
+
+  .user-info__transports {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-info__change-photo {
+    width: 100%;
+    order: 3;
+  }
+
+  .user-info__level {
+    margin-left: auto;
+    margin-top: -140px;
+    order: 1;
+
+    color: @white;
+  }
+
+  .user-info__photo {
+    width: 190px;
+    height: 190px;
+    margin-top: -190px;
+    order: 2;
+  }
+
+  .user-info__hashtags {
+    order: 4;
+    flex-grow: 2;
+  }
+
+  .user-info__transports {
+    order: 5;
+    flex-grow: 1;
+  }
+}
+

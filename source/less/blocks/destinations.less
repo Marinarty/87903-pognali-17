@@ -78,9 +78,24 @@
 @media (min-width: @desktop-width) {
   .destinations__global-container {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  .destinations__show-all {
+    margin-left: auto;
+    display: inline-block;
+    margin-right: 200px;
+    margin-top: -100px;
+    order: 3;
   }
 
   .destinations__container {
+    width: 50%;
+    order: 2;
+  }
+
+  .destinations__articles-container {
+    width: 50%;
     order: 1;
   }
 }
