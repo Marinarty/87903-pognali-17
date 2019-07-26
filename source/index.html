@@ -12,8 +12,10 @@
 <body>
   <header class="header">
     <div class="header__container container">
-    <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+    <!-- <a class="header__logo"><img class="header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a> -->
+    <a class="header__logo"><p class="header__logo-image"></p></a>
     <button class="header__menu-btn" type="button">Меню</button>
+    <div class="header__wrapper">
     <nav class="header__nav nav">
       <ul class="nav__item site-list">
         <li class="site-list__item">
@@ -29,8 +31,8 @@
     </nav>
         <a class="header__login-btn button button--rounded" href="login.html">Авторизация</a>
       <div class="header__contacts contacts contacts--header">
-          <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__btn contacts__btn--tel" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts__btn contacts__btn--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <ul class="header__social-links social">
         <li class="social__item">
@@ -44,6 +46,7 @@
         </li>
       </ul>
     </div>
+    </div>
   </header>
   <main class="main">
     <div class="intro">
@@ -55,9 +58,9 @@
   </div>
 </div>
     <div class="contacts contacts--main container">
-      <a class="contacts__tel button" href="tel:88005558628">8 800 555-86-28</a>
-      <a class="contacts__email button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <a class="contacts__login button button--rounded" href="login.html">Авторизация</a>
+      <a class="contacts__btn contacts__btn--tel" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="contacts__btn contacts__btn--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <a class="contacts__btn contacts__btn--login button button--rounded" href="login.html">Авторизация</a>
     </div>
     <div class="blockquote container">
       <q class="blockquote__text">Лучшее приложение, что я видел в жизни!</q>

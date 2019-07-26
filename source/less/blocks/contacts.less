@@ -2,34 +2,150 @@
   font-weight: 300;
 }
 
-.contacts--header .contacts__tel,
-.contacts--header .contacts__email {
-  color: @blue;
-  font-size: 16px;
+.contacts--header {
+  display: flex;
+  flex-direction: column;
 }
 
-.contacts__tel,
-.contacts__email {
+.contacts--header .contacts__btn--tel,
+.contacts--header .contacts__btn--email {
+  position: relative;
+  padding-left: 50px;
+
+  color: @blue;
+  font-size: 16px;
+
+    &::before {
+      content: "";
+
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -50%;
+      left: 0;
+
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 50%;
+      background-color: @dark-blue;
+      background-size: 20px;
+    }
+}
+
+.contacts--header .contacts__btn--tel::before {
+  background-image: url("../../img/contacts-phone.svg");
+}
+
+.contacts--header .contacts__btn--email::before {
+  background-image: url("../../img/contacts-mail.svg");
+}
+
+.contacts--header .contacts__btn--tel {
+  margin-bottom: 30px;
+}
+
+.contacts__btn {
   color: @yellow;
   font-weight: 700;
-  font-size: 0;
 
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.contacts__login {
-  display: inline-block;
-  flex-grow: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.contacts--sign-up .contacts__email,
-.contacts--sign-up .contacts__tel {
+.contacts--sign-up .contacts__btn--email,
+.contacts--sign-up .contacts__btn--tel {
   display: block;
 
   color: @yellow;
+
+}
+.contacts--main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts--main .contacts__btn--tel,
+.contacts--main .contacts__btn--email {
+  font-size: 0;
+}
+
+.contacts--main .contacts__btn--login {
+  flex-grow: 1;
+
+  font-size: 17px;
+  line-height: 30px;
+  color: @dark-blue;
+
+  &:hover {
+    background-color: @orange;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+}
+
+.contacts--main .contacts__btn--tel,
+.contacts--main .contacts__btn--email {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top:50%;
+      left: 50%;
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+}
+
+.contacts--main .contacts__btn--tel {
+  background-color: @dark-orange;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -9px;
+
+    background-image: url("../../img/topmenu-phone.svg");
+   }
+}
+
+.contacts--main .contacts__btn--email {
+  background-color: @orange;
+
+  &:hover {
+    background-color: @dark-orange;
+  }
+
+   &::before {
+    width: 18px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -9px;
+
+    background-image: url("../../img/topmenu-mail.svg");
+   }
+}
+
+.contacts--main .contacts__btn--tel:active,
+.contacts--main .contacts__btn--email:active {
+  &::before {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
