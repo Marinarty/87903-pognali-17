@@ -3,8 +3,7 @@
 }
 
 .contacts--header {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .contacts--header .contacts__btn--tel,
@@ -41,7 +40,7 @@
 }
 
 .contacts--header .contacts__btn--tel {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .contacts__btn {
@@ -155,9 +154,54 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts--header {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
   .contacts--header .contacts__tel,
   .contacts--header .contacts__email {
     color: @white;
     font-size: 16px;
   }
+
+  .contacts--header .contacts__btn--tel,
+  .contacts--header .contacts__btn--email {
+    font-size: 0;
+ }
+
+ .contacts--header .contacts__btn--tel,
+.contacts--header .contacts__btn--email {
+  position: relative;
+  padding-left: 50px;
+  // right: -100px;
+
+  color: @orange;
+  font-size: 0;
+
+    &::before {
+      content: "";
+
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 50%;
+      background-color: @orange;
+      background-size: 20px;
+    }
+}
+
+.contacts--header .contacts__btn--tel::before {
+  background-image: url("../../img/topmenu-phone.svg");
+}
+
+.contacts--header .contacts__btn--email::before {
+  background-image: url("../../img/topmenu-mail.svg");
+}
+
 }

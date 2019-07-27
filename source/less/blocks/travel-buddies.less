@@ -69,17 +69,20 @@
 }
 
 @media (min-width: @tablet-width) {
-  .travel-buddies__item {
+  .travel-buddies__articles-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .travel-buddies__item--catalog {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .travel-buddies__item--column {
-    flex-direction: column;
-  }
-
-  .travel-buddies__countries-to-visit {
+  .travel-buddies__item--catalog .travel-buddies__countries-to-visit {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -87,26 +90,26 @@
     order: 5;
   }
 
-  .travel-buddies__wrapper {
+  .travel-buddies__item--catalog .travel-buddies__wrapper {
     order: 3;
   }
 
-  .travel-buddies__photo {
+  .travel-buddies__item--catalog .travel-buddies__photo {
     width: 190px;
     height: 190px;
 
     order: 1;
   }
 
-  .travel-buddies__user-info {
+  .travel-buddies__item--catalog .travel-buddies__user-info {
     order: 2;
   }
 
-  .travel-buddies__desc {
+  .travel-buddies__item--catalog  .travel-buddies__desc {
     width: 450px;
   }
 
-  .travel-buddies__invite {
+  .travel-buddies__item--catalog .travel-buddies__invite {
     order: 4;
     flex-grow: 0;
     margin-left: 220px;
@@ -114,11 +117,11 @@
     margin-bottom: 20px;
   }
 
-  .travel-buddies__transport {
+  .travel-buddies__item--catalog .travel-buddies__transport {
     flex-direction: column;
   }
 
-  .travel-buddies__articles-wrapper {
+  .travel-buddies__item--catalog .travel-buddies__articles-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,39 +139,43 @@
     flex-wrap: wrap;
   }
 
+  .travel-buddies__container {
+    width: 50%;
+  }
+
   .travel-buddies__articles-wrapper {
     justify-content: space-between;
   }
 
-  .travel-buddies__show-all {
+  .travel-buddies__item--catalog .travel-buddies__show-all {
     margin-top: -100px;
   }
 
-  .travel-buddies__item {
+  .travel-buddies__item--catalog  {
     width: 950px;
   }
 
-  .travel-buddies__countries-to-visit {
+  .travel-buddies__item--catalog .travel-buddies__countries-to-visit {
     flex-direction: column;
     width: 300px;
     margin-left: auto;
     order: 3;
   }
 
-  .travel-buddies__wrapper {
+  .travel-buddies__item--catalog .travel-buddies__wrapper {
     order: 5;
     margin-left: auto;
   }
 
-  .travel-buddies__invite {
+  .travel-buddies__item--catalog .travel-buddies__invite {
     order: 4;
   }
 
-  .travel-buddies__text {
+  .travel-buddies__item--catalog .travel-buddies__text {
     display: none;
   }
 
-  .travel-buddies__transport {
+  .travel-buddies__item--catalog .travel-buddies__transport {
     flex-direction: row;
   }
 }
