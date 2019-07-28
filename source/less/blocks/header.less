@@ -1,0 +1,254 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-wrapper {
+  display: none;
+  align-items: center;
+}
+
+.header__return {
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__container {
+  position: relative;
+}
+
+.header__logo-image {
+  position: relative;
+  width: 100px;
+  height: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 20px;
+
+    background-image: url("../../img/logo-mobile-white@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.header__menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+
+  font-size: 0;
+
+  display: block;
+  width: 40px;
+  height: 30px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.header__menu-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 25px;
+  height: 3px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff;
+  border-radius: 2px;
+}
+
+.header--menu-open {
+  background-color: @white;
+}
+
+.header--menu-open .header__logo-image::before {
+  background-image: url("../../img/logo-mobile-blue@1x.png");
+}
+
+.header--menu-open .header__menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 2;
+
+  font-size: 0;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.header--menu-open .header__menu-btn::before,
+.header--menu-open .header__menu-btn::after {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  width: 25px;
+  height: 2px;
+
+  background-color: #cccccc;
+}
+
+.header--menu-open .header__menu-btn::before {
+  transform: rotate(45deg);
+}
+
+.header--menu-open .header__menu-btn::after {
+  transform: rotate(-45deg);
+}
+
+.header__nav,
+.header__login-btn,
+.header__contacts,
+.header__social-links {
+  display: none;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.header--menu-open .header__nav,
+.header--menu-open .header__contacts,
+.header--menu-open .header__social-links {
+  display: flex;
+}
+
+.header__contacts {
+  flex-direction: column;
+}
+
+.header--menu-open .header__login-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    background-color: #182044;
+  }
+
+  .header__container {
+    align-items: center;
+  }
+
+  .header__login-btn {
+    display: block;
+  }
+
+  .header__logo-image {
+    width: 166px;
+    height: 42px;
+
+    &::before {
+      background-image: url("../../img/logo-tablet-white@1x.png");
+      width: 166px;
+      height: 42px;
+    }
+  }
+
+  .header__menu-btn,
+  .header--menu-open .header__menu-btn {
+    right: 47%;
+    top: 25px;
+  }
+
+  .header--menu-open {
+    background-color: @white;
+  }
+
+  .header--menu-open .header__logo-image::before {
+    background-image: url("../../img/logo-tablet-blue@1x.png");
+  }
+
+  .header__login-btn {
+    padding: 15px;
+    width: 190px;
+  }
+
+  .header--menu-open .header__login-btn {
+    display: inline-block;
+    width: 190px;
+    margin-bottom: 0;
+  }
+
+  .header--menu-open .header__login-btn {
+    order: -1;
+  }
+
+  .header--menu-open .header__logo {
+    order: -3;
+  }
+
+  .header--menu-open .header__menu-btn {
+    order: -2;
+  }
+
+  .header--menu-open .header__nav {
+    width: 100%;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color: @white;
+
+    background-color: transparent;
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
+
+  .header__contacts {
+    display: inline-block;
+    order: 1;
+  }
+
+  .header__login-btn {
+    order: 2;
+  }
+
+  .header__title {
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+}

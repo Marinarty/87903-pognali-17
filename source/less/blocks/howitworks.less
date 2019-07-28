@@ -5,6 +5,9 @@
 }
 
 .howitworks__list {
+  display: flex;
+  flex-wrap: wrap;
+
   .nolist();
 }
 
@@ -20,8 +23,6 @@
 
   &--step1 {
     background-color: @dark-orange;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
 
   &--step2 {
@@ -34,5 +35,22 @@
 
   &--step4 {
     background-color: @yellow;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .howitworks {
+    background-color: transparent;
+    margin-bottom: 80px;
+  }
+
+  .howitworks__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .howitworks__item {
+    width: 25%;
   }
 }

@@ -3,3 +3,25 @@
 
   background-color: #dfe3f0;
 }
+
+.user-plans__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .user-plans__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-plans__destinations {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-plans__destinations {
+    width: 560px;
+  }
+}

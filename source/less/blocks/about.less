@@ -25,3 +25,30 @@
     font-weight: 700;
   }
 }
+
+.about__learn-more {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: right;
+  }
+
+  .about__container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__desc {
+    width: 50%;
+  }
+
+  .about__learn-more {
+    display: block;
+    width: 275px;
+  }
+}

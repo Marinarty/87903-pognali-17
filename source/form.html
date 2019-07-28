@@ -10,61 +10,53 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-        <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
-        <button class="header__menu-buttom" type="button">Открыть меню</button>
+  <header class="header">
+    <div class="header__container container">
+    <a class="header__logo"><img class="header__logo-image" src="http://placehold.it/100x19" width="100" height="19" alt="«Погнали?» - поиск попутчиков для путешествий"></a>
+    <button class="header__menu-btn" type="button">Меню</button>
+    <nav class="header__nav nav">
+      <ul class="nav__item site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html" class="site-list__link">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+        <a class="header__login-btn button button--rounded" href="login.html">Авторизация</a>
+      <div class="header__contacts contacts contacts--header">
+          <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
-        <nav class="nav">
-            <div class="container nav__container">
-          <ul class="nav__item site-list">
-            <li class="site-list__item">
-              <a href="index.html" class="site-list__link">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Попутчики</a>
-            </li>
-          </ul>
-          <ul class="nav__item user-block">
-            <li class="user-block__item">
-              <a class="user-block__login button button--rounded" href="login.html">Авторизация</a>
-            </li>
-            <li class="user-block__item">
-              <a class="user-block__tel" href="tel:88005558628">8 800 555-86-28</a>
-            </li>
-            <li class="user-block__item">
-              <a class="user-block__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-          <ul class="nav__item social social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Instagram</a>
-            </li>
-          </ul>
-          </div>
-        </nav>
-      </header>
+      <ul class="header__social-links social">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">VKontakte</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-wrapper container">
+      <h1 class="header__title">Направления</h1>
+    </div>
+  </header>
   <main class="main-page">
-      <div class="container">
-    <h1 class="title">Направления</h1>
-      </div>
     <div class="user-info">
-      <div class="container">
+      <div class="container user-info__container">
       <div class="user-info__level level">
         <span class="level__number">80</span>
         <span class="level__text">левел</span>
       </div>
       <img src="http://placehold.it/100x100" width="100" height="100" alt="Петя Демин" class="user-info__photo">
-      <button class="user-info__change-photo">Изменить фото</button>
+      <button class="user-info__change-photo">Сменить фото</button>
       <fieldset class="user-info__hashtags">
         <legend class="user-info__tags">Тэги</legend>
         <textarea name="tags" id="tags" cols="30" rows="5">#бургер #бар #футбол #концерт #крафт</textarea>
@@ -86,13 +78,13 @@
       <div class="container user-plans__container">
         <h2 class="user-plans__title">Мои планы:</h2>
         <div class="user-plans__item">
-          <span class="user-plans__destinations">1. Франция, Италия</span>
+          <span class="user-plans__destinations">Франция, Италия</span>
           <span class="user-plans__buddies-number">3 попутчика</span>
           <span class="user-plans__dates">26 мар - 29 мар</span>
           <a href="#" class="user-plans__change-plan">Изменить</a>
         </div>
         <div class="user-plans__item">
-          <span class="user-plans__destinations">1. Тайланд, Индонезия</span>
+          <span class="user-plans__destinations">Тайланд, Индонезия</span>
           <span class="user-plans__buddies-number">1 попутчик</span>
           <span class="user-plans__dates">1 июл - 15 июл</span>
           <a href="#" class="user-plans__change-plan">Изменить</a>
@@ -104,8 +96,20 @@
         <h2 class="add-plan__title">Добавить план:</h2>
         <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
           <fieldset class="add-plan__step duration" name="step1">
+            <div class="add-plan__intro">
+              <div class="add-plan__intro-wrapper">
             <legend class="add-plan__step-title">Шаг 1. Даты пребывания</legend>
             <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+          </div>
+            <ul class="add-plan__steps-list">
+                <li><a href="#step2" class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
+                <li><a href="#step3" class="add-plan__steps-link">Маршрут</a></li>
+                <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
+              </ul>
+          </div>
+          <div class="add-plan__buddy-criteria">
+            <div class="add-plan__buddy-numbers">
+
             <span class="duration__buddies">Ищу попутчиков:</span><span class="duration__persons">чел.</span>
             <button class="duration__minus" type="button">+</button>
             <input id='buddies-number' type="number" name="buddies-number" value="2">
@@ -114,8 +118,10 @@
             <button class="duration__minus" type="button">+</button>
             <input id='days-number' type="number" name="days-number" value="2">
             <button class="duration__plus" type="button">-</button>
+          </div>
             <input type="checkbox" id="children" name="children[]" value="с детьми" checked>
             <label tabindex="0" for="children">Можно с детьми</label>
+          </div>
             <div class="calendar">
               <a href="#" class="calendar__pages calendar__pages--back">Назад</a>
               <span class="calendar__date">Март 2019</span>
@@ -186,11 +192,20 @@
                 </tr>
               </table>
             </div>
-            <a href="#step2" class="add-plan__next">Следующий шаг</a>
+            <a href="#step2" class="add-plan__next button">Следующий шаг</a>
           </fieldset>
           <fieldset class="add-plan__step" name="step2">
-            <legend class="add-plan__step-title">Шаг 2. Маршрут</legend>
-            <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+              <div class="add-plan__intro">
+                  <div class="add-plan__intro-wrapper">
+                <legend class="add-plan__step-title">Шаг 2. Маршрут</legend>
+                <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+              </div>
+                <ul class="add-plan__steps-list">
+                    <li><a href="#step2" class="add-plan__steps-link">Даты</a></li>
+                    <li><a href="#step3" class="add-plan__steps-link add-plan__steps-link--active">Маршрут</a></li>
+                    <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
+                  </ul>
+              </div>
             <div class="countries-select">
               <div class="countries-select__item">
                 <select name="country" class="countries-select__choose-country">
@@ -216,13 +231,21 @@
                 <button class="countries-select__add-country">Добавить страну</button>
               </div>
             </div>
-            <a href="#step3" class="add-plan__next">Следующий шаг</a>
+            <a href="#step3" class="add-plan__next button">Следующий шаг</a>
             <a href="#step1" class="add-plan__next add-plan__next--back">Шаг назад</a>
           </fieldset>
           <fieldset class="add-plan__step amusements" name="step3">
-            <legend class="add-plan__step-title">Шаг 3. Развлечения</legend>
-            <p class="add-plan__desc">Наконец, расскажите о своих планах времяпрепровождения. Можно писать в свободной
-              форме и ставить тэги.</p>
+              <div class="add-plan__intro">
+                  <div class="add-plan__intro-wrapper">
+                <legend class="add-plan__step-title">Шаг 3. Развлечения</legend>
+                <p class="add-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              </div>
+                <ul class="add-plan__steps-list">
+                    <li><a href="#step2" class="add-plan__steps-link">Даты</a></li>
+                    <li><a href="#step3" class="add-plan__steps-link">Маршрут</a></li>
+                    <li><a href="#step4" class="add-plan__steps-link add-plan__steps-link--active">Развлечения</a></li>
+                  </ul>
+              </div>
             <div class="amusements__item">
               <div class="amusements__wrapper">
                 <p class="amusements__country">Босния и Герцеговина</p>
@@ -238,7 +261,7 @@
               <textarea name="Czech Republic" id="amusements2" cols="30" rows="10">Пить пиво и лазить по старым замкам, насдлаждаться архитектурой и вот это все.</textarea>
             </div>
           </fieldset>
-          <button type="submit" class="add-plan__next add-plan--submit">Отправить</button>
+          <button type="submit" class="add-plan__next add-plan--submit button">Отправить</button>
           <a href="#step2" class="add-plan__next add-plan__next--back">Шаг назад</a>
         </form>
       </div>
@@ -327,6 +350,7 @@
       </ul>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

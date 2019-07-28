@@ -1,4 +1,8 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .nolist();
 
   text-align: center;
@@ -12,4 +16,21 @@
   text-transform: uppercase;
 
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__link {
+    color: @white;
+    font-size: 20px;
+    font-weight: 30px;
+    margin-right: 35px;
+  }
+
+  .site-list__item {
+    display: inline-block;
+  }
 }

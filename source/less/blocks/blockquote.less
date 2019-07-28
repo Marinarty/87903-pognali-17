@@ -21,3 +21,25 @@
 
   font-style: normal;
 }
+
+@media (min-width: @tablet-width) {
+  .blockquote {
+    margin-top: -400px;
+    padding-bottom: 215px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -700px;
+    padding-bottom: 350px;
+  }
+
+  .blockquote__text,
+  .blockquote__author {
+    margin-left: auto;
+  }
+}

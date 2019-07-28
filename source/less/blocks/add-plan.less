@@ -3,3 +3,41 @@
 
   background-color: #d4d9eb;
 }
+
+.add-plan__steps-list {
+  display: none;
+}
+
+.add-plan__steps-link {
+  color: @blue;
+  text-decoration: none;
+  text-transform: upprcase;
+}
+
+@media (min-width: @desktop-width) {
+  .add-plan__steps-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-plan__buddy-criteria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .add-plan__buddy-numbers {
+    width: 50%;
+  }
+
+  .add-plan__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .add-plan__intro-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
