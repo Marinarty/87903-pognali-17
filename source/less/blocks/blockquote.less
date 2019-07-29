@@ -1,6 +1,6 @@
 .blockquote {
-  // width: 160px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 
   text-align: left;
 }
@@ -8,6 +8,8 @@
 .blockquote__text,
 .blockquote__author {
   display: block;
+  width: 190px;
+  padding-left: 20px;
 }
 
 .blockquote__text {
@@ -22,24 +24,14 @@
   font-style: normal;
 }
 
-@media (min-width: @tablet-width) {
-  .blockquote {
-    margin-top: -400px;
-    padding-bottom: 215px;
-  }
-}
+// @media (min-width: @tablet-width) {
+//   .blockquote {
+//     margin-top: 0;
+//   }
+// }
 
 @media (min-width: @desktop-width) {
   .blockquote {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: -700px;
-    padding-bottom: 350px;
-  }
-
-  .blockquote__text,
-  .blockquote__author {
-    margin-left: auto;
+    width: 50%;
   }
 }
