@@ -2,10 +2,40 @@
   .nolist();
 }
 
-.social__item {
+.social--header .social__item {
   margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.social--footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social--footer .social__link {
+  display: flex;
+  width: 45px;
+  height: 45px;
+
+  background-color: @yellow;
+  border-radius: 50%;
+}
+
+.social--footer svg {
+  margin-top: 14px;
+  margin-left: 14px;
+
+  fill: @blue;
+}
+
+.social--footer .social__ig-svg {
+  fill: @blue;
+}
+
+.social--footer {
+  margin-bottom: 40px;
 }

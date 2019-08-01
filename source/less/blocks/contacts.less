@@ -51,13 +51,6 @@
   text-decoration: none;
 }
 
-.contacts--sign-up .contacts__btn--email,
-.contacts--sign-up .contacts__btn--tel {
-  display: block;
-
-  color: @yellow;
-}
-
 .contacts--main {
   display: flex;
   flex-wrap: wrap;
@@ -148,6 +141,50 @@
     opacity: 0.3;
   }
 }
+
+.contacts--sign-up .contacts__btn--email,
+.contacts--sign-up .contacts__btn--tel {
+  display: block;
+
+
+}
+  .contacts--sign-up .contacts__btn--tel,
+  .contacts--sign-up .contacts__btn--email {
+    position: relative;
+    padding-left: 50px;
+
+    color: @yellow;
+    font-size: 16px;
+    text-align: left;
+
+    &::before {
+      content: "";
+
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -50%;
+      left: 0;
+
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 50%;
+      background-color: @dark-blue;
+      background-size: 20px;
+    }
+  }
+
+  .contacts--sign-up .contacts__btn--tel::before {
+    background-image: url("../../img/contacts-phone.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--email::before {
+    background-image: url("../../img/contacts-mail.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--tel {
+    margin-bottom: 18px;
+  }
 
 @media (min-width: @tablet-width) {
   .contacts--main {

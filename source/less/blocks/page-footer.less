@@ -7,6 +7,30 @@
   background-color: @white;
 }
 
+.page-footer__logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 19px;
+    margin-bottom: 40px;
+
+    background-image: url("../../img/logo-mobile-blue@1x.png");
+    background-repeat: no-repeat;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.page-footer__link svg {
+  fill: @blue;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__container {
     display: flex;

@@ -6,6 +6,11 @@
 
 .add-profile__container {
   padding: 30px 20px;
+
+  background-image: url("../../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 40px right;
+  background-size: 100px;
 }
 
 .add-profile__title {
@@ -16,23 +21,75 @@
 
 .add-profile__list {
   .nolist();
+  padding-top: 30px;
+  // padding-bottom: 40px;
 }
 
 .add-profile__option,
 .add-profile__price {
   margin: 0;
   padding: 0;
+
+  font-weight: 300;
 }
 
 .add-profile__item {
+  position: relative;
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 0;
+    right: -50px;
+    padding-top: 5px;
+
+    color: @white;
+    text-align: center;
+
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+.add-profile__item--option1::after {
+  content: "1";
+  background-color: @mid-orange;
+}
+
+.add-profile__item--option2::after {
+  content: "2";
+  background-color: @orange;
+}
+
+.add-profile__item--option3::after {
+  content: "3";
+  background-color: @yellow;
 }
 
 .add-profile__button {
+  padding-left: 20px;
+  margin-bottom: 40px;
+
   color: @blue;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 700;
+
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
