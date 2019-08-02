@@ -2,6 +2,8 @@
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
+
+  background-color: #161c36;
 }
 
 .header__container {
@@ -32,6 +34,7 @@
   display: block;
   width: 100px;
   height: 19px;
+  margin-top: 10px;
 
   background-image: url("../../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
@@ -39,8 +42,8 @@
 
 .header__menu-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
   z-index: 2;
 
   font-size: 0;
@@ -137,6 +140,11 @@
   display: flex;
 }
 
+.header--menu-open .header__social-links,
+.header--menu-open .header__nav {
+  margin: 0 auto;
+}
+
 .header__contacts {
   flex-direction: column;
 }
@@ -147,6 +155,14 @@
   padding: 16px;
   text-align: center;
   margin-bottom: 50px;
+
+  &:hover {
+    background-color: @orange;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -23,6 +23,20 @@
 
   background-color: @yellow;
   border-radius: 50%;
+
+  &:hover {
+    background-color: @blue;
+  }
+
+  &:hover svg,
+  &:hover .social__ig-svg {
+    fill: @white;
+  }
+
+  &:active svg,
+  &:active .social__ig-svg {
+    opacity: 0.3;
+  }
 }
 
 .social--footer svg {

@@ -79,7 +79,7 @@
       <a class="contacts__btn contacts__btn--login button button--rounded" href="login.html">Авторизация</a>
     </div>
     <div class="intro__blockquotes blockquote">
-      <q class="blockquote__text">Лучшее приложение, что я видел в жизни!</q>
+      <q class="blockquote__text">«Лучшее приложение, что я видел в жизни!»</q>
       <cite class="blockquote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
     </div>
 
@@ -104,7 +104,9 @@
     </section>
   </div>
     <section class="about">
-      <div class="container about__container">
+      <div class="container">
+        <div class="about__container">
+
         <h2 class="about__title">О сервисе</h2>
         <p class="about__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
           идеями путешествий и черпайте вдохновение в чужих.</p>
@@ -112,6 +114,7 @@
           трип!</p>
           <a href="#" class="about__learn-more button">Подробнее</a>
       </div>
+    </div>
     </section>
 
 
@@ -263,6 +266,7 @@
       </div>
         <button class="add-profile__button">Показать тарифы для бизнеса</button>
         <section class="plan modal">
+          <div class="plan__container">
           <h2 class="plan__title">Бизнес-тарифы</h2>
           <ul class="plan__list">
             <li class="plan__item">
@@ -282,13 +286,14 @@
               <p class="plan__price">Индивидуально</p>
             </li>
           </ul>
+        </div>
           <button class="plan__close" type="button">Закрыть окно</button>
         </section>
 
     </div>
     </section>
-    <section class="sign-up container">
-      <div class="sign-up__container">
+    <section class="sign-up">
+      <div class="sign-up__container container">
       <h2 class="visually-hidden">Регистрация</h2>
       <h2 class="sign-up__title">Заинтересовались?</h2>
       <p class="sign-up__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="sign-up__login">авторизуйтесь</a>.</p>
@@ -304,11 +309,13 @@
     </div>
     </section>
     <div class="on-map">
-      <div class="container on-map__container">
+      <div class="on-map__container">
+      <div class="container">
         <span class="on-map__address">ул. Большая Конюшенная, 19/8</span>
         <a href="#" class="on-map__itinerary button button--outline">Проложить маршрут</a>
       </div>
-      <div class="om-map__map"></div>
+    </div>
+      <div id="map" class="on-map__map"></div>
     </div>
   </main>
   <footer class="page-footer">
@@ -348,13 +355,14 @@
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTMLAcademy">
           <?xml version="1.0" encoding="utf-8"?>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
-          <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8 l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8 l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9 L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+          <path d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8 l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8 l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9 L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
           </svg>
 
         </a>
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/script.js"></script>
 </body>
 
