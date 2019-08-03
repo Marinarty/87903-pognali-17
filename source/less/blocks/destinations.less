@@ -35,6 +35,19 @@
   overflow: hidden;
 }
 
+.destinations__item:last-child .destinations__wrapper::after {
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: transparent;
+  background: linear-gradient(to top, rgba(237, 239, 246, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
+}
+
 .destinations__title {
   .title();
 }

@@ -36,7 +36,7 @@
 
 .travel-buddies__item {
   display: flex;
-  // position: relative;
+  position: relative;
   flex-direction: column;
   color: @dark-grey;
   text-align: center;
@@ -45,6 +45,34 @@
   background-color: @white;
   border-radius: 10px;
   overflow: hidden;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 48px;
+    left: 30px;
+    width: 28px;
+    height: 1px;
+
+    background-color: @white;
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "level";
+
+    position: absolute;
+    top: 50px;
+    left: 33px;
+
+    color: @white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+
+    z-index: 10;
+  }
 }
 
 .travel-buddies__info {
@@ -109,8 +137,46 @@
 }
 
 .travel-buddies__level {
-  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
+
+
+
+
+
+.circular-chart {
+  display: block;
+  // margin: 10px auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.circle-bg {
+  fill: rgba(0, 0, 0, 0.5);
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 2;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.circular-chart.orange .circle {
+  stroke: @dark-orange;
+}
+
+.percentage {
+  fill: @white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
 
 .travel-buddies__wrapper {
   padding-left: 45px;

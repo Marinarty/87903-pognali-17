@@ -38,7 +38,25 @@
   border-radius: 10px;
   box-shadow: none;
   border: none;
+
+  &:hover {
+    color: rgba(68, 68, 68, 0.5);
+
+    background-color: #edeff6;
+  }
+
+  &:active {
+    padding: 17px 17px;
+
+    color: @white;
+
+    background-color: @blue;
+    border: 4px solid @white;
+  }
+
+
 }
+
 
 .sign-up__button {
   width: 60px;
@@ -53,6 +71,12 @@
 
   &:hover {
     background-color: @orange;
+    background-image: url("../img/triangle-arrow-right.svg");
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-image: url("../img/triangle-arrow-right-opacity.svg");
   }
 }
 

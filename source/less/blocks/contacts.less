@@ -77,6 +77,8 @@
 
   &:active {
     color: rgba(22, 28, 53, 0.3);
+
+    background-image: none;
   }
 }
 
@@ -181,6 +183,32 @@
 
   .contacts--sign-up .contacts__btn--email::before {
     background-image: url("../../img/contacts-mail.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--tel:hover,
+  .contacts--sign-up .contacts__btn--email:hover {
+    color: @orange;
+  }
+
+  .contacts--sign-up .contacts__btn--tel:hover::before {
+    background-image: url("../../img/contacts-phone-mango.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--email:hover::before {
+    background-image: url("../../img/contacts-mail-mango.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--tel:active,
+  .contacts--sign-up .contacts__btn--email:active {
+    color: rgba(255, 189, 48, 0.3);
+  }
+
+  .contacts--sign-up .contacts__btn--email:active::before {
+    background-image: url("../../img/contacts-mail-mango-opacity.svg");
+  }
+
+  .contacts--sign-up .contacts__btn--tel:active::before {
+    background-image: url("../../img/contacts-phone-mango-opacity.svg");
   }
 
   .contacts--sign-up .contacts__btn--tel {
