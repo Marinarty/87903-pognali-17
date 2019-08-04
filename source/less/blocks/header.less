@@ -149,12 +149,16 @@
   flex-direction: column;
 }
 
+.header--menu-open .header__social-links {
+  margin-bottom: 20px;
+}
+
 .header--menu-open .header__login-btn {
   display: block;
   width: 100%;
   padding: 16px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
 
   &:hover {
     background-color: @orange;
@@ -169,6 +173,8 @@
 
 @media (min-width: @tablet-width) {
   .header {
+    padding-top: 40px;
+
     background-color: #182044;
   }
 
@@ -180,11 +186,23 @@
     display: block;
     padding: 15px;
     width: 190px;
+    padding: 10px 26px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    border-radius: 25px;
+
+
+    &:active {
+      background-image: none;
+    }
   }
 
   .header__logo {
     width: 166px;
     height: 42px;
+    margin-top: 0;
 
     background-image: url("../../img/logo-tablet-white@1x.png");
   }
@@ -192,7 +210,7 @@
   .header__menu-btn,
   .header--menu-open .header__menu-btn {
     right: 47%;
-    top: 25px;
+    top: 16px;
   }
 
   .header--menu-open {
@@ -204,17 +222,13 @@
     order: -3;
   }
 
-  // .header__login-btn {
-  //   padding: 15px;
-  //   width: 190px;
-  // }
-
   .header--menu-open .header__login-btn {
     display: inline-block;
     width: 190px;
     margin-bottom: 0;
 
     order: -1;
+
   }
 
   // .header--menu-open .header__login-btn {

@@ -28,17 +28,17 @@
 }
 
 .destinations__item {
-  // position: relative;
+  position: relative;
   margin-bottom: 10px;
 
   border-radius: 10px;
   overflow: hidden;
 }
 
-.destinations__item:last-child .destinations__wrapper::after {
+.destinations__item:last-child::after {
   content: "";
   display: block;
-  height: 50%;
+  height: 30%;
   left: 0;
   position: absolute;
   bottom: 0;
@@ -46,7 +46,10 @@
 
   background: transparent;
   background: linear-gradient(to top, rgba(237, 239, 246, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
+
+  z-index: 10;
 }
+
 
 .destinations__title {
   .title();

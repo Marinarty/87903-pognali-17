@@ -84,9 +84,47 @@
     margin-bottom: 80px;
   }
 
+  .howitworks__container {
+    border-radius: 20px;
+  }
+
   .howitworks__item {
     width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 0;
+
+    &:nth-child(even) {
+      margin-left: -20px;
+      flex-grow: 1;
+    }
+
+    &::before {
+      left: 30px;
+      top: 90px;
+
+      font-size: 30px;
+    }
   }
+
+  .howitworks__item__span {
+    width: 200px;
+  }
+
+  .howitworks__item--step2 {
+    border-top-left-radius: 20px;
+  }
+
+  .howitworks__item--step4 {
+    border-bottom-left-radius: 20px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
