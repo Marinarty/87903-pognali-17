@@ -104,8 +104,8 @@
     </section>
   </div>
     <section class="about">
-      <div class="container">
-        <div class="about__container">
+      <div class="container about__container">
+        <div class="about__wrapper">
 
         <h2 class="about__title">О сервисе</h2>
         <p class="about__desc">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
@@ -129,8 +129,12 @@
         </div>
           <div class="destinations__articles-container">
         <article class="destinations__item destinations__item--thai">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
           <img src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд" class="destinations__country-image">
+        </picture>
           <div class="destinations__wrapper">
+
               <img src="img/flag-thailand.svg" width="35" height="24" alt="Thai" class="destinations__flags">
           <h4 class="destinations__country">Тайланд</h4>
           <p class="destinations__visitors">18321</p>
@@ -138,7 +142,12 @@
         </div>
         </article>
         <article class="destinations__item destinations__item--france">
+
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
           <img src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция" class="destinations__country-image">
+          </picture>
+
           <div class="destinations__wrapper">
               <img src="img/flag-france.svg" width="35" height="24" alt="France" class="destinations__flags">
           <h4 class="destinations__country">Франция</h4>
@@ -147,7 +156,10 @@
           </div>
         </article>
         <article class="destinations__item destinations__item--czech-republic">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
           <img src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия" class="destinations__country-image">
+          </picture>
           <div class="destinations__wrapper">
               <img src="img/flag-czech.svg" width="35" height="24" alt="Czech Republic" class="destinations__flags">
           <h4 class="destinations__country">Чехия</h4>
@@ -165,6 +177,7 @@
         <p class="travel-buddies__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
           пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="travel-buddies__desc travel-buddies__desc--bold">Теперь можно легко найти единомышленников!</p>
+        <a href="catalog.html" class="travel-buddies__show-all button">Показать всех</a>
         </div>
         <div class="travel-buddies__articles-wrapper">
         <article class="travel-buddies__item">
@@ -280,7 +293,6 @@
             </div>
         </article>
       </div>
-        <a href="catalog.html" class="travel-buddies__show-all button">Показать всех</a>
       </div>
     </section>
     <section class="add-profile">
