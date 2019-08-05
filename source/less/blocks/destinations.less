@@ -152,6 +152,25 @@
     padding-left: 38px;
   }
 
+  .destinations__articles-container {
+    position: relative;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      top: -40px;
+      left: 0px;
+
+      background-color: #e2e5f2;
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+  }
+
   .destinations__desc {
     width: 340px;
     margin: 0;
@@ -162,10 +181,6 @@
     font-weight: 300;
     line-height: 33px;
   }
-
-  // .destinations__articles-container {
-  //   margin-bottom: 55px;
-  // }
 
   .destinations__item {
     width: 615px;

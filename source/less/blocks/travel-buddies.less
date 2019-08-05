@@ -5,9 +5,9 @@
 
   background-color: @blue;
 
-  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-position: left 200px, right 50px;
+  // background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: left 200px, right 50px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 
@@ -24,6 +24,9 @@
 .travel-buddies__global-container {
   position: relative;
   padding-bottom: 100px;
+
+  background: url("../img/rogovaya-back-mobile@1x.png") left 0 top 300px, url("../img/smolov-back-desktop@1x.png") right 30px top 40px;
+  background-repeat: no-repeat;
 }
 
 .travel-buddies__title {
@@ -212,8 +215,30 @@
     border-radius: 50px;
   }
 
+  .travel-buddies__title {
+    position: relative;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      width: 213px;
+      height: 213px;
+      top: -55px;
+      left: -35px;
+
+      background-color: #141b3b;
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+  }
+
   .travel-buddies__global-container {
     padding-bottom: 240px;
+
+    background: url("../img/rogovaya-back-desktop@1x.png") right 70px top 80px, url("../img/smolov-back-desktop@1x.png") left 40px top 420px;
+    background-repeat: no-repeat;
   }
 
   .travel-buddies__container {
