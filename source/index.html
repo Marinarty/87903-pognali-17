@@ -314,7 +314,15 @@
           </li>
         </ul>
       </div>
-        <button class="add-profile__button">Показать тарифы для бизнеса</button>
+        <button class="add-profile__button">
+            <span class="add-profile__btn-icon"><?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="21" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+            <style type="text/css">.st0{fill:#132576;}</style>
+            <path class="st0" d="M16.4,15.1c-0.9-1.2-2-2-3.6-2.4l-1.5,5.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9v-4.2 c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1v4.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9l-1.5-5.2 c-1.6,0.4-2.7,1.2-3.6,2.4C0.2,15.6,0,16.6,0,17.1c0,0.1,0,0.3,0,0.4v0.9v0.9c0,1,0.8,1.7,1.7,1.7h13.5c1,0,1.7-0.8,1.7-1.7v-0.9 v-0.9c0-0.2,0-0.3,0-0.4C17,16.6,16.8,15.6,16.4,15.1z M3.9,4.6c0,2.6,1.6,6.3,4.6,6.3c2.9,0,4.6-3.8,4.6-6.3c0-2.6-2-4.6-4.6-4.6 C6,0,3.9,2.1,3.9,4.6z"/>
+            </svg></span>
+          <span class="add-profile__btn-text">Показать тарифы для бизнеса</span>
+        </button>
         <section class="plan modal">
           <div class="plan__container">
           <h2 class="plan__title">Бизнес-тарифы</h2>
@@ -343,7 +351,8 @@
     </div>
     </section>
     <section class="sign-up">
-      <div class="sign-up__container container">
+      <div class="container">
+        <div class="sign-up__container">
       <h2 class="visually-hidden">Регистрация</h2>
       <h2 class="sign-up__title">Заинтересовались?</h2>
       <p class="sign-up__desc">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="sign-up__login">авторизуйтесь</a>.</p>
@@ -357,20 +366,32 @@
         <a class="contacts__btn contacts__btn--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
     </div>
+    </div>
     </section>
     <div class="on-map">
-      <div class="on-map__container">
+        <div class="on-map__container">
       <div class="container">
+        <div class="container__inner">
+
         <span class="on-map__address">ул. Большая Конюшенная, 19/8</span>
         <a href="#" class="on-map__itinerary button button--outline">Проложить маршрут</a>
       </div>
+    </div>
     </div>
       <div id="map" class="on-map__map"></div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="container page-footer__container">
-      <a class="page-footer__logo" aria-label="Главная"></a>
+      <a class="page-footer__logo" aria-label="Главная">
+
+          <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+        <img src="img/logo-mobile-blue@1x.png" width="270" height="110" alt="Главная" class="page-footer__logo-img">
+        </picture>
+
+      </a>
         <ul class="page-footer__social-list social social--footer">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="Погнали в Facebook"><span class="visually-hidden">Facebook</span>

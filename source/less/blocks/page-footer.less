@@ -13,15 +13,12 @@
   z-index: 1;
 }
 
-.page-footer__logo {
+.page-footer__logo-img {
     display: block;
     margin: 0 auto;
     width: 100px;
     height: 19px;
     margin-bottom: 40px;
-
-    background-image: url("../../img/logo-mobile-blue@1x.png");
-    background-repeat: no-repeat;
 }
 
 .page-footer__copyright {
@@ -46,10 +43,34 @@
 }
 
 @media (min-width: @tablet-width) {
+.page-footer {
+  margin-top: -60px;
+
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
   .page-footer__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .page-footer__logo-img {
+    width: 166px;
+    height: 42px;
+  }
+
+  .page-footer__copyright {
+    font-size: 20px;
+
+    border: none;
+  }
+
+  .page-footer__text {
+    margin-right: 20px;
+  }
+
+
 }

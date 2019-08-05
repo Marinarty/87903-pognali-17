@@ -57,3 +57,48 @@
 
   z-index: -100;
 }
+
+@media (min-width: @tablet-width) {
+  .on-map {
+    margin-top: -50px;
+  }
+
+  .on-map__container {
+    padding-top: 120px;
+    padding-bottom: 85px;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .on-map__address {
+    width: 100%;
+    padding-left: 90px;
+    margin-bottom: 65px;
+
+    font-size: 28px;
+    line-height:  28px;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+      top: -20px;
+      left: 0;
+
+      background-size: 20px;
+    }
+  }
+
+  .on-map__itinerary {
+    width: 618px;
+    margin: 0 auto;
+    padding: 25px 35px;
+  }
+
+  .on-map__map {
+    height: 580px;
+    margin-top: -50px;
+
+    background-image: url(../../img/map-tablet@1x.jpg);
+  }
+}

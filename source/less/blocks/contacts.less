@@ -219,6 +219,30 @@
   .contacts--main {
     display: none;
   }
+
+  .contacts--sign-up .contacts__questions {
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 55px;
+    margin-bottom: 65px;
+  }
+
+  .contacts--sign-up .contacts__btn--tel,
+  .contacts--sign-up .contacts__btn--email {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 90px;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+      background-size: 28px;
+    }
+  }
+
+  .contacts--sign-up .contacts__btn--tel {
+    margin-bottom: 38px;
+  }
 }
 
 @media (min-width: @desktop-width) {
