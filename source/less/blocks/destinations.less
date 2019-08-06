@@ -258,20 +258,50 @@
   .destinations__global-container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 212px;
+    padding-left: 90px;
+    padding-bottom: 72px;
+
+    background: url("../../img/flags-back@1x.png") right 60px top 140px;
+    background-repeat: no-repeat;
   }
 
   .destinations__container {
     width: 50%;
     order: 2;
+    padding-left: 128px;
+  }
+
+  .destinations__title {
+    margin: 0;
+  }
+
+  .destinations__flags {
+    left: 336px;
   }
 
   .destinations__articles-container {
     width: 50%;
     order: 1;
+
+    &::after {
+      top: -70px;
+      left: -30px;
+    }
+  }
+
+  .destinations__desc {
+    margin-bottom: 102px;
+  }
+
+  .destinations__item {
+    width: 560px;
   }
 
   .destinations__show-all {
     position: static;
     order: 3;
+    width: 274px;
+    padding: 25px 35px;
   }
 }

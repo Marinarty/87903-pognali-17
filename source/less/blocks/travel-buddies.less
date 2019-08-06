@@ -378,22 +378,30 @@
   }
 }
 
-
-
-
-
 @media (min-width: @desktop-width) {
   .travel-buddies__global-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .travel-buddies__container {
-    width: 50%;
+    width: 30%;
   }
 
   .travel-buddies__articles-wrapper {
     justify-content: space-between;
+    margin-top: 134px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .travel-buddies__item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .travel-buddies__item--catalog .travel-buddies__show-all {

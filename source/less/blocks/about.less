@@ -80,3 +80,49 @@
     padding: 30px 35px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .about__container {
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__container {
+    background: url("../img/about-desktop@1x.png") right 60px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about__wrapper {
+    padding-top: 90px;
+    padding-bottom: 162px;
+    padding-left: 65px;
+  }
+
+  .about__title {
+    position: relative;
+    margin-bottom: 60px;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      width: 213px;
+      height: 213px;
+      top: -55px;
+      left: -70px;
+
+      background-color: #141b3b;
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+  }
+
+  .about__desc--bold {
+    width: 410px;
+    margin-bottom: 85px;
+    margin-top: 10px;
+  }
+}
