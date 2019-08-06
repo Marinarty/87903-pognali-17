@@ -18,6 +18,18 @@
   text-decoration: none;
 }
 
+@media (min-width: @tablet-width) {
+  .site-list {
+    align-items: flex-start;
+    padding-left: 60px;
+  }
+
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     flex-direction: row;
