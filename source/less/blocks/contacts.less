@@ -59,11 +59,6 @@
   justify-content: center;
 }
 
-// .contacts--main .contacts__btn--tel,
-// .contacts--main .contacts__btn--email {
-//   font-size: 0;
-// }
-
 .contacts--main .contacts__btn--login {
   flex-grow: 1;
 
@@ -145,79 +140,74 @@
   }
 }
 
-.contacts--sign-up .contacts__btn--email,
-.contacts--sign-up .contacts__btn--tel {
+.contacts--sign-up .contacts__btn--tel,
+.contacts--sign-up .contacts__btn--email {
+  position: relative;
   display: block;
+  padding-left: 50px;
 
+  color: @yellow;
+  font-size: 16px;
+  text-align: left;
 
+  &::before {
+    content: "";
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    background-color: @dark-blue;
+    background-size: 20px;
+  }
 }
-  .contacts--sign-up .contacts__btn--tel,
-  .contacts--sign-up .contacts__btn--email {
-    position: relative;
-    padding-left: 50px;
 
-    color: @yellow;
-    font-size: 16px;
-    text-align: left;
+.contacts--sign-up .contacts__btn--tel::before {
+  background-image: url("../../img/contacts-phone.svg");
+}
 
-    &::before {
-      content: "";
+.contacts--sign-up .contacts__btn--email::before {
+  background-image: url("../../img/contacts-mail.svg");
+}
 
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: -50%;
-      left: 0;
+.contacts--sign-up .contacts__btn--tel:hover,
+.contacts--sign-up .contacts__btn--email:hover {
+  color: @orange;
+}
 
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      border-radius: 50%;
-      background-color: @dark-blue;
-      background-size: 20px;
-    }
-  }
+.contacts--sign-up .contacts__btn--tel:hover::before {
+  background-image: url("../../img/contacts-phone-mango.svg");
+}
 
-  .contacts--sign-up .contacts__btn--tel::before {
-    background-image: url("../../img/contacts-phone.svg");
-  }
+.contacts--sign-up .contacts__btn--email:hover::before {
+  background-image: url("../../img/contacts-mail-mango.svg");
+}
 
-  .contacts--sign-up .contacts__btn--email::before {
-    background-image: url("../../img/contacts-mail.svg");
-  }
+.contacts--sign-up .contacts__btn--tel:active,
+.contacts--sign-up .contacts__btn--email:active {
+  color: rgba(255, 189, 48, 0.3);
+}
 
-  .contacts--sign-up .contacts__btn--tel:hover,
-  .contacts--sign-up .contacts__btn--email:hover {
-    color: @orange;
-  }
+.contacts--sign-up .contacts__btn--email:active::before {
+  background-image: url("../../img/contacts-mail-mango-opacity.svg");
+}
 
-  .contacts--sign-up .contacts__btn--tel:hover::before {
-    background-image: url("../../img/contacts-phone-mango.svg");
-  }
+.contacts--sign-up .contacts__btn--tel:active::before {
+  background-image: url("../../img/contacts-phone-mango-opacity.svg");
+}
 
-  .contacts--sign-up .contacts__btn--email:hover::before {
-    background-image: url("../../img/contacts-mail-mango.svg");
-  }
+.contacts--sign-up .contacts__btn--tel {
+  margin-bottom: 18px;
+}
 
-  .contacts--sign-up .contacts__btn--tel:active,
-  .contacts--sign-up .contacts__btn--email:active {
-    color: rgba(255, 189, 48, 0.3);
-  }
-
-  .contacts--sign-up .contacts__btn--email:active::before {
-    background-image: url("../../img/contacts-mail-mango-opacity.svg");
-  }
-
-  .contacts--sign-up .contacts__btn--tel:active::before {
-    background-image: url("../../img/contacts-phone-mango-opacity.svg");
-  }
-
-  .contacts--sign-up .contacts__btn--tel {
-    margin-bottom: 18px;
-  }
-
-  .contacts__switch-2 {
-    display: none;
-  }
+.contacts__switch-2 {
+  display: none;
+}
 
 @media (min-width: @tablet-width) {
   .contacts--main {
@@ -244,7 +234,6 @@
       height: 67px;
       top: -20px;
 
-
       background-size: 25px;
     }
   }
@@ -270,20 +259,19 @@
   .contacts--header .contacts__btn--tel,
   .contacts--header .contacts__btn--email {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding-left: 0;
     display: flex;
     margin-bottom: 0;
 
-    color: @orange;
     font-size: 0;
 
     &::before {
       content: "";
 
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       position: absolute;
       top: 0;
       left: 0;
@@ -291,35 +279,52 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
       border-radius: 50%;
-      background-color: @orange;
+      // background-color: @orange;
       background-size: 20px;
     }
   }
 
-  .contacts--header .contacts__btn--tel::before {
-    background-image: url("../../img/topmenu-phone.svg");
-  }
-
   .contacts--header .contacts__btn--email::before {
+    background-color: @orange;
     background-image: url("../../img/topmenu-mail.svg");
   }
 
+  .contacts--header .contacts__btn--email:hover::before {
+    background-color: @dark-orange;
+  }
 
-.contacts__switch-1 {
-  display: none;
-}
+  .contacts--header .contacts__btn--tel::before {
+    background-color: @dark-orange;
+    background-image: url("../../img/topmenu-phone.svg");
+  }
 
-.contacts__switch-2 {
-  display: inline-block;
- }
+  .contacts--header .contacts__btn--tel:hover::before {
+    background-color: #f26926;
+  }
 
- .contacts--sign-up .contacts__questions {
-   width: 100%;
-   margin-top: 62px;
-   margin-bottom: 77px;
- }
+  .contacts--header .contacts__btn--email:active::before {
+    background-image: url("../../img/topmenu-mail-opacity.svg");
+  }
 
- .contacts--sign-up .contacts__btn--tel,
+  .contacts--header .contacts__btn--tel:active::before {
+    background-image: url("../../img/topmenu-phone-opacity.svg");
+  }
+
+  .contacts__switch-1 {
+    display: none;
+  }
+
+  .contacts__switch-2 {
+    display: inline-block;
+  }
+
+  .contacts--sign-up .contacts__questions {
+    width: 100%;
+    margin-top: 62px;
+    margin-bottom: 77px;
+  }
+
+  .contacts--sign-up .contacts__btn--tel,
   .contacts--sign-up .contacts__btn--email {
     padding-left: 120px;
 
@@ -330,13 +335,13 @@
 
       background-size: 40px;
     }
-}
+  }
 
-.contacts--sign-up .contacts__wrapper {
-  display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   width: 870px;
-   margin: 0 auto;
-}
+  .contacts--sign-up .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 870px;
+    margin: 0 auto;
+  }
 }

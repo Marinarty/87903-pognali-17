@@ -4,10 +4,6 @@
 
 
   background-color: @blue;
-
-  // background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
-  // background-repeat: no-repeat;
-  // background-position: left 200px, right 50px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 
@@ -122,7 +118,7 @@
     width: 5px;
     height: 5px;
     top: 50%;
-    left: -15px;;
+    left: -15px;
 
     border-radius: 50%;
   }
@@ -168,18 +164,11 @@
   stroke-linecap: round;
 }
 
-// .travel-buddies__circular-chart.orange .travel-buddies__.circle {
-//   stroke: @dark-orange;
-// }
-
 .travel-buddies__percentage {
   fill: @white;
   font-weight: 700;
   font-size: 14px;
 }
-
-
-
 
 .travel-buddies__wrapper {
   padding-left: 45px;
@@ -218,7 +207,7 @@
   .travel-buddies__title {
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
 
       position: absolute;
@@ -270,12 +259,16 @@
   .travel-buddies__articles-wrapper {
     padding-right: 10px;
     padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .travel-buddies__item {
-  width: 285px;
+    width: 285px;
 
-  border-radius: 20px;
+    border-radius: 20px;
   }
 
   .travel-buddies__photo {
@@ -290,9 +283,9 @@
   }
 
   .travel-buddies__name::before {
-      width: 7px;
-      height: 7px;
-    }
+    width: 7px;
+    height: 7px;
+  }
 
   .travel-buddies__hashtags {
     font-size: 20px;
@@ -312,14 +305,12 @@
     bottom: 90px;
   }
 
-
-
-  .travel-buddies__articles-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  // .travel-buddies__articles-wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: space-around;
+  // }
 
   .travel-buddies__item--catalog {
     display: flex;

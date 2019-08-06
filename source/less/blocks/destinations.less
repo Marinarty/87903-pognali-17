@@ -44,7 +44,7 @@
   bottom: 0;
   width: 100%;
 
-  background: transparent;
+  // background: transparent;
   background: linear-gradient(to top, rgba(237, 239, 246, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
 
   z-index: 10;
@@ -145,7 +145,6 @@
 
     background: url("../../img/flags-back@1x.png") right 42px top 130px;
     background-repeat: no-repeat;
-
   }
 
   .destinations__container {
@@ -155,14 +154,14 @@
   .destinations__articles-container {
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
 
       position: absolute;
       width: 140px;
       height: 140px;
       top: -40px;
-      left: 0px;
+      left: 0;
 
       background-color: #e2e5f2;
       border-radius: 20px;
@@ -227,7 +226,6 @@
     left: 400px;
     top: 40px;
     margin-top: -23px;
-
   }
 
   .destinations__country-image {
