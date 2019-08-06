@@ -102,3 +102,36 @@
     background-image: url(../../img/map-tablet@1x.jpg);
   }
 }
+
+  @media (min-width: @tablet-width) {
+    .on-map__itinerary {
+      width: 324px;
+      margin: 0;
+      padding: 25px 35px;
+      margin-left: 110px;
+    }
+
+    .on-map__container {
+      padding-top: 111px;
+      padding-bottom: 60px;
+    }
+
+    .on-map__address {
+      width: 50%;
+      margin-bottom: 0;
+      padding-left: 120px;
+
+      &::before {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+        left: 0;
+
+        background-size: 30px;
+      }
+    }
+
+    .on-map__map {
+      height: 510px;
+    }
+}

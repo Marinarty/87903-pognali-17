@@ -215,6 +215,10 @@
     margin-bottom: 18px;
   }
 
+  .contacts__switch-2 {
+    display: none;
+  }
+
 @media (min-width: @tablet-width) {
   .contacts--main {
     display: none;
@@ -299,4 +303,40 @@
   .contacts--header .contacts__btn--email::before {
     background-image: url("../../img/topmenu-mail.svg");
   }
+
+
+.contacts__switch-1 {
+  display: none;
+}
+
+.contacts__switch-2 {
+  display: inline-block;
+ }
+
+ .contacts--sign-up .contacts__questions {
+   width: 100%;
+   margin-top: 62px;
+   margin-bottom: 77px;
+ }
+
+ .contacts--sign-up .contacts__btn--tel,
+  .contacts--sign-up .contacts__btn--email {
+    padding-left: 120px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -30px;
+
+      background-size: 40px;
+    }
+}
+
+.contacts--sign-up .contacts__wrapper {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 870px;
+   margin: 0 auto;
+}
 }

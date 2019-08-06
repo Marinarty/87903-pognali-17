@@ -210,7 +210,37 @@
     .add-profile__button:active .add-profile__btn-text {
       opacity: 0.3;
     }
+}
 
+@media (min-width: @desktop-width) {
+  .add-profile {
+    padding-bottom: 132px;
+  }
 
+  .add-profile__title {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
 
+  .add-profile__list {
+    padding-left: 160px;
+    padding-right: 343px;
+    margin-bottom: 33px;
+
+    &::before {
+      bottom: -90px;
+      right: 70px;
+      background-size: 200px;
+    }
+
+    &::after {
+      right: 185px;
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .add-profile__button {
+    padding-left: 68px;
+  }
 }
