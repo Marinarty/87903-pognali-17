@@ -1,15 +1,25 @@
 .plan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: none;
   width: 270px;
-  padding-top: 30px;
-  padding-left: 25px;
-  padding-bottom: 20px;
 
   color: #444444;
   font-weight: 300;
 
   background-color: @white;
   border-radius: 20px;
+
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.plan__container {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
 }
 
 .plan__list {
@@ -18,10 +28,53 @@
 
 .plan__title {
   .title();
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
 }
 
 .plan__option,
 .plan__price {
   margin: 0;
   padding: 0;
+}
+
+.plan__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+  }
+}
+
+.plan__close {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: @mid-blue;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background-color: #f3f4f8;
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }

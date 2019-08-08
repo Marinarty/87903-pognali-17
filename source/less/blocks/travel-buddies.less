@@ -1,16 +1,28 @@
 .travel-buddies {
+  position: relative;
   text-align: left;
 
-  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-position: left 200px, right 50px;
+
+  background-color: @blue;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  z-index: 4;
 }
 
 .travel-buddies__container {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
+}
+
+.travel-buddies__global-container {
+  position: relative;
+  padding-bottom: 100px;
+
+  background: url("../img/rogovaya-back-mobile@1x.png") left 0 top 300px, url("../img/smolov-back-desktop@1x.png") right 30px top 40px;
+  background-repeat: no-repeat;
 }
 
 .travel-buddies__title {
@@ -27,20 +39,135 @@
 
 .travel-buddies__item {
   display: flex;
+  position: relative;
   flex-direction: column;
   color: @dark-grey;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   background-color: @white;
   border-radius: 10px;
   overflow: hidden;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 48px;
+    left: 30px;
+    width: 28px;
+    height: 1px;
+
+    background-color: @white;
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "level";
+
+    position: absolute;
+    top: 50px;
+    left: 33px;
+
+    color: @white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+
+    z-index: 10;
+  }
+}
+
+.travel-buddies__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.travel-buddies__countries-to-visit {
+  position: relative;
+  margin-top: -10px;
+}
+
+.travel-buddies__flags {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .travel-buddies__name {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  color: @mid-blue;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    left: -15px;
+
+    border-radius: 50%;
+  }
+}
+
+.travel-buddies__name--offline::before {
+  background-color: #f97676;
+}
+
+.travel-buddies__name--online::before {
+  background-color: #81e31e;
+}
+
+.travel-buddies__hashtags {
+  padding: 0;
+  margin: 0;
+
+  color: @dark-grey;
+}
+
+.travel-buddies__level {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.travel-buddies__circular-chart {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.travel-buddies__circle-bg {
+  fill: rgba(0, 0, 0, 0.5);
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 2;
+}
+
+.travel-buddies__circle {
+  fill: none;
+  stroke-width: 2;
+  stroke: @dark-orange;
+  stroke-linecap: round;
+}
+
+.travel-buddies__percentage {
+  fill: @white;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .travel-buddies__wrapper {
@@ -50,12 +177,16 @@
 }
 
 .travel-buddies__show-all {
+  width: 270px;
   display: block;
-  margin-bottom: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
 }
 
 .travel-buddies__transport {
-  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .travel-buddies__invite {
@@ -69,12 +200,117 @@
 }
 
 @media (min-width: @tablet-width) {
+  .travel-buddies {
+    border-radius: 50px;
+  }
+
+  .travel-buddies__title {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      width: 213px;
+      height: 213px;
+      top: -55px;
+      left: -35px;
+
+      background-color: #141b3b;
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+  }
+
+  .travel-buddies__global-container {
+    padding-bottom: 240px;
+
+    background: url("../img/rogovaya-back-desktop@1x.png") right 70px top 80px, url("../img/smolov-back-desktop@1x.png") left 40px top 420px;
+    background-repeat: no-repeat;
+  }
+
+  .travel-buddies__container {
+    padding-top: 100px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .travel-buddies__desc {
+    width: 430px;
+    margin: 0;
+    margin-top: 60px;
+
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+
+  .travel-buddies__desc--bold {
+    width: 255px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
   .travel-buddies__articles-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .travel-buddies__item {
+    width: 285px;
+
+    border-radius: 20px;
+  }
+
+  .travel-buddies__photo {
+    width: 285px;
+    height: 285px;
+  }
+
+  .travel-buddies__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .travel-buddies__name::before {
+    width: 7px;
+    height: 7px;
+  }
+
+  .travel-buddies__hashtags {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .travel-buddies__info {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .travel-buddies__show-all {
+    width: 618px;
+    padding: 25px 35px;
+    margin-left: 50px;
+    bottom: 90px;
+  }
+
+  // .travel-buddies__articles-wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: space-around;
+  // }
 
   .travel-buddies__item--catalog {
     display: flex;
@@ -137,14 +373,48 @@
   .travel-buddies__global-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 120px;
+
+    background: url("../img/rogovaya-back-desktop@1x.png") left 190px bottom 80px, url("../img/smolov-back-desktop@1x.png") left 550px top 130px;
+    background-repeat: no-repeat;
   }
 
   .travel-buddies__container {
-    width: 50%;
+    width: 30%;
+    padding-left: 70px;
+    padding-bottom: 17px;
   }
 
   .travel-buddies__articles-wrapper {
     justify-content: space-between;
+    margin-top: 134px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .travel-buddies__item {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .travel-buddies__show-all {
+    position: static;
+    width: 280px;
+    margin-left: 0;
+    margin-top: 92px;
+  }
+
+  .travel-buddies__title {
+    margin-top: 25px;
+
+    &::after {
+      top: -55px;
+      left: -73px;
+    }
   }
 
   .travel-buddies__item--catalog .travel-buddies__show-all {

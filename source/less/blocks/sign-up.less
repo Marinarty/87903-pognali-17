@@ -1,5 +1,12 @@
 .sign-up {
   text-align: center;
+  position: relative;
+
+  background-color: @blue;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  z-index: 2;
 }
 
 .sign-up__title {
@@ -7,7 +14,67 @@
 }
 
 .sign-up__desc {
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
   font-weight: 300;
+}
+
+.sign-up__form {
+  display: flex;
+}
+
+.sign-up__email {
+  width: 220px;
+  padding: 21px 21px;
+
+  color: rgba(68, 68, 68, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    color: rgba(68, 68, 68, 0.5);
+
+    background-color: #edeff6;
+  }
+
+  &:active {
+    padding: 17px 17px;
+
+    color: @white;
+
+    background-color: @blue;
+    border: 4px solid @white;
+  }
+}
+
+.sign-up__button {
+  width: 60px;
+  margin-left: -15px;
+
+  font-size: 0;
+
+  border: none;
+  background-position: center center;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: @orange;
+    background-image: url("../img/triangle-arrow-right.svg");
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-image: url("../img/triangle-arrow-right-opacity.svg");
+  }
 }
 
 .sign-up__login {
@@ -19,5 +86,89 @@
 
   &:active {
     color: rgba(255, 141, 48, 0.3);
+  }
+}
+
+.sign-up__container {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .sign-up {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-bottom: 45px;
+  }
+
+  .sign-up__container {
+    padding: 35px 35px;
+  }
+
+  .sign-up__title {
+    margin-bottom: 50px;
+  }
+
+  .sign-up__desc {
+    width: 100%;
+    margin-bottom: 65px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .sign-up__email {
+    width: 90%;
+    padding: 30px 35px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+  }
+
+  .sign-up__button {
+    width: 82px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sign-up {
+    padding-bottom: 60px;
+  }
+
+  .sign-up__button {
+    width: 320px;
+    padding-right: 168px;
+    padding-left: 34px;
+
+    font-size: 24px;
+
+    background-position: top 50% right 35px;
+
+    &:hover {
+      color: @mid-blue;
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+    }
+  }
+
+  .sign-up__desc {
+    width: 610px;
+    margin-bottom: 58px;
+  }
+
+  .sign-up__container {
+    padding: 35px 73px;
+  }
+
+  .sign-up__title {
+    margin-bottom: 63px;
+    margin-top: 63px;
   }
 }

@@ -1,17 +1,25 @@
 .about {
+  position: relative;
   text-align: left;
 
   background-color: @blue;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  z-index: 6;
+}
+
+.about__container {
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-.about__container {
+.about__wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 65px;
 }
 
 .about__title {
@@ -32,12 +40,18 @@
 
 @media (min-width: @tablet-width) {
   .about {
+    border-radius: 50px;
+  }
 
+  .about__container {
     background-image: url("../img/about-tablet@1x.png");
     background-position: right;
   }
 
-  .about__container {
+  .about__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -45,10 +59,70 @@
 
   .about__desc {
     width: 50%;
+
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-top: 0;
+  }
+
+  .about__desc--bold {
+    margin-bottom: 60px;
+
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
   }
 
   .about__learn-more {
     display: block;
     width: 275px;
+    padding: 30px 35px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .about__container {
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__container {
+    background: url("../img/about-desktop@1x.png") right 60px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about__wrapper {
+    padding-top: 90px;
+    padding-bottom: 162px;
+    padding-left: 65px;
+  }
+
+  .about__title {
+    position: relative;
+    margin-bottom: 60px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      width: 213px;
+      height: 213px;
+      top: -55px;
+      left: -70px;
+
+      background-color: #141b3b;
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+  }
+
+  .about__desc--bold {
+    width: 410px;
+    margin-bottom: 85px;
+    margin-top: 10px;
   }
 }

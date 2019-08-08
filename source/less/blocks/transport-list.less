@@ -1,3 +1,15 @@
 .transport-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
+
   .nolist();
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.transport-list__item--active svg {
+  fill: @mid-blue;
 }

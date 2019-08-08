@@ -1,11 +1,24 @@
 .add-profile {
+  position: relative;
+  margin-top: -40px;
+
   color: #444444;
 
   background-color: @light-grey;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  z-index: 3;
 }
 
 .add-profile__container {
   padding: 30px 20px;
+  padding-top: 70px;
+
+  background-image: url("../../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 70px right;
+  background-size: 100px;
 }
 
 .add-profile__title {
@@ -16,33 +29,218 @@
 
 .add-profile__list {
   .nolist();
+  padding-top: 30px;
 }
 
 .add-profile__option,
 .add-profile__price {
   margin: 0;
   padding: 0;
+
+  font-weight: 300;
 }
 
 .add-profile__item {
+  position: relative;
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 0;
+    right: -50px;
+    padding-top: 5px;
+
+    color: @white;
+    text-align: center;
+
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+.add-profile__item--option1::after {
+  content: "1";
+  background-color: @mid-orange;
+}
+
+.add-profile__item--option2::after {
+  content: "2";
+  background-color: @orange;
+}
+
+.add-profile__item--option3::after {
+  content: "3";
+  background-color: @yellow;
 }
 
 .add-profile__button {
+  padding-left: 20px;
+  margin-bottom: 40px;
+
   color: @blue;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 700;
+
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+}
+
+.add-profile__btn-icon {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
+  .add-profile {
+    margin-top: -50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .add-profile__container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    background-image: none;
+  }
+
   .add-profile__title {
     width: 100%;
+
     text-align: center;
   }
 
+  .add-profile__list {
+    position: relative;
+    padding-left: 90px;
+    padding-top: 45px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 285px;
+      background-color: rgba(226, 229, 242, 1);
+      border-radius: 20px;
+
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: -300px;
+      right: -50px;
+      width: 200px;
+      height: 285px;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100px;
+    }
+  }
+
   .add-profile__item {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .add-profile__item::after {
+    width: 67px;
+    height: 67px;
+    top: 0;
+    left: -90px;
+    padding-top: 20px;
+  }
+
+  .add-profile__button {
+    padding: 0;
+
+    color: #132576;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-profile__btn-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 67px;
+    height: 67px;
+    padding-top: 20px;
+    margin-right: 20px;
+
+    background-color: #e2e5f2;
+    border-radius: 50%;
+  }
+
+  .add-profile__button:hover svg,
+  .add-profile__button:hover .add-profile__btn-text {
+    opacity: 0.7;
+  }
+
+  .add-profile__button:active svg,
+  .add-profile__button:active .add-profile__btn-text {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-profile {
+    padding-bottom: 132px;
+  }
+
+  .add-profile__title {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+
+  .add-profile__list {
+    padding-left: 160px;
+    padding-right: 343px;
+    margin-bottom: 33px;
+
+    &::before {
+      bottom: -90px;
+      right: 70px;
+      background-size: 200px;
+    }
+
+    &::after {
+      right: 185px;
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .add-profile__button {
+    padding-left: 68px;
   }
 }
