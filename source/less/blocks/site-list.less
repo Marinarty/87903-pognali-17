@@ -45,4 +45,26 @@
   .site-list__item {
     display: inline-block;
   }
+
+  .site-list__hover {
+    position: relative;
+    transition: transform 0.3s;
+
+    &::before {
+
+      position: absolute;
+top: 100%;
+content: "красный";
+font-weight: 700;
+transform: translate3d(0,0,0);
+color: red;
+    }
+  }
+
+  .site-list__link:hover {
+      transform: translateY(-100%);
+    }
+
+
 }
+

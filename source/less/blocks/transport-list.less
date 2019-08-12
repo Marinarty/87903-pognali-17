@@ -13,3 +13,13 @@
 .transport-list__item--active svg {
   fill: @mid-blue;
 }
+
+.transport-list__item {
+  position: relative;
+
+  cursor: pointer;
+
+  &:hover .transport-list__tooltip {
+    display: block;
+  }
+}
