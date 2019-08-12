@@ -1,0 +1,40 @@
+.inner-page-nav {
+  position: relative;
+
+  background-color: @dark-blue;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  z-index: 4;
+}
+
+.inner-page-nav__title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.inner-page-nav__title span {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    left: 0;
+
+    border-radius: 2px;
+    background-color: @dark-orange;
+  }
+}
+
+.inner-page-nav__return_btn {
+    display: none;
+}
