@@ -1,5 +1,5 @@
 .level {
-    display: block;
+  display: block;
 }
 
 .level__range-scale {
@@ -62,19 +62,19 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   &::before {
     content: '';
 
     position: absolute;
-    top: 20px;
-    left: 118px;
-    height: 33px;
+    top: 0;
+    left: 108px;
+    height: 34px;
     width: 1px;
 
-    // transform: translateX(-50%);
+    // transform: translateX(50%);
     background-color: #cbced9;
   }
 
@@ -118,6 +118,19 @@
   }
 }
 
-  .level__price:hover {
-    border: solid 1px #959bb2;
-  }
+.level__price:hover {
+  border-color: #959bb2;
+}
+
+.level__price-controls:hover::before {
+  background-color: #959bb2;
+}
+
+.level__price:focus {
+  border-color: #161c35;
+}
+
+.level__price-controls:active::before,
+.level__price-controls:focus::before {
+  background-color: #161c35;
+}

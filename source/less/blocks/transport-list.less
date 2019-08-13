@@ -1,13 +1,9 @@
 .transport-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 120px;
   margin: 0 auto;
 
-  .nolist();
-  padding-top: 10px;
-  padding-bottom: 20px;
+  // .nolist();
 }
 
 .transport-list__item--active svg {
@@ -16,10 +12,29 @@
 
 .transport-list__item {
   position: relative;
+  margin-right: 10px;
 
   cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:hover .transport-list__tooltip {
     display: block;
   }
+}
+
+.transport-list__item--bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-color: #edeff6;
+  border-radius: 50%;
 }
