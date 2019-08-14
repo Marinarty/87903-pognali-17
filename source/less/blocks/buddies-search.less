@@ -5,8 +5,7 @@
   margin-top: -25px;
 
   background-color: @light-grey;
-
-  z-index: 2;
+  // z-index: 2;
 }
 
 .buddies-search__container {
@@ -163,7 +162,7 @@
 }
 
 .buddies-search__transport input[type="checkbox"]:checked+label svg {
-  fill: @dark-blue;
+  fill: @mid-blue;
 }
 
 .buddies-search__show {
@@ -189,16 +188,111 @@
     background-color: #f3c72b;
   }
 }
-
+  .buddies-search__hidden {
+    display: none;
+  }
 
 @media (min-width: @tablet-width) {
   .buddies-search__container {
     width: 688px;
+    padding: 35px;
+  }
+
+  .buddies-search__hidden {
+    display: inline;
+  }
+
+  .buddies-search__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buddies-search__criteria {
+    width: 25%;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+
+  .buddies-search__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    border: none;
+  }
+
+  .buddies-search__input-wrapper {
+    width: 33%;
+  }
+
+  .buddies-search__item label {
+    padding-left: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .buddies-search__item input[type="checkbox"] + label::before,
+  .buddies-search__item input[type="checkbox"]:checked + label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .buddies-search__item input[type="checkbox"]:checked + label::before {
+    background-size: 12px;
+  }
+
+  .buddies-search__inner-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .buddies-search__filter-btn {
+    display: none;
+  }
+
+  .buddies-search__transport {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .buddies-search__transport .buddies-search__input-wrapper,
+  .buddies-search__transport label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .buddies-search__transport svg {
+    width: 19px;
+    height: 21px;
+  }
+
+  .buddies-search__transport .buddies-search__input-wrapper {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .buddies-search__container {
     width: 285px;
+  }
+
+  .buddies-search {
+    margin-top: 0;
   }
 }

@@ -349,7 +349,7 @@
   font-size: 0;
 
   background-repeat: no-repeat;
-  background-size: 10px;
+  background-size: 10px auto;
   background-position: center center;
 
   &--back {
@@ -541,6 +541,45 @@
   .buddies__level::before {
     top: 8px;
     right: 27px;
+  }
+
+  .buddies__show-more {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+
+    background-size: 25px;
+  }
+
+  .buddies__pagination-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: @white;
+    border-radius: 20px;
+  }
+
+  .buddies__pagination {
+    display: flex;
+  }
+
+  .buddies__arrows {
+    width: 90px;
+    padding: 0;
+  }
+
+  .buddies__arrows::before {
+    display: none;
+  }
+
+  .buddies {
+    padding-bottom: 60px;
   }
 
 }
