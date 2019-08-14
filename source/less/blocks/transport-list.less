@@ -2,8 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-
-  // .nolist();
 }
 
 .transport-list__item--active svg {
@@ -37,4 +35,15 @@
 
   background-color: #edeff6;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .transport-list__item--bg {
+    background-color: transparent;
+  }
+
+  .transport-list__item--bg svg {
+    width: 20px;
+    height: 20px;
+  }
 }

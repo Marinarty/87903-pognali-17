@@ -66,7 +66,7 @@
       </ul>
     </div>
   </header>
-  <main class="main-page">
+  <main class="main-page main-page--gray">
       <div class="inner-page-nav">
         <div class="container">
           <h1 class="inner-page-nav__title"><span>Попутчики</span></h1>
@@ -143,9 +143,11 @@
         <button class="country-filter__close">Свернуть</button>
       </div>
     </section>
-    <div class="buddies-container">
+    <!-- <div class="buddies-container"> -->
+      <div class="container container--buddies">
     <section class="buddies-search">
-      <div class="buddies-search__container container">
+      <!-- <div class="buddies-search__container container"> -->
+          <div class="buddies-search__container">
       <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
       <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
 
@@ -281,27 +283,30 @@
     </section>
 
     <section class="buddies">
-      <div class="container">
+      <!-- <div class="container"> -->
       <h2 class="visually-hidden">Выбрать попутчика</h2>
 
 
       <article class="buddies__item">
 
-        <div class="buddies__info">
+
             <div class="buddies__photo-wrapper">
+              <a href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
             <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова" class="buddies__photo">
           </picture>
+          </a>
         </div>
-
+        <div class="buddies__info">
 
 
         <h4><a href="#" class="buddies__name buddies__name--offline">Таня Фирсова</a></h4>
 
         <p class="buddies__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 
+        <div class="buddies__btn-wrapper">
         <button class="buddies__invite button button--rounded">Позвать!</button>
 
         <div class="buddies__likes">
@@ -313,11 +318,12 @@
           </span>
           <span>1,5 M</span>
         </div>
-
+</div>
       </div>
 
         <div class="buddies__countries-to-visit">
           <p class="buddies__text">Хочет посетить:</p>
+          <div class="buddies__countries-main-wrapper">
           <div class="buddies__countries-wrapper">
             <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Sri-Lanka" class="buddies__flags">
             <span class="buddies__country">Шри-Ланка</span>
@@ -329,6 +335,8 @@
           <div class="buddies__countries-wrapper">
             <img src="img/flag-seychelles.svg" width="35" height="24" alt="Seychelles" class="buddies__flags">
             <span class="buddies__country">Сейшелы</span>
+          </div>
+
           </div>
         </div>
 
@@ -500,6 +508,7 @@
       </div>
       </div>
     </section>
+  </div>
   </div>
   </main>
   <footer class="page-footer">
