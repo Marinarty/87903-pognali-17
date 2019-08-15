@@ -78,71 +78,207 @@
     <section class="country-filter">
       <div class="country-filter__container container">
         <h2 class="country-filter__title">Фильтрация по странам</h2>
-        <button class="country-filter__btn" aria-label="Открыть/Закрыть">Свернуть</button>
+        <button class="country-filter__btn country-filter__btn--open" aria-label="Открыть/Закрыть">Показать все</button>
+
+        <button class="country-filter__btn country-filter__btn--close" aria-label="Открыть/Закрыть">Свернуть</button>
+
+
         <ul class="country-filter__continents continents-list">
           <li class="continents-list__item continents-list__item--active">Европа</li>
           <li class="continents-list__item">Азия</li>
           <li class="continents-list__item">Америка</li>
           <li class="continents-list__item">Острова</li>
         </ul>
-      <div class="country-filter__wrapper container">
+      <div class="country-filter__wrapper">
         <table class="country-filter__letters">
           <tr>
-            <td>А</td>
-            <td>Б</td>
-            <td>В</td>
-            <td>Г</td>
-            <td>Д</td>
+            <td>
+              <button class="country-filter__btn">А</button>
+              <div class="country-filter__list country-filter__list--active">
+                <a href="#">Австрия</a>
+                <a href="#">Албания</a>
+                <a href="#">Андорра</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Б</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Беларусь</a>
+                <a href="#">Бельгия</a>
+                <a href="#">Болгария</a>
+                <a href="#">Босния и Герцеговина</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">В</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Ватикан</a>
+                <a href="#">Великобритания</a>
+                <a href="#">Венгрия</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Г</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Германия</a>
+                <a href="#">Голландия</a>
+                <a href="#">Греция</a>
+                <a href="#">Грузия</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Д</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Дания</a>
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Е</td>
-            <td>Ё</td>
-            <td>Ж</td>
-            <td>З</td>
-            <td>И</td>
+            <td>
+                <button class="country-filter__btn">Е</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">Ё</button>
+
+                </td>
+            <td>
+                <button class="country-filter__btn">Ж</button>
+
+                </td>
+            <td>
+              <button class="country-filter__btn">З</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">И</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Ирландия</a>
+                <a href="#">Исландия</a>
+                <a href="#">Испания</a>
+                <a href="#">Италия</a>
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Й</td>
-            <td>К</td>
-            <td>Л</td>
-            <td>М</td>
-            <td>Н</td>
+            <td>
+                <button class="country-filter__btn">Й</button>
+                </td>
+            <td>
+                <button class="country-filter__btn">К</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">Л</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Латвия</a>
+                <a href="#">Литва</a>
+                <a href="#">Лихтенштейн</a>
+                <a href="#">Люксембург</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">М</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Македония</a>
+                <a href="#">Мальта</a>
+                <a href="#">Молдова</a>
+                <a href="#">Монако</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Н</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Норвегия</a>
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>О</td>
-            <td>П</td>
-            <td>Р</td>
-            <td>С</td>
-            <td>Т</td>
+            <td>
+                <button class="country-filter__btn">О</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">П</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Польша</a>
+                <a href="#">Португалия</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Р</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Россия</a>
+                <a href="#">Румыния</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">С</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Сан-Марино</a>
+                <a href="#">Сербия</a>
+                <a href="#">Словакия</a>
+                <a href="#">Словения</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Т</button>
+                </td>
           </tr>
           <tr>
-            <td>У</td>
-            <td>Ф</td>
-            <td>Х</td>
-            <td>Ц</td>
-            <td>Ч</td>
+            <td>
+                <button class="country-filter__btn">У</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Украина</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Ф</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Финляндия</a>
+                <a href="#">Франция</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Х</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Хорватия</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Ц</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">Ч</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Черногория</a>
+                <a href="#">Чехия</a>
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Ш</td>
-            <td>Щ</td>
-            <td>Э</td>
-            <td>Ю</td>
-            <td>Я</td>
+            <td>
+                <button class="country-filter__btn">Ш</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Швейцария</a>
+                <a href="#">Швеция</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Щ</button>
+                </td>
+            <td>
+                <button class="country-filter__btn">Э</button>
+              <div class="country-filter__list country-filter__list--hidden">
+                <a href="#">Эстония</a>
+              </div>
+            </td>
+            <td>
+                <button class="country-filter__btn">Ю</button>
+            </td>
+            <td>
+                <button class="country-filter__btn">Я</button>
+            </td>
           </tr>
         </table>
-        <ul class="country-filter__countries countries-list">
-          <li class="countries-list__item"><a class="countries-list__link">Афганистан</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Албания</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Алжир</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Андорра</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Аргентина</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Армения</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Австралия</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Австрия</a></li>
-          <li class="countries-list__item"><a class="countries-list__link">Азербайджан</a></li>
-        </ul>
-      </div>
         <button class="country-filter__close">Свернуть</button>
+      </div>
       </div>
     </section>
     <!-- <div class="buddies-container"> -->

@@ -1,10 +1,15 @@
 var menuBtn = document.querySelector('.header__menu-btn');
 var header = document.querySelector('header');
+var filterBtn = document.querySelector('.country-filter__btn');
+var filter = document.querySelector('.country-filter__container');
 
 menuBtn.onclick = function() {
   header.classList.toggle('header--menu-open')
 }
 
+filterBtn.onclick = function() {
+  filter.classList.toggle('country-filter__container--open')
+}
 
 
 document.addEventListener("DOMContentLoaded", function (event) {
