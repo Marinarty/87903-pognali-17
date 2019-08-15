@@ -138,5 +138,98 @@
 @media (min-width: @tablet-width) {
   .level__price-controls {
     width: 140px;
+    margin: 0;
+    margin-left: auto;
+    order: 1;
+
+    &::before {
+      left: 50%;
+      height: 42px;
+    }
+
+    &::after {
+      width: 20px;
+    }
+  }
+
+  .level__price {
+    padding: 10px 15px;
+
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .level__range-controls {
+    margin-bottom: 0;
+  }
+
+  .level__range-scale {
+    width: 280px;
+    margin: 0;
+  }
+
+  .level {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .level__range-toggle {
+    width: 13px;
+    height: 13px;
+    bottom: 0;
+
+    transform: translateY(40%);
+    &--min {
+      left: 25%;
+    }
+
+    &--max {
+      right: 0;
+    }
+  }
+
+  .level__range-toggle--min:hover,
+  .level__range-toggle--max:hover {
+    height: 19px;
+    width: 19px;
+  }
+
+  .level__range-scale {
+    height: 3px;
+
+    border-radius: 1.5px;
+  }
+
+  .level__range-bar {
+    height: 3px;
+    width: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .level__price-controls {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .level__range-controls {
+    width: 190px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  .level__range-scale {
+    width: 100%;
+  }
+
+  .level__range-bar {
+    width: 125px;
+    left: 55px;
   }
 }

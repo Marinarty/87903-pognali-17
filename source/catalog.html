@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header--dark">
     <div class="header__container container">
     <a class="header__logo" aria-label="Главная"></a>
     <button class="header__menu-btn" type="button" aria-label="Открыть/Закрыть меню">Меню</button>
@@ -69,9 +69,11 @@
   <main class="main-page main-page--gray">
       <div class="inner-page-nav">
         <div class="container">
+          <div class="inner-page-nav__wrapper">
           <h1 class="inner-page-nav__title"><span>Попутчики</span></h1>
           <a href="index.html" class="inner-page-nav__return_btn">На главную</a>
           </div>
+        </div>
         </div>
     <section class="country-filter">
       <div class="country-filter__container container">
@@ -150,7 +152,7 @@
           <div class="buddies-search__container">
       <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
       <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
-
+<div class="buddies__search-global-wrapper">
           <div class="buddies-search__item">
             <div class="buddies-search__criteria">
           <p>Хобби<span class="buddies-search__hidden">:</span></p>
@@ -162,7 +164,7 @@
           <label tabindex="0" for="sport">Спортзал</label>
         </div>
         <div class="buddies-search__input-wrapper">
-          <input type="checkbox" id="hookah" class="visually-hidden" name="hobby[]" value="кальян" checked>
+          <input type="checkbox" id="hookah" class="visually-hidden" name="hobby[]" value="кальян">
           <label tabindex="0" for="hookah">Кальян</label>
         </div>
           <div class="buddies-search__input-wrapper">
@@ -183,7 +185,7 @@
           <label tabindex="0" for="rock">Тяжелый рок</label>
           </div>
           <div class="buddies-search__input-wrapper">
-          <input type="checkbox" id="rap" class="visually-hidden" name="music[]" value="рэп" checked>
+          <input type="checkbox" id="rap" class="visually-hidden" name="music[]" value="рэп">
           <label tabindex="0" for="rap">Русский рэп</label>
           </div>
           <div class="buddies-search__input-wrapper">
@@ -199,16 +201,16 @@
           </div>
           <div class="buddies-search__inner-wrapper">
               <div class="buddies-search__input-wrapper">
-          <input type="checkbox" id="boul" class="visually-hidden" name="food[]" value="боул" checked>
-          <label tabindex="0" for="boul">Мясоед</label>
+          <input type="checkbox" id="meat-eater" class="visually-hidden" name="food[]" value="мясоед" checked>
+          <label tabindex="0" for="meat-eater">Мясоед</label>
           </div>
           <div class="buddies-search__input-wrapper">
-          <input type="checkbox" class="visually-hidden" id="falafel" name="food[]" value="фалафель" checked>
-          <label tabindex="0" for="falafel">Сидит на ПП</label>
+          <input type="checkbox" class="visually-hidden" id="health-food" name="food[]" value="пп">
+          <label tabindex="0" for="health-food">Сидит на ПП</label>
           </div>
           <div class="buddies-search__input-wrapper">
-          <input type="checkbox" class="visually-hidden" id="shawarma" name="food[]" value="шаверма">
-          <label tabindex="0" for="shawarma">Веган-сыроед</label>
+          <input type="checkbox" class="visually-hidden" id="vegan" name="food[]" value="веган-сыроед">
+          <label tabindex="0" for="vegan">Веган-сыроед</label>
           </div>
         </div>
       </div>
@@ -277,7 +279,9 @@
 
           </div>
         </div>
+      </div>
         <button type="submit" class="buddies-search__show">Показать</button>
+
       </form>
     </div>
     </section>
@@ -657,7 +661,7 @@
                     <span class="buddies__country">Великобритания</span>
                   </div>
                   <div class="buddies__countries-wrapper">
-                      <img src="img/flag-australia.svg" width="35" height="24" alt="Австралия" class="buddies__flags">
+                      <img src="img/flag-germany.svg" width="35" height="24" alt="Австралия" class="buddies__flags">
                       <span class="buddies__country">Германия</span>
                     </div>
                 </div>
