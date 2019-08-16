@@ -1,5 +1,9 @@
 .continents-list {
   .nolist();
+
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .continents-list__item {
@@ -7,17 +11,48 @@
   color: rgba(25, 33, 68, 0.3);
   font-weight: 700;
 
+  cursor: pointer;
+
   &--active {
     color: @blue;
+
+    cursor: default;
+  }
+
+  &:hover {
+    color: rgba(25, 33, 68, 0.6);
+  }
+
+  &:active {
+    color: rgba(25, 33, 68, 1);
+  }
+
+  &--active:hover {
+    color: rgba(25, 33, 68, 1);
+  }
+
+  &--active:active {
+    color: rgba(25, 33, 68, 1);
   }
 }
 
-// @media (min-width: @tablet-width) {
-//   .continents-list {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     width: 420px;
-//     justify-content: space-between;
-//   }
-// }
+@media (min-width: @tablet-width) {
+  .continents-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+  .continents-list__item {
+    margin-right: 25px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
