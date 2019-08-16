@@ -1,4 +1,9 @@
 .user-info {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: -20px;
+
   color: @blue;
 
   background-color: @light-grey;
@@ -9,8 +14,128 @@
   flex-wrap: wrap;
 }
 
+.user-info__level svg {
+  width: 100px;
+  height: 100px;
+}
+
+.user-info__photo {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.user-info__photo img {
+  border-radius: 50%;
+}
+
 .user-info__change-photo {
   width: 100%;
+  padding: 5px 10px;
+  color: @mid-blue;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  background-color: #dfe3f0;
+  border-radius: 30px;
+  border: none;
+  box-shadow: none;
+}
+
+.user-info__hashtags,
+.user-info__transports {
+  border: solid 1px #cbced9;
+  border-radius: 10px;
+}
+
+.user-info__hashtags {
+  margin-bottom: 30px;
+}
+
+.user-info__hashtags textarea {
+  padding: 20px;
+
+  color: #444444;
+
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.user-info__tags,
+.user-info__transport {
+  margin: 0;
+  margin-top: -8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: @mid-blue;
+  text-transform: uppercase;
+
+  background-color: #edeff6;
+}
+
+.user-info__transports,
+.user-info__hashtags {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info__input-wrapper {
+  padding: 0;
+}
+
+.user-info__transports svg {
+  width: 19px;
+  height: 21px;
+}
+
+// .user-info__transports .user-info__input-wrapper {
+//   margin-right: 10px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+.user-info__transports .user-info__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-info__transports label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+
+  font-size: 0;
+
+  background-color: @white;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.user-info__transports input[type="checkbox"]+label svg {
+  fill: rgba(0, 0, 0, 0.15);
+}
+
+.user-info__transports input[type="checkbox"]:checked+label svg {
+  fill: @mid-blue;
 }
 
 @media (min-width: @tablet-width) {
