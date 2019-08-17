@@ -586,6 +586,7 @@
 
 @media (min-width: @desktop-width) {
   .buddies__item {
+    position: relative;
     width: 950px;
     padding: 0;
     margin-bottom: 30px;
@@ -595,6 +596,33 @@
     &:hover {
       box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
     }
+  }
+
+
+  .buddies__item::after {
+    position: absolute;
+
+    content: '';
+    display: block;
+    top:0;
+    left: 66%;
+    width: 1px;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 5%, transparent 80%);
+
+    z-index: 10;
+  }
+
+  .buddies__item::before {
+    position: absolute;
+
+    content: '';
+    display: block;
+    bottom:0;
+    left: 66%;
+    width: 1px;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 5%, transparent 80%);
   }
 
   .buddies__name::before {

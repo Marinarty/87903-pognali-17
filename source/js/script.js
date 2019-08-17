@@ -1,16 +1,24 @@
 var menuBtn = document.querySelector('.header__menu-btn');
 var header = document.querySelector('header');
-var filterBtn = document.querySelector('.country-filter__btn');
+var filterBtns = document.querySelectorAll('.country-filter__btn');
 var filter = document.querySelector('.country-filter__container');
+var searchbtns = document.querySelectorAll('.buddies-search__filter-btn');
 
 menuBtn.onclick = function() {
   header.classList.toggle('header--menu-open')
 }
 
-filterBtn.onclick = function() {
+for (var i = 0; i < filterBtns.length; i++ ) {
+  filterBtns[i].onclick = function() {
   filter.classList.toggle('country-filter__container--open')
+  }
 }
 
+searchbtns.forEach(function(button) {
+  button.onclick = function(){
+    button.classList.toggle('buddies-search__filter-btn--swipe');
+  }
+})
 
 document.addEventListener("DOMContentLoaded", function (event) {
   ymaps.ready(init);
