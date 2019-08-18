@@ -1,5 +1,6 @@
 .buddies {
   background-color: #edeff6;
+  padding-bottom: 50px;
 }
 
 .buddies__item {
@@ -336,7 +337,6 @@
     left: 50%;
 
     background-color: rgba(0, 0, 0, 0.1);
-
   }
 }
 
@@ -369,12 +369,7 @@
   }
 }
 
-.buddies {
-  padding-bottom: 50px;
-}
-
 @media (min-width: @tablet-width) {
-
   .buddies__item {
     display: flex;
     flex-wrap: wrap;
@@ -398,6 +393,8 @@
 
   .buddies__info {
     flex-direction: column;
+    width: 300px;
+    margin-left: 30px;
   }
 
   .buddies__countries-to-visit {
@@ -451,11 +448,6 @@
 
   .buddies__wrapper .buddies__text {
     display: none;
-  }
-
-  .buddies__info {
-    width: 300px;
-    margin-left: 30px;
   }
 
   .buddies__name {
@@ -593,15 +585,14 @@
     border-radius: 20px;
 
     &:hover {
-      box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
     }
   }
-
 
   .buddies__item::after {
     position: absolute;
 
-    content: '';
+    content: "";
     display: block;
     top: 0;
     left: 66%;
@@ -615,7 +606,7 @@
   .buddies__item::before {
     position: absolute;
 
-    content: '';
+    content: "";
     display: block;
     bottom: 0;
     left: 66%;

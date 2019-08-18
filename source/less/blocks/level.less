@@ -55,7 +55,7 @@
 
 .level__range-toggle--min:active,
 .level__range-toggle--max:active {
-  box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
+  box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
 }
 
 .level__price-controls {
@@ -66,7 +66,7 @@
   margin-bottom: 20px;
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -79,7 +79,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 50%;
@@ -168,6 +168,9 @@
   .level__range-scale {
     width: 280px;
     margin: 0;
+    height: 3px;
+
+    border-radius: 1.5px;
   }
 
   .level {
@@ -182,6 +185,7 @@
     bottom: 0;
 
     transform: translateY(40%);
+
     &--min {
       left: 25%;
     }
@@ -195,12 +199,6 @@
   .level__range-toggle--max:hover {
     height: 19px;
     width: 19px;
-  }
-
-  .level__range-scale {
-    height: 3px;
-
-    border-radius: 1.5px;
   }
 
   .level__range-bar {
