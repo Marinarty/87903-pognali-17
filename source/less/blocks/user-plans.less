@@ -1,27 +1,172 @@
 .user-plans {
-  color: @blue;
+  color: @mid-blue;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   background-color: #dfe3f0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .user-plans__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  padding: 25px;
+
+  background-color: @white;
+  border-radius: 10px;
+}
+
+.user-plans__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.user-plans__destinations {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.user-plans__number {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.user-plans__buddies-number,
+.user-plans__dates {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.user-plans__buddies-number {
+  margin-bottom: 5px;
+}
+
+.user-plans__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-plans__change-plan {
+  margin-top: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .user-plans__item {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 35px;
+    padding-bottom: 25px;
+  }
+
+  .user-plans__inner-wrapper {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 629px;
+      top: -20px;
+      left: -35px;
+
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .user-plans__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .user-plans__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .user-plans__destinations {
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 55px;
+
+    font-size: 24px;
+  }
+
+  .user-plans__number {
+    font-size: 20px;
+  }
+
+  .user-plans__change-plan,
+  .user-plans__buddies-number,
+  .user-plans__dates {
+    margin: 0;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .user-plans__item {
+    flex-direction: row;
+  }
   .user-plans__destinations {
     width: 560px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .user-plans__number {
+    margin-right: 20px;
+  }
+
+  .user-plans__inner-wrapper::before {
+      display: none;
+  }
+
+  .user-plans__inner-wrapper {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .user-plans__change-plan {
+    margin-left: auto;
+  }
+
+  .user-plans__buddies-number {
+    width: 30%;
   }
 }
