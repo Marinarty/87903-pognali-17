@@ -26,13 +26,6 @@
   display: block;
 }
 
-// .country-filter__continents,
-// .country-filter__wrapper,
-// .country-filter__countries,
-// .country-filter__close {
-//   display: none;
-// }
-
 .country-filter__title {
   display: inline-block;
   position: relative;
@@ -80,7 +73,7 @@
   position: relative;
   width: 225px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 
   color: @mid-blue;
   text-align: center;
@@ -209,16 +202,24 @@
   cursor: pointer;
 }
 
+// .country-filter__list {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .country-filter__list--hidden {
+//   display: none;
+// }
+
 .country-filter__list {
+  display: none;
+
+  text-align: left;
+}
+
+.country-filter__item--current .country-filter__list {
   display: flex;
   flex-direction: column;
-}
-
-.country-filter__list--hidden {
-  display: none;
-}
-
-.country-filter__list--active {
   position: absolute;
   top: 240px;
   left: 0;

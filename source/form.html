@@ -17,13 +17,13 @@
     <nav class="header__nav nav">
       <ul class="nav__item site-list">
         <li class="site-list__item">
-          <a href="#" class="site-list__link"><span data-hover class="site-list__hover">О сервисе</span></a>
+          <a href="#" class="site-list__link"><span class="site-list__hover site-list__hover--about">О сервисе</span></a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">Направления</a>
+          <a href="form.html" class="site-list__link"><span class="site-list__hover site-list__hover--destinations">Направления</span></a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">Попутчики</a>
+          <a href="catalog.html" class="site-list__link"><span class="site-list__hover site-list__hover--buddies">Попутчики</span></a>
         </li>
       </ul>
     </nav>
@@ -175,10 +175,13 @@
       <div class="container add-plan__container">
         <h2 class="add-plan__title">Добавить план:</h2>
         <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
-          <fieldset class="add-plan__step duration" name="step1">
+
+
+          <div class="add-plan__step" name="step1">
+
             <div class="add-plan__intro">
               <div class="add-plan__intro-wrapper">
-            <legend class="add-plan__step-title">Шаг 1. Даты пребывания</legend>
+            <p class="add-plan__step-title"><span>Шаг 1.</span> Даты пребывания</p>
             <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
           </div>
             <ul class="add-plan__steps-list">
@@ -187,97 +190,122 @@
                 <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
               </ul>
           </div>
-          <div class="add-plan__buddy-criteria">
-            <div class="add-plan__buddy-numbers">
 
-            <span class="duration__buddies">Ищу попутчиков:</span><span class="duration__persons">чел.</span>
-            <button class="duration__minus" type="button">+</button>
-            <input id='buddies-number' type="number" name="buddies-number" value="2">
-            <button class="duration__plus" type="button">-</button>
-            <span class="duration__lenth">Длительность:</span><span class="duration__days">дн.</span>
-            <button class="duration__minus" type="button">+</button>
-            <input id='days-number' type="number" name="days-number" value="2">
-            <button class="duration__plus" type="button">-</button>
-          </div>
-            <input type="checkbox" id="children" name="children[]" value="с детьми" checked>
-            <label tabindex="0" for="children">Можно с детьми</label>
-          </div>
+
+        <div class="add-plan__inner-wrapper">
+
+<div class="trip-details">
+
+  <div class="trip-details__inner-wrapper">
+    <span class="trip-details__buddies">Ищу попутчиков:</span>
+    <span class="trip-details__persons">чел.</span>
+
+    <div class="trip-details__input-wrapper">
+      <button class="trip-details__btn trip-details__btn--minus" type="button" aria-label="Меньше">+</button>
+      <input id='buddies-number' type="number" name="buddies-number" value="2">
+      <button class="trip-details__btn trip-details__btn--plus" type="button" aria-label="Больше">-</button>
+    </div>
+  </div>
+  <div class="trip-details__inner-wrapper">
+      <span class="trip-details__lenth">Длительность:</span>
+      <span class="trip-details__days">дн.</span>
+      <div class="trip-details__input-wrapper">
+      <button class="trip-details__btn trip-details__btn--minus" type="button" aria-label="Меньше">+</button>
+      <input id='days-number' type="number" name="days-number" value="2">
+      <button class="trip-details__btn trip-details__btn--plus" type="button" aria-label="Больше">-</button>
+    </div>
+  </div>
+
+
+  <div class="trip-details__children">
+    <input type="checkbox" class="visually-hidden" id="children" name="children[]" value="с детьми" checked>
+    <label tabindex="0" for="children">Можно с детьми</label>
+  </div>
+</div>
+
             <div class="calendar">
-              <a href="#" class="calendar__pages calendar__pages--back">Назад</a>
+              <div class="calendar__wrapper">
+              <button type="button" class="calendar__btn calendar__btn--back" aria-label="Назад">Назад</button>
               <span class="calendar__date">Март 2019</span>
-              <a href="#" class="calendar__name calendar__pages--next">Вперед</a>
-              <table class="country-filter__letters">
+              <button type="button" class="calendar__btn calendar__btn--next" aria-label="Вперед">Вперед</button>
+            </div>
+              <table class="calendar__numbers">
                 <tr>
-                  <td>П</td>
-                  <td>В</td>
-                  <td>С</td>
-                  <td>Ч</td>
-                  <td>П</td>
-                  <td>С</td>
-                  <td>В</td>
+                  <th class="calendar__days">П</th>
+                  <th class="calendar__days">В</th>
+                  <th class="calendar__days">С</th>
+                  <th class="calendar__days">Ч</th>
+                  <th class="calendar__days">П</th>
+                  <th class="calendar__days calendar__days--weekend">С</th>
+                  <th class="calendar__days calendar__days--weekend">В</th>
                 </tr>
                 <tr>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>1</td>
-                  <td>2</td>
+                  <td class="calendar__date calendar__date--disabled">24</td>
+                  <td class="calendar__date calendar__date--disabled">25</td>
+                  <td class="calendar__date calendar__date--disabled">26</td>
+                  <td class="calendar__date calendar__date--disabled">27</td>
+                  <td class="calendar__date calendar__date--disabled">28</td>
+                  <td class="calendar__date calendar__date--disabled">1</td>
+                  <td class="calendar__date calendar__date--disabled">2</td>
                 </tr>
                 <tr>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
+                  <td class="calendar__date calendar__date--disabled">3</td>
+                  <td class="calendar__date calendar__date--disabled">4</td>
+                  <td class="calendar__date calendar__date--disabled">5</td>
+                  <td class="calendar__date calendar__date--disabled">6</td>
+                  <td class="calendar__date calendar__date--disabled">7</td>
+                  <td class="calendar__date calendar__date--disabled">8</td>
+                  <td class="calendar__date calendar__date--disabled">9</td>
                 </tr>
                 <tr>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                  <td>16</td>
+                  <td class="calendar__date calendar__date--disabled">10</td>
+                  <td class="calendar__date calendar__date--disabled">11</td>
+                  <td class="calendar__date calendar__date--disabled">12</td>
+                  <td class="calendar__date calendar__date--disabled">13</td>
+                  <td class="calendar__date calendar__date--disabled">14</td>
+                  <td class="calendar__date calendar__date--disabled">15</td>
+                  <td class="calendar__date calendar__date--disabled">16</td>
                 </tr>
                 <tr>
-                  <td>17</td>
-                  <td>18</td>
-                  <td>19</td>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                  <td>23</td>
+                  <td class="calendar__date calendar__date--disabled">17</td>
+                  <td class="calendar__date calendar__date--disabled">18</td>
+                  <td class="calendar__date calendar__date--disabled">19</td>
+                  <td class="calendar__date calendar__date--disabled">20</td>
+                  <td class="calendar__date calendar__date--disabled">21</td>
+                  <td class="calendar__date calendar__date--disabled">22</td>
+                  <td class="calendar__date calendar__date--disabled">23</td>
                 </tr>
                 <tr>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
+                  <td class="calendar__date calendar__date--disabled">24</td>
+                  <td class="calendar__date calendar__date--disabled">25</td>
+                  <td class="calendar__date calendar__date--disabled">26</td>
+                  <td class="calendar__date calendar__date--chosen">27</td>
+                  <td class="calendar__date calendar__date--chosen">28</td>
+                  <td class="calendar__date calendar__date--chosen">29</td>
+                  <td class="calendar__date">30</td>
                 </tr>
                 <tr>
-                  <td>31</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
+                  <td class="calendar__date">31</td>
+                  <td class="calendar__date">1</td>
+                  <td class="calendar__date">2</td>
+                  <td class="calendar__date">3</td>
+                  <td class="calendar__date">4</td>
+                  <td class="calendar__date">5</td>
+                  <td class="calendar__date">6</td>
                 </tr>
               </table>
             </div>
-            <a href="#step2" class="add-plan__next button">Следующий шаг</a>
-          </fieldset>
-          <fieldset class="add-plan__step" name="step2">
+            <a href="#step2" class="add-plan__next button button--rounded">Следующий шаг</a>
+         </div>
+    </div>
+
+          </div>
+
+
+          <div class="add-plan__step" name="step2">
               <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
-                <legend class="add-plan__step-title">Шаг 2. Маршрут</legend>
+                <p class="add-plan__step-title"><span>Шаг 2.</span> Маршрут</p>
                 <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               </div>
                 <ul class="add-plan__steps-list">
@@ -313,11 +341,11 @@
             </div>
             <a href="#step3" class="add-plan__next button">Следующий шаг</a>
             <a href="#step1" class="add-plan__next add-plan__next--back">Шаг назад</a>
-          </fieldset>
-          <fieldset class="add-plan__step amusements" name="step3">
+          </div>
+          <div class="add-plan__step amusements" name="step3">
               <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
-                <legend class="add-plan__step-title">Шаг 3. Развлечения</legend>
+                <p class="add-plan__step-title"><span>Шаг 3.</span> Развлечения</p>
                 <p class="add-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               </div>
                 <ul class="add-plan__steps-list">
@@ -340,7 +368,7 @@
               </div>
               <textarea name="Czech Republic" id="amusements2" cols="30" rows="10">Пить пиво и лазить по старым замкам, насдлаждаться архитектурой и вот это все.</textarea>
             </div>
-          </fieldset>
+          </div>
           <button type="submit" class="add-plan__next add-plan--submit button">Отправить</button>
           <a href="#step2" class="add-plan__next add-plan__next--back">Шаг назад</a>
         </form>

@@ -1,7 +1,19 @@
 .add-plan {
+  padding-top: 10px;
+
   color: @blue;
 
   background-color: #d4d9eb;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.add-plan__step {
+  padding: 25px;
+  margin-bottom: 10px;
+
+  background-color: @white;
+  border-radius: 10px;
 }
 
 .add-plan__steps-list {
@@ -11,7 +23,34 @@
 .add-plan__steps-link {
   color: @blue;
   text-decoration: none;
-  text-transform: upprcase;
+  text-transform: uppercase;
+}
+
+.add-plan__step-title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.add-plan__step-title span {
+  display: block;
+}
+
+.add-plan__desc {
+   font-size: 16px;
+   line-height: 22px;
+   color: #444444;
+   text-align: left;
+}
+
+.add-plan__next {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+
+  &:active {
+    background-image: none;
+  }
 }
 
 @media (min-width: @desktop-width) {

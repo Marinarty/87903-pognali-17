@@ -3,6 +3,8 @@ var header = document.querySelector('header');
 var filterBtns = document.querySelectorAll('.country-filter__btn');
 var filter = document.querySelector('.country-filter__container');
 var searchbtns = document.querySelectorAll('.buddies-search__filter-btn');
+var letterButtons = document.querySelectorAll('.country-filter__letter-btn');
+var lettersContainer = document.querySelector('.country-filter__letters');
 
 menuBtn.onclick = function() {
   header.classList.toggle('header--menu-open')
@@ -13,6 +15,16 @@ for (var i = 0; i < filterBtns.length; i++ ) {
   filter.classList.toggle('country-filter__container--open')
   }
 }
+
+letterButtons.forEach(function(button) {
+  button.onclick = function() {
+    letterButtons.forEach(function(item) {
+      item.parentNode.classList.remove('country-filter__item--current')
+    });
+    button.parentNode.classList.add('country-filter__item--current');
+    lettersContainer.style.marginBottom = (button.parentNode.querySelector('.country-filter__list').offsetHeight + 20) + 'px';
+  }
+});
 
 searchbtns.forEach(function(button) {
   button.onclick = function(){
