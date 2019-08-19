@@ -15,7 +15,7 @@
   padding: 30px 20px;
   padding-top: 70px;
 
-  background-image: url("../../img/rates@1x.png");
+  background-image: url("../img/rates@1x.png");
   background-repeat: no-repeat;
   background-position: top 70px right;
   background-size: 100px;
@@ -95,8 +95,17 @@
 
   border: none;
   box-shadow: none;
+  background-color: transparent;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .add-profile__btn-icon {
@@ -156,7 +165,7 @@
       right: -50px;
       width: 200px;
       height: 285px;
-      background-image: url("../../img/rates@1x.png");
+      background-image: url("../img/rates@1x.png");
       background-repeat: no-repeat;
       background-size: 100px;
     }

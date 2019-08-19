@@ -21,6 +21,8 @@
   display: flex;
   width: 45px;
   height: 45px;
+  justify-content: center;
+  align-items: center;
 
   background-color: @yellow;
   border-radius: 50%;
@@ -41,19 +43,8 @@
 }
 
 .social--footer svg {
-  margin-top: 14px;
-  margin-left: 14px;
-
   fill: @blue;
 }
-
-.social--footer .social__ig-svg {
-  fill: @blue;
-}
-
-// .social--footer {
-//   margin-bottom: 40px;
-// }
 
 @media (min-width: @tablet-width) {
   .social--footer .social__link {
@@ -61,14 +52,23 @@
     height: 60px;
   }
 
+  .social--header {
+    align-items: center;
+  }
+
   .social--header svg {
     width: 24px;
+    height: 24px;
+  }
+
+  .social--header .social__link--vkontakte svg,
+  .social--footer .social__link--vkontakte svg {
+    width: 30px;
+    height: 30px;
   }
 
   .social--footer svg {
     width: 24px;
     height: 24px;
-    margin-top: 16px;
-    margin-left: 18px;
   }
 }

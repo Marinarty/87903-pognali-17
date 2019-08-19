@@ -300,10 +300,11 @@
   border: none;
   box-shadow: none;
   cursor: pointer;
-  background-image: url("../../img/show-more-plus.svg");
+  background-image: url("../img/show-more-plus.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 18px;
+  background-color: transparent;
 
   &:hover {
     opacity: 0.6;
@@ -353,11 +354,11 @@
   background-position: center center;
 
   &--back {
-    background-image: url("../../img/triangle-arrow-left.svg");
+    background-image: url("../img/triangle-arrow-left.svg");
   }
 
   &--next {
-    background-image: url("../../img/triangle-arrow-right.svg");
+    background-image: url("../img/triangle-arrow-right.svg");
   }
 
   &:hover {
@@ -636,6 +637,7 @@
 
   .buddies__item:hover .buddies__photo {
     transform: scale(1.1, 1.1);
+    transition: transform 0.4s ease;
   }
 
   .buddies__countries-to-visit .buddies__text {
