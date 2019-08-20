@@ -50,7 +50,7 @@
   }
 }
 
-.trip-details__input-wrapper  .trip-details__btn {
+.trip-details__input-wrapper .trip-details__btn {
   width: 40px;
   height: 40px;
 
@@ -151,4 +151,149 @@
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .trip-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trip-details__inner-wrapper {
+    width: 100%;
+  }
+
+  .trip-details__input-wrapper {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .trip-details__input-wrapper input {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .trip-details__input-wrapper .trip-details__btn {
+    width: 70px;
+    height: 70px;
+
+    background-size: 20px;
+  }
+
+  .trip-details__inner-wrapper--duration {
+    order: 1;
+  }
+
+  .trip-details__inner-wrapper--buddies {
+    padding-top: 20px;
+    margin-bottom: 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .trip-details__days,
+  .trip-details__persons,
+  .trip-details__buddies,
+  .trip-details__lenth,
+  .trip-details__children label {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .trip-details__children {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .trip-details__children label {
+    padding-left: 50px;
+
+    text-transform: uppercase;
+    color: @mid-blue;
+  }
+
+  .trip-details__children input[type="checkbox"] + label::before,
+  .trip-details__children input[type="checkbox"]:checked + label::before {
+    width: 36px;
+    height: 36px;
+    top: -8px;
+  }
+
+  .trip-details__children input[type="checkbox"]:checked + label::before {
+    background-size: 12px;
+  }
+
+  .trip-details__children input[type="checkbox"] + label:active::before,
+  .trip-details__children input[type="checkbox"]:checked + label:active::before {
+    background-size: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .trip-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .trip-details__children {
+    width: 50%;
+    margin-left: auto;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    text-align: right;
+
+    border: none;
+  }
+
+  .trip-details__inner-wrapper {
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .trip-details__inner-wrapper--buddies {
+    padding-top: 0;
+
+    border: none;
+  }
+
+  .trip-details__inner-wrapper--buddies {
+    margin-bottom: 15px;
+  }
+
+  .trip-details__input-wrapper {
+    width: 180px;
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .trip-details__days,
+  .trip-details__persons {
+    margin-left: 0;
+    order: 2;
+
+    color: @mid-blue;
+  }
+
+  .trip-details__input-wrapper input {
+    width: 100px;
+  }
+
+  .trip-details__buddies,
+  .trip-details__lenth {
+    width: 45%;
+  }
 }

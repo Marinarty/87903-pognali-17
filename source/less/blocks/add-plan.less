@@ -1,7 +1,7 @@
 .add-plan {
   padding-top: 10px;
 
-  color: @blue;
+  color: @mid-blue;
 
   background-color: #d4d9eb;
   border-top-left-radius: 25px;
@@ -16,8 +16,59 @@
   border-radius: 10px;
 }
 
+.add-plan__steps-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.add-plan__title {
+  display: inline-block;
+
+  color: @mid-blue;
+}
+
 .add-plan__steps-list {
+  .nolist();
+}
+
+.add-plan__steps-list--bottom {
   display: none;
+}
+
+.add-plan__steps-list--top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+
+  font-size: 0;
+}
+
+.add-plan__steps-list--top .add-plan__steps-link {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    left: 0;
+
+    background-color: rgba(128, 130, 133, 0.3);
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+}
+
+.add-plan__steps-list .add-plan__steps-link--active::before {
+  background-color: @mid-blue;
+
+  cursor: default;
 }
 
 .add-plan__steps-link {
@@ -30,6 +81,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
+  color: @mid-blue;
 }
 
 .add-plan__step-title span {
@@ -53,10 +105,105 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .add-plan__step {
+    border-radius: 30px;
+    padding: 45px;
+  }
+
+  .add-plan__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .add-plan__step-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+  }
+
+  .add-plan__desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .add-plan__next {
+    width: 285px;
+    padding: 25px 30px;
+
+    color: @mid-blue;
+
+    text-align: left;
+    text-transform: none;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: top 53% right 30px;
+    background-size: 10px;
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+      background-image: url("../img/triangle-arrow-right-opacity.svg");
+    }
+  }
+
+  .add-plan__steps-list--top .add-plan__steps-link {
+    padding-left: 40px;
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .add-plan__steps-list {
+  .add-plan__step {
+    border-radius: 60px;
+    padding: 100px 160px;
+  }
+
+  .add-plan__step-title span {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .add-plan__steps-list--bottom {
     display: flex;
     flex-direction: column;
+    margin-left: 180px;
+    margin-top: 15px;
+  }
+
+  .add-plan__steps-list--bottom .add-plan__steps-link {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    display: block;
+
+    font-size: 20px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.6);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      top: 5px;
+      left: 0;
+
+      background-color: rgba(128, 130, 133, 0.3);
+      border-radius: 50%;
+
+      cursor: pointer;
+    }
+  }
+
+  .add-plan__steps-list--bottom .add-plan__steps-link--active {
+    color: @mid-blue;
+
+    cursor: default;
+
+    &::before {
+      background-color: @mid-blue;
+    }
   }
 
   .add-plan__buddy-criteria {
@@ -76,7 +223,12 @@
   }
 
   .add-plan__intro-wrapper {
+    width: 60%;
     display: flex;
     flex-direction: column;
+  }
+
+  .add-plan__steps-list--top {
+    display: none;
   }
 }

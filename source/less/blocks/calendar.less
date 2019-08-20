@@ -97,3 +97,88 @@
     color: #ff5c23;
   }
 }
+
+.calendar__full-version,
+.calendar__month,
+.calendar__arrival-departure {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .calendar__date {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calendar__btn {
+    background-size: 15px;
+  }
+
+  .calendar__wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+
+  .calendar__full-version {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .calendar__numbers .calendar__date,
+  .calendar__numbers .calendar__days {
+    height: 70px;
+ }
+
+ .calendar__numbers .calendar__days {
+   font-size: 18px;
+   line-height: 30px;
+ }
+
+ .calendar__numbers .calendar__date {
+   font-size: 20px;
+   font-weight: 500;
+   color: @mid-blue;
+
+   &--disabled {
+    color: rgba(68, 68, 68, 0.3);
+   }
+
+   &--chosen {
+    color: @white;
+  }
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .calendar__numbers .calendar__days {
+    padding-left: 15px;
+
+    text-align: left;
+  }
+
+  .calendar__numbers .calendar__date {
+    width: 14%;
+    padding-top: 5px;
+    padding-left: 15px;
+
+    text-align: left;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .calendar__arrival-departure {
+    display: block;
+  }
+
+  .calendar {
+    margin-bottom: 55px;
+  }
+
+  .calendar__month {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}

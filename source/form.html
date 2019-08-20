@@ -173,7 +173,14 @@
     </section>
     <section class="add-plan">
       <div class="container add-plan__container">
+        <div class="add-plan__steps-wrapper">
         <h2 class="add-plan__title">Добавить план:</h2>
+        <ul class="add-plan__steps-list add-plan__steps-list--top">
+          <li><a class="add-plan__steps-link add-plan__steps-link--active" aria-label="Даты">Даты</a></li>
+          <li><a href="#step3" class="add-plan__steps-link" aria-label="Маршрут">Маршрут</a></li>
+          <li><a href="#step4" class="add-plan__steps-link" aria-label="Развлечения">Развлечения</a></li>
+        </ul>
+        </div>
         <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
 
 
@@ -184,7 +191,7 @@
             <p class="add-plan__step-title"><span>Шаг 1.</span> Даты пребывания</p>
             <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
           </div>
-            <ul class="add-plan__steps-list">
+            <ul class="add-plan__steps-list add-plan__steps-list--bottom">
                 <li><a href="#step2" class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
                 <li><a href="#step3" class="add-plan__steps-link">Маршрут</a></li>
                 <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
@@ -196,7 +203,7 @@
 
 <div class="trip-details">
 
-  <div class="trip-details__inner-wrapper">
+  <div class="trip-details__inner-wrapper trip-details__inner-wrapper--buddies">
     <span class="trip-details__buddies">Ищу попутчиков:</span>
     <span class="trip-details__persons">чел.</span>
 
@@ -206,7 +213,7 @@
       <button class="trip-details__btn trip-details__btn--plus" type="button" aria-label="Больше">-</button>
     </div>
   </div>
-  <div class="trip-details__inner-wrapper">
+  <div class="trip-details__inner-wrapper trip-details__inner-wrapper--duration">
       <span class="trip-details__lenth">Длительность:</span>
       <span class="trip-details__days">дн.</span>
       <div class="trip-details__input-wrapper">
@@ -231,13 +238,13 @@
             </div>
               <table class="calendar__numbers">
                 <tr>
-                  <th class="calendar__days">П</th>
-                  <th class="calendar__days">В</th>
-                  <th class="calendar__days">С</th>
-                  <th class="calendar__days">Ч</th>
-                  <th class="calendar__days">П</th>
-                  <th class="calendar__days calendar__days--weekend">С</th>
-                  <th class="calendar__days calendar__days--weekend">В</th>
+                  <th class="calendar__days">П<span class="calendar__full-version">н</span></th>
+                  <th class="calendar__days">В<span class="calendar__full-version">т</span></th>
+                  <th class="calendar__days">С<span class="calendar__full-version">р</span></th>
+                  <th class="calendar__days">Ч<span class="calendar__full-version">т</span></th>
+                  <th class="calendar__days">П<span class="calendar__full-version">т</span></th>
+                  <th class="calendar__days calendar__days--weekend">С<span class="calendar__full-version">б</span></th>
+                  <th class="calendar__days calendar__days--weekend">В<span class="calendar__full-version">с</span></th>
                 </tr>
                 <tr>
                   <td class="calendar__date calendar__date--disabled">24</td>
@@ -245,7 +252,7 @@
                   <td class="calendar__date calendar__date--disabled">26</td>
                   <td class="calendar__date calendar__date--disabled">27</td>
                   <td class="calendar__date calendar__date--disabled">28</td>
-                  <td class="calendar__date calendar__date--disabled">1</td>
+                  <td class="calendar__date calendar__date--disabled">1 <span class="calendar__month">мар</span></td>
                   <td class="calendar__date calendar__date--disabled">2</td>
                 </tr>
                 <tr>
@@ -279,9 +286,9 @@
                   <td class="calendar__date calendar__date--disabled">24</td>
                   <td class="calendar__date calendar__date--disabled">25</td>
                   <td class="calendar__date calendar__date--disabled">26</td>
-                  <td class="calendar__date calendar__date--chosen">27</td>
+                  <td class="calendar__date calendar__date--chosen">27<span class="calendar__arrival-departure">Заезд</span></td>
                   <td class="calendar__date calendar__date--chosen">28</td>
-                  <td class="calendar__date calendar__date--chosen">29</td>
+                  <td class="calendar__date calendar__date--chosen">29<span class="calendar__arrival-departure">Выезд</span></td>
                   <td class="calendar__date">30</td>
                 </tr>
                 <tr>
