@@ -192,9 +192,9 @@
             <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
           </div>
             <ul class="add-plan__steps-list add-plan__steps-list--bottom">
-                <li><a href="#step2" class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
-                <li><a href="#step3" class="add-plan__steps-link">Маршрут</a></li>
-                <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
+                <li><a class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
+                <li><a href="#step2" class="add-plan__steps-link">Маршрут</a></li>
+                <li><a href="#step3" class="add-plan__steps-link">Развлечения</a></li>
               </ul>
           </div>
 
@@ -315,25 +315,26 @@
                 <p class="add-plan__step-title"><span>Шаг 2.</span> Маршрут</p>
                 <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               </div>
-                <ul class="add-plan__steps-list">
-                    <li><a href="#step2" class="add-plan__steps-link">Даты</a></li>
-                    <li><a href="#step3" class="add-plan__steps-link add-plan__steps-link--active">Маршрут</a></li>
-                    <li><a href="#step4" class="add-plan__steps-link">Развлечения</a></li>
-                  </ul>
+              <ul class="add-plan__steps-list add-plan__steps-list--bottom">
+                <li><a href="#step1" class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
+                <li><a class="add-plan__steps-link">Маршрут</a></li>
+                <li><a href="#step3" class="add-plan__steps-link">Развлечения</a></li>
+              </ul>
               </div>
+
             <div class="countries-select">
               <div class="countries-select__item">
                 <select name="country" class="countries-select__choose-country">
                   <option value="Bosnia and Herzegovina">Босния и Герцеговина</option>
                 </select>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Босния и Герцеговина" class="countries-select__flag">
+                <img src="img/flag-bosnia.svg" width="35" height="24" alt="Босния и Герцеговина" class="countries-select__flag">
                 <button type="button" class="countries-select__delete"></button>
               </div>
               <div class="countries-select__item">
                 <select name="country" class="countries-select__choose-country">
-                  <option value="Czech Republic">Чехия</option>
+                  <option value="Czech Republic">Чехословакия</option>
                 </select>
-                <img src="http://placehold.it/35x24" width="35" height="24" alt="Чехия" class="countries-select__flag">
+                <img src="img/flag-czech.svg" width="35" height="24" alt="Чехословакия" class="countries-select__flag">
                 <button type="button" class="countries-select__delete"></button>
               </div>
               <div class="countries-select__item">
@@ -346,9 +347,13 @@
                 <button type="button" class="countries-select__add-country">Добавить страну</button>
               </div>
             </div>
+
             <a href="#step3" class="add-plan__next button">Следующий шаг</a>
             <a href="#step1" class="add-plan__next add-plan__next--back">Шаг назад</a>
           </div>
+
+
+
           <div class="add-plan__step amusements" name="step3">
               <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
