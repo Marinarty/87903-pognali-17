@@ -199,7 +199,7 @@
           </div>
 
 
-        <div class="add-plan__inner-wrapper">
+        <!-- <div class="add-plan__inner-wrapper"> -->
 
 <div class="trip-details">
 
@@ -303,11 +303,12 @@
               </table>
             </div>
             <a href="#step2" class="add-plan__next button button--rounded">Следующий шаг</a>
-         </div>
+         <!-- </div> -->
     </div>
 
           </div>
 
+<div class="container">
 
           <div class="add-plan__step" name="step2">
               <div class="add-plan__intro">
@@ -324,35 +325,56 @@
 
             <div class="countries-select">
               <div class="countries-select__item">
-                <select name="country" class="countries-select__choose-country">
-                  <option value="Bosnia and Herzegovina">Босния и Герцеговина</option>
-                </select>
+                <input type="text" name="country" class="countries-select__choose-country" placeholder="Босния и Герцеговина">
+                <div class="countries-select__flag-wrapper">
                 <img src="img/flag-bosnia.svg" width="35" height="24" alt="Босния и Герцеговина" class="countries-select__flag">
-                <button type="button" class="countries-select__delete"></button>
+                </div>
+                <button type="button" class="countries-select__delete" aria-label="Удалить">
+                  Удалить
+                  <?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<path d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3 L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3 L10.3,9z"/>
+</svg>
+                </button>
               </div>
               <div class="countries-select__item">
-                <select name="country" class="countries-select__choose-country">
-                  <option value="Czech Republic">Чехословакия</option>
-                </select>
-                <img src="img/flag-czech.svg" width="35" height="24" alt="Чехословакия" class="countries-select__flag">
-                <button type="button" class="countries-select__delete"></button>
+                <input name="country" type="text" class="countries-select__choose-country" placeholder="Чехословакия">
+                <div class="countries-select__flag-wrapper">
+                  <img src="img/flag-czech.svg" width="35" height="24" alt="Чехословакия" class="countries-select__flag">
+                </div>
+                <button type="button" class="countries-select__delete" aria-label="Удалить">
+                  Удалить
+                  <?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<path d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3 L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3 L10.3,9z"/>
+</svg>
+                </button>
               </div>
-              <div class="countries-select__item">
-                <select name="country" class="countries-select__choose-country">
-                  <option value="choose country">Выберите страну</option>
-                </select>
-                <button type="button" class="countries-select__delete"></button>
+              <div class="countries-select__item countries-select__item--empty">
+                <input type="text" name="country" class="countries-select__choose-country" placeholder="Выберите страну">
+                <button type="button" class="countries-select__delete" aria-label="Удалить">
+                  Удалить
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                  <path d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3 L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3 L10.3,9z"/>
+                  </svg></button>
               </div>
-              <div class="countries-select__item">
-                <button type="button" class="countries-select__add-country">Добавить страну</button>
+              <div class="countries-select__item countries-select__item--add">
+                <button type="button" class="countries-select__add-country">
+                  Добавить страну
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <polygon points="20,9 11,9 11,0 9,0 9,9 0,9 0,11 9,11 9,20 11,20 11,11 20,11 "/>
+                  </svg>
+                </button>
               </div>
             </div>
 
-            <a href="#step3" class="add-plan__next button">Следующий шаг</a>
-            <a href="#step1" class="add-plan__next add-plan__next--back">Шаг назад</a>
+            <a href="#step3" class="add-plan__next button button--rounded">Следующий шаг</a>
+            <a href="#step1" class="add-plan__next add-plan__next--back button button--rounded">На шаг назад</a>
           </div>
 
-
+</div>
 
           <div class="add-plan__step amusements" name="step3">
               <div class="add-plan__intro">
