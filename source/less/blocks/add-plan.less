@@ -9,6 +9,7 @@
 }
 
 .add-plan__step {
+  width: 270px;
   padding: 25px;
   margin-bottom: 10px;
 
@@ -121,10 +122,35 @@
   }
 }
 
+.add-plan__submit {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 20px;
+
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:active {
+    background-image: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
+  .add-plan {
+    padding-bottom: 40px;
+  }
+
   .add-plan__step {
-    border-radius: 30px;
+    width: 618px;
     padding: 45px;
+    margin-bottom: 50px;
+
+    border-radius: 30px;
+  }
+
+  .add-plan__steps-wrapper {
+    width: 618px;
   }
 
   .add-plan__title {
@@ -144,7 +170,7 @@
   }
 
   .add-plan__next {
-    width: 285px;
+    width: 50%;
     padding: 25px 30px;
 
     color: @mid-blue;
@@ -153,7 +179,7 @@
     text-transform: none;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
-    background-position: top 53% right 30px;
+    background-position: top 50% right 30px;
     background-size: 10px;
 
     &:active {
@@ -165,12 +191,59 @@
   .add-plan__steps-list--top .add-plan__steps-link {
     padding-left: 40px;
   }
+
+  .add-plan__btns-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .add-plan__next--back {
+    width: 40%;
+    margin-top: 0;
+    padding-right: 0;
+
+    text-align: right;
+
+    background-image: url("../img/triangle-arrow-left.svg");
+    background-position: top 50% left 30px;
+
+    &:active {
+      color: rgba(29, 46, 91, 1);
+      background-image: url("../img/triangle-arrow-left.svg");
+      opacity: 0.3;
+    }
+  }
+
+  .add-plan__submit {
+    width: 285px;
+    padding: 25px 30px;
+    margin-top: 0;
+
+    color: @mid-blue;
+    text-transform: none;
+    text-align: left;
+
+    border-radius: 20px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% right 30px;
+    background-size: 10px;
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+      background-image: url("../img/triangle-arrow-right-opacity.svg");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .add-plan__step {
-    border-radius: 60px;
+    width: 1320px;
     padding: 100px 160px;
+
+    border-radius: 60px;
   }
 
   .add-plan__step-title span {
@@ -246,5 +319,13 @@
 
   .add-plan__steps-list--top {
     display: none;
+  }
+
+  .add-plan__next {
+    width: 285px;
+  }
+
+  .add-plan__next--back {
+    background-position: top 50% left 110px;
   }
 }

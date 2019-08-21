@@ -1,0 +1,166 @@
+.amusements__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    top: 25px;
+    left: 0;
+
+    border-radius: 50%;
+    background-color: @mid-blue;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 2px;
+    top: 27px;
+    left: -12px;
+
+    background-color: @mid-blue;
+  }
+}
+
+.amusements__item {
+  position: relative;
+}
+
+.amusements__item--connected::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 316px;
+  top: 27px;
+  left: -12px;
+
+  background-color: @mid-blue;
+}
+
+.amusements__country {
+  padding-left: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: @mid-blue;
+}
+
+.amusements textarea {
+  width: 100%;
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  resize: none;
+}
+
+.amusements__flag {
+  display: block;
+}
+
+.amusements__flag-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    left: -37px;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.3) 100%);
+
+    z-index: 10;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .amusements__country {
+    padding-left: 0;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .amusements__flag {
+    width: 70px;
+    height: 47px;
+  }
+
+  .amusements__flag-wrapper::after {
+    display: none;
+  }
+
+  .amusements__wrapper::before {
+    width: 15px;
+    height: 15px;
+    top: 30px;
+    left: 410px;
+  }
+
+  .amusements__wrapper::after {
+    display: none;
+  }
+
+  .amusements__item--connected::before {
+    display: none;
+  }
+
+  .amusements textarea {
+    padding: 18px;
+
+    font-size: 20px;
+  }
+
+  .amusements__item {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .amusements textarea {
+    width: 730px;
+  }
+
+  .amusements__flag-wrapper {
+    margin-right: 110px;
+  }
+
+  .amusements__item--connected::before {
+    display: block;
+    width: 3px;
+    height: 390px;
+    top: 30px;
+    left: 780px;
+  }
+
+  .amusements__wrapper::before {
+    top: 30px;
+    left: 775px;
+  }
+}

@@ -150,3 +150,134 @@
 .countries-select__delete svg {
   fill: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: @tablet-width) {
+  .countries-select {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+    border-top: 1px solid #d6d9e6;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      right: 135px;
+
+      background-color: #d6d9e6;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      height: 10%;
+      left: 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      // background: transparent;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
+
+      z-index: 10;
+    }
+  }
+
+  .countries-select__choose-country,
+  .countries-select__add-country {
+    width: 370px;
+    height: 70px;
+    padding-left: 25px;
+
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 18px;
+
+    background-size: 17px;
+    background-position: right 25px center;
+  }
+
+  .countries-select__item--empty .countries-select__choose-country {
+    width: 370px;
+  }
+
+  .countries-select__flag-wrapper {
+    width: 70px;
+    margin-left: auto;
+    margin-right: 20px;
+
+    border: none;
+  }
+
+  .countries-select__flag-wrapper img {
+    width: 70px;
+    height: 47px;
+  }
+
+  .countries-select__delete {
+    position: static;
+
+    background-color: transparent;
+  }
+
+  .countries-select__delete svg {
+    width: 17px;
+    height: 17px;
+
+    opacity: 0.4;
+  }
+
+  .countries-select__item--empty {
+    justify-content: space-between;
+  }
+
+  .countries-select__item::before {
+    width: 15px;
+    height: 15px;
+    left: 385px;
+    top: 26px;
+  }
+
+  .countries-select__item--empty::before {
+    background-color: @white;
+  }
+
+  .countries-select__item--add::before {
+    background-color: #edeff6;
+  }
+
+  .countries-select__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .countries-select__add-country {
+    padding-right: 25px;
+  }
+
+  .countries-select__add-country svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .countries-select__choose-country,
+  .countries-select__add-country,
+  .countries-select__item--empty .countries-select__choose-country {
+    width: 730px;
+  }
+
+  .countries-select__item::before {
+    left: 770px;
+  }
+
+  .countries-select::before {
+    left: 777px;
+  }
+}
