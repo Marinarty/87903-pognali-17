@@ -1,15 +1,12 @@
 .choose-country {
   position: absolute;
-  // display: none;
-  display: block;
-  width: 220px;
+  display: none;
+  // display: block;
   top: 0;
   left: 0;
 
-  background-color: @white;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   // border: solid 1px #cbced9;
@@ -17,11 +14,21 @@
   z-index: 20;
 }
 
+.choose-country__inner-wrapper {
+  width: 221px;
+
+  background-color: @white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+
 .choose-country--open {
   display: block;
 }
 
 .choose-country__wrapper {
+  width: 221px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -62,13 +69,29 @@
   }
 }
 
+// .choose-country__letters {
+//   width: 100%;
+
+//   text-align: center;
+
+//   border: solid 1px #cbced9;
+//   border-collapse: collapse;
+// }
+
 .choose-country__letters {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 
-  text-align: center;
+  border-left: solid 1px #cbced9;
+  border-top: solid 1px #cbced9;
+}
 
-  border: solid 1px #cbced9;
-  border-collapse: collapse;
+.choose-country__letters div {
+  width: 44px;
+  height: 42px;
+
+  border-right: solid 1px #cbced9;
+  border-bottom: solid 1px #cbced9;
 }
 
 .choose-country__letter-btn {
@@ -92,16 +115,17 @@
   }
 }
 
-.choose-country__letters td {
-  height: 42px;
-  width: 44px;
+// .choose-country__letters td {
+//   height: 42px;
+//   width: 44px;
+//   padding: 0;
 
-  border: solid 1px #cbced9;
-}
+//   border: solid 1px #cbced9;
+// }
 
-.choose-country__letters th {
-  border: solid 1px #cbced9;
-}
+// .choose-country__letters th {
+//   border: solid 1px #cbced9;
+// }
 
 .choose-country__countries-list {
   .nolist();
@@ -130,4 +154,134 @@
     color: rgba(29, 46, 91, 0.3);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .choose-country__inner-wrapper {
+    position: relative;
+    width: 573px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 369px;
+
+      background-color: rgba(203, 206, 217, 0.5);
+    }
+  }
+
+  .choose-country__wrapper {
+    width: 370px;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .choose-country__title {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .choose-country__close svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .choose-country__letters {
+    width: 315px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 35px;
+    margin-bottom: 95px;
+
+    // border-left: none;
+    // border-bottom: none;
+    // border-top: none;
+  }
+
+  .choose-country__letters div {
+    width: 52px;
+    height: 70px;
+  }
+
+  // .choose-country__letters tr {
+  //   display: flex;
+  // }
+
+  .choose-country__countries-list {
+    border: none;
+    padding-top: 30px;
+  }
+
+  .choose-country__list-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .choose-country__letter-btn {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+
+    &--current {
+      color: @white;
+
+      background-color: @mid-blue;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choose-country__inner-wrapper {
+    width: 730px;
+
+    &::before {
+      left: 500px;
+    }
+  }
+
+  .choose-country__wrapper {
+    width: 730px;
+  }
+
+  .choose-country__letters {
+    width: 460px;
+
+    border: none;
+  }
+
+  .choose-country__letters div {
+    width: 60px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 4px;
+    border-top: solid 1px #cbced9;
+    border-left: solid 1px #cbced9;
+
+    &:hover {
+      border: solid 1px #959bb2;
+    }
+  }
+
+  .choose-country__letter-btn:active {
+    color: @white;
+
+    background-color: @mid-blue;
+  }
+
+  .choose-country__letter-btn {
+    border-radius: 4px;
+  }
+}
+
+
 
