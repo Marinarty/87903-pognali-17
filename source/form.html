@@ -178,15 +178,15 @@
         <h2 class="add-plan__title">Добавить план:</h2>
         <ul class="add-plan__steps-list add-plan__steps-list--top">
           <li><a class="add-plan__steps-link add-plan__steps-link--active" aria-label="Даты">Даты</a></li>
-          <li><a href="#step3" class="add-plan__steps-link" aria-label="Маршрут">Маршрут</a></li>
-          <li><a href="#step4" class="add-plan__steps-link" aria-label="Развлечения">Развлечения</a></li>
+          <li><a href="#step2" class="add-plan__steps-link" aria-label="Маршрут">Маршрут</a></li>
+          <li><a href="#step3" class="add-plan__steps-link" aria-label="Развлечения">Развлечения</a></li>
         </ul>
         </div>
         <form method="post" action="https://htmlacademy.ru/echo" class="add-plan__form">
 
 
-          <div class="add-plan__step container" name="step1">
-
+          <div class="add-plan__step container">
+              <a name="step1"></a>
             <div class="add-plan__intro">
               <div class="add-plan__intro-wrapper">
             <p class="add-plan__step-title"><span>Шаг 1.</span> Даты пребывания</p>
@@ -287,19 +287,19 @@
                   <td class="calendar__date calendar__date--disabled">24</td>
                   <td class="calendar__date calendar__date--disabled">25</td>
                   <td class="calendar__date calendar__date--disabled">26</td>
-                  <td class="calendar__date calendar__date--chosen">27<span class="calendar__arrival-departure">Заезд</span></td>
-                  <td class="calendar__date calendar__date--chosen">28</td>
-                  <td class="calendar__date calendar__date--chosen">29<span class="calendar__arrival-departure">Выезд</span></td>
-                  <td class="calendar__date">30</td>
+                  <td class="calendar__date calendar__date--chosen"><div class="calendar__date-number">27<span class="calendar__arrival-departure">Заезд</span></div></td>
+                  <td class="calendar__date calendar__date--chosen"><div class="calendar__date-number">28</div></td>
+                  <td class="calendar__date calendar__date--chosen"><div class="calendar__date-number">29<span class="calendar__arrival-departure">Выезд</span></div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">30</div></td>
                 </tr>
                 <tr>
-                  <td class="calendar__date">31</td>
-                  <td class="calendar__date">1</td>
-                  <td class="calendar__date">2</td>
-                  <td class="calendar__date">3</td>
-                  <td class="calendar__date">4</td>
-                  <td class="calendar__date">5</td>
-                  <td class="calendar__date">6</td>
+                  <td class="calendar__date"><div class="calendar__date-number">31</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">1</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">2</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">3</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">4</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">5</div></td>
+                  <td class="calendar__date"><div class="calendar__date-number">6</div></td>
                 </tr>
               </table>
             </div>
@@ -311,8 +311,9 @@
 
 <!-- <div class="container"> -->
 
-          <div class="add-plan__step container" name="step2">
-              <div class="add-plan__intro">
+          <div class="add-plan__step container">
+            <a name="step2"></a>
+            <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
                 <p class="add-plan__step-title"><span>Шаг 2.</span> Маршрут</p>
                 <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
@@ -516,7 +517,8 @@
           </div>
 </div>
 
-          <div class="add-plan__step container" name="step3">
+          <div class="add-plan__step container">
+              <a name="step3"></a>
               <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
                 <p class="add-plan__step-title"><span>Шаг 3.</span> Развлечения</p>
@@ -550,7 +552,7 @@
           </div>
           <div class="add-plan__btns-wrapper">
           <button type="submit" class="add-plan__submit button button--rounded">Отправить</button>
-          <a href="#step1" class="add-plan__next add-plan__next--back button button--rounded">На шаг назад</a>
+          <a href="#step2" class="add-plan__next add-plan__next--back button button--rounded">На шаг назад</a>
         </div>
         </div>
         </form>
