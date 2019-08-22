@@ -77,7 +77,7 @@
     <div class="user-info">
       <div class="container user-info__container">
 <div class="user-info__wrapper">
-        <div class="user-info__level user-info__level--demin">
+        <div class="user-info__level">
           <svg viewBox="0 0 35 35" width="45" height="45" class="buddies__circular-chart">
             <path class="buddies__circle-bg" d="M18 2.0845
                   a 15.9155 15.9155 0 0 1 0 31.831
@@ -99,7 +99,7 @@
           <button class="user-info__change-photo"><span>Сменить</span> фото</button>
       <div class="user-info__hashtags">
         <p class="user-info__tags">Тэги</p>
-        <textarea name="tags" id="tags" cols="30" rows="2">#бургер #бар #футбол #концерт #крафт</textarea>
+        <textarea name="tags" id="tags" cols="30" rows="2" placeholder="Коротко о себе в виде 5-8 хештэгов"></textarea>
       </div>
       <div class="user-info__transports">
           <p class="user-info__transport">Транспорт</p>
@@ -351,6 +351,8 @@
 </svg>
                 </button>
               </div>
+
+
               <div class="countries-select__item countries-select__item--empty">
                 <input type="text" name="country" class="countries-select__choose-country" placeholder="Выберите страну">
                 <button type="button" class="countries-select__delete" aria-label="Удалить">
@@ -359,7 +361,142 @@
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
                   <path d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3 L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3 L10.3,9z"/>
                   </svg></button>
+
+                  <section class="choose-country">
+                    <!-- <div class="choose-country__container"> -->
+                      <div class="choose-country__wrapper">
+                      <h2 class="choose-country__title">Выберите страну</h2>
+                      <button type="button" class="choose-country__close" aria-label="Закрыть">
+                        Закрыть
+                        <?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" width="10" height="10" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
+<path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7 L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/>
+</svg>
+                      </button>
+                      </div>
+                      <table class="choose-country__letters">
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn choose-country__letter-btn--current" type="button">А</button>
+
+                              </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Б</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">В</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Г</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Д</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Е</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ё</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ж</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">З</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">И</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Й</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">К</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Л</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">М</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Н</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">О</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">П</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Р</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">С</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Т</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">У</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ф</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Х</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ц</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ч</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ш</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Щ</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Э</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Ю</button>
+                          </td>
+                          <td>
+                              <button class="choose-country__letter-btn" type="button">Я</button>
+                          </td>
+                        </tr>
+                      </table>
+                      <ul class="choose-country__countries-list">
+                        <li><a href="#" class="choose-country__list-item">Афганистан</a></li>
+                        <li><a href="#" class="choose-country__list-item">Албания</a></li>
+                        <li><a href="#" class="choose-country__list-item">Алжир</a></li>
+                        <li><a href="#" class="choose-country__list-item">Андорра</a></li>
+                        <li><a href="#" class="choose-country__list-item">Аргентина</a></li>
+                        <li><a href="#" class="choose-country__list-item">Армения</a></li>
+                        <li><a href="#" class="choose-country__list-item">Австралия</a></li>
+                        <li><a href="#" class="choose-country__list-item">Австрия</a></li>
+                        <li><a href="#" class="choose-country__list-item">Азербайджан</a></li>
+                      </ul>
+                    <!-- </div> -->
+                  </section>
+
               </div>
+
+
+
               <div class="countries-select__item countries-select__item--add">
                 <button type="button" class="countries-select__add-country">
                   Добавить страну
@@ -470,67 +607,7 @@
         </div>
       </div>
     </footer>
-  <section class="country-filter country-filter--modal modal">
-    <div class="container country-filter__container">
-      <h2 class="country-filter__title">Выберите страну</h2>
-      <button class="country-filter__close"></button>
-      <table class="country-filter__letters">
-        <tr>
-          <td>А</td>
-          <td>Б</td>
-          <td>В</td>
-          <td>Г</td>
-          <td>Д</td>
-        </tr>
-        <tr>
-          <td>Е</td>
-          <td>Ё</td>
-          <td>Ж</td>
-          <td>З</td>
-          <td>И</td>
-        </tr>
-        <tr>
-          <td>Й</td>
-          <td>К</td>
-          <td>Л</td>
-          <td>М</td>
-          <td>Н</td>
-        </tr>
-        <tr>
-          <td>О</td>
-          <td>П</td>
-          <td>Р</td>
-          <td>С</td>
-          <td>Т</td>
-        </tr>
-        <tr>
-          <td>У</td>
-          <td>Ф</td>
-          <td>Х</td>
-          <td>Ц</td>
-          <td>Ч</td>
-        </tr>
-        <tr>
-          <td>Ш</td>
-          <td>Щ</td>
-          <td>Э</td>
-          <td>Ю</td>
-          <td>Я</td>
-        </tr>
-      </table>
-      <ul class="country-filter__countries countries-list-list">
-        <li class="countries-list__item">Афганистан</li>
-        <li class="countries-list__item">Албания</li>
-        <li class="countries-list__item">Алжир</li>
-        <li class="countries-list__item">Андорра</li>
-        <li class="countries-list__item">Аргентина</li>
-        <li class="countries-list__item">Армения</li>
-        <li class="countries-list__item">Австралия</li>
-        <li class="countries-list__item">Австрия</li>
-        <li class="countries-list__item">Азербайджан</li>
-      </ul>
-    </div>
-  </section>
+
   <script src="js/script.js"></script>
 </body>
 

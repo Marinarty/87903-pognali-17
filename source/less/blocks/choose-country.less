@@ -1,0 +1,133 @@
+.choose-country {
+  position: absolute;
+  // display: none;
+  display: block;
+  width: 220px;
+  top: 0;
+  left: 0;
+
+  background-color: @white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  // border: solid 1px #cbced9;
+
+  z-index: 20;
+}
+
+.choose-country--open {
+  display: block;
+}
+
+.choose-country__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 15px;
+
+  background-color: @mid-blue;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.choose-country__title {
+  color: @white;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+
+.choose-country__close {
+  font-size: 0;
+  padding: 0;
+
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.choose-country__letters {
+  width: 100%;
+
+  text-align: center;
+
+  border: solid 1px #cbced9;
+  border-collapse: collapse;
+}
+
+.choose-country__letter-btn {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  color: @mid-blue;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--current {
+    background-color: #edeff6;
+  }
+}
+
+.choose-country__letters td {
+  height: 42px;
+  width: 44px;
+
+  border: solid 1px #cbced9;
+}
+
+.choose-country__letters th {
+  border: solid 1px #cbced9;
+}
+
+.choose-country__countries-list {
+  .nolist();
+
+  border: solid 1px #cbced9;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.choose-country__countries-list {
+  padding: 15px 18px;
+}
+
+.choose-country__list-item {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    color: @mid-blue;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
