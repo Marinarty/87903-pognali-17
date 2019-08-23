@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // padding-top: 60px;
   margin-top: -40px;
 
   color: @dark-grey;
@@ -45,12 +44,10 @@
   bottom: 0;
   width: 100%;
 
-  // background: transparent;
   background: linear-gradient(to top, rgba(237, 239, 246, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
 
   z-index: 10;
 }
-
 
 .destinations__title {
   .title();
@@ -146,6 +143,11 @@
 
     background: url("../img/flags-back@1x.png") right 42px top 130px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px auto;
+    }
   }
 
   .destinations__container {
@@ -263,6 +265,11 @@
 
     background: url("../img/flags-back@1x.png") right 60px top 140px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px auto;
+    }
   }
 
   .destinations__container {

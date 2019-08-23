@@ -21,8 +21,14 @@
   position: relative;
   padding-bottom: 100px;
 
-  background: url("../img/rogovaya-back-mobile@1x.png") left 0 top 300px, url("../img/smolov-back-desktop@1x.png") right 30px top 40px;
+  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
+  background-position: left 0 top 300px, right 30px top 40px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/rogovaya-back-mobile@2x.png"), url("../img/smolov-back-desktop@2x.png");
+    background-size: 71px auto, 143px auto;
+  }
 }
 
 .travel-buddies__title {
@@ -220,11 +226,6 @@
   padding-bottom: 20px;
 }
 
-// .travel-buddies__photo {
-//   border-top-left-radius: 10px;
-//   border-top-right-radius: 10px;
-// }
-
 .travel-buddies__show-all {
   width: 270px;
   display: block;
@@ -234,7 +235,6 @@
 }
 
 .travel-buddies__transport {
-
   .nolist();
 
   padding-top: 10px;
@@ -278,8 +278,14 @@
   .travel-buddies__global-container {
     padding-bottom: 240px;
 
-    background: url("../img/rogovaya-back-desktop@1x.png") right 70px top 80px, url("../img/smolov-back-desktop@1x.png") left 40px top 420px;
+    background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
+    background-position: right 70px top 80px, left 40px top 420px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-size: 285px auto, 143px auto;
+    }
   }
 
   .travel-buddies__container {
@@ -287,10 +293,6 @@
     padding-right: 35px;
     padding-left: 35px;
   }
-
-  // .travel-buddies__item::before {
-  //   left: 30px;
-  // }
 
   .travel-buddies__desc {
     width: 430px;
@@ -377,8 +379,14 @@
     justify-content: space-between;
     padding-bottom: 120px;
 
-    background: url("../img/rogovaya-back-desktop@1x.png") left 190px bottom 80px, url("../img/smolov-back-desktop@1x.png") left 550px top 130px;
+    background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png");
+    background-position: left 190px bottom 80px, left 550px top 130px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png");
+      background-size: 285px auto, 143px auto;
+    }
   }
 
   .travel-buddies__container {
@@ -418,35 +426,3 @@
     }
   }
 }
-//   .travel-buddies__item--catalog .travel-buddies__show-all {
-//     margin-top: -100px;
-//   }
-
-//   .travel-buddies__item--catalog {
-//     width: 950px;
-//   }
-
-//   .travel-buddies__item--catalog .travel-buddies__countries-to-visit {
-//     flex-direction: column;
-//     width: 300px;
-//     margin-left: auto;
-//     order: 3;
-//   }
-
-//   .travel-buddies__item--catalog .travel-buddies__wrapper {
-//     order: 5;
-//     margin-left: auto;
-//   }
-
-//   .travel-buddies__item--catalog .travel-buddies__invite {
-//     order: 4;
-//   }
-
-//   .travel-buddies__item--catalog .travel-buddies__text {
-//     display: none;
-//   }
-
-//   .travel-buddies__item--catalog .travel-buddies__transport {
-//     flex-direction: row;
-//   }
-// }
