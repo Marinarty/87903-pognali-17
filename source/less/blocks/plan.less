@@ -2,7 +2,7 @@
   position: absolute;
   top: 48%;
   left: 50%;
-  display: block;
+  display: none;
   width: 270px;
 
   color: #444444;
@@ -10,9 +10,14 @@
 
   background-color: @white;
   border-radius: 20px;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
 
   transform: translate(-50%, -50%);
   overflow: hidden;
+}
+
+.plan--open {
+  display: block;
 }
 
 .plan__container {
@@ -76,5 +81,69 @@
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .plan {
+    top: 940px;
+    left: 50%;
+    width: 688px;
+
+    border-radius: 30px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .plan__container {
+    padding-bottom: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+  }
+
+  .plan__title {
+    margin-bottom: 50px;
+  }
+
+  .plan__list {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .plan__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plan__close {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plan {
+    top: 52%;
+    left: 50%;
+    width: 750px;
+
+    border-radius: 30px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .plan__container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }

@@ -8,6 +8,10 @@ var lettersContainer = document.querySelector('.country-filter__letters');
 var chooseCountry = document.querySelector('.choose-country');
 var countrySelect = document.querySelector('.countries-select__item--empty .countries-select__choose-country');
 var chooseCountryClose = document.querySelector('.choose-country__close');
+var planOpen = document.querySelector('.add-profile__button');
+var planModal = document.querySelector('.plan');
+var planClose = document.querySelector('.plan__close');
+
 
 menuBtn.onclick = function() {
   header.classList.toggle('header--menu-open')
@@ -74,6 +78,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 
+planOpen.onclick = function() {
+  planModal.classList.add('plan--open')
+}
+
+planClose.onclick = function() {
+  planModal.classList.remove('plan--open')
+}
+
+
+
 countrySelect.onclick = function() {
   chooseCountry.classList.add('choose-country--open')
 }
@@ -81,3 +95,13 @@ countrySelect.onclick = function() {
 chooseCountryClose.onclick = function() {
   chooseCountry.classList.remove('choose-country--open')
 }
+
+
+
+// planOpen.onclick = function() {
+//   planModal.classList.add('plan--open')
+// }
+
+// planClose.onclick = function() {
+//   planModal.classList.remove('plan--open')
+// }
