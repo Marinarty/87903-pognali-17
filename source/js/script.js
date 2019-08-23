@@ -25,9 +25,30 @@ letterButtons.forEach(function(button) {
       item.parentNode.classList.remove('country-filter__item--current')
     });
     button.parentNode.classList.add('country-filter__item--current');
+    if (window.matchMedia("(max-width: 766px)").matches) {
     lettersContainer.style.marginBottom = (button.parentNode.querySelector('.country-filter__list').offsetHeight + 20) + 'px';
+    }
   }
 });
+
+
+
+// letterButtons.forEach(function(button) {
+//   if (window.matchMedia("(max-width: 1439px)").matches) {
+//   button.onclick = function() {
+//     letterButtons.forEach(function(item) {
+//       item.parentNode.classList.remove('country-filter__item--current')
+//     });
+//     button.parentNode.classList.add('country-filter__item--current');
+//     if (window.matchMedia("(max-width: 766px)").matches) {
+//     lettersContainer.style.marginBottom = (button.parentNode.querySelector('.country-filter__list').offsetHeight + 20) + 'px';
+//     }
+//   }
+// }
+// });
+
+
+
 
 searchbtns.forEach(function(button) {
   button.onclick = function(){

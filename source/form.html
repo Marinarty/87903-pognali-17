@@ -190,7 +190,7 @@
             <div class="add-plan__intro">
               <div class="add-plan__intro-wrapper">
             <p class="add-plan__step-title"><span>Шаг 1.</span> Даты пребывания</p>
-            <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+            <p class="add-plan__desc">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели&nbsp;бы позвать в поездку, и ее предполагаемую длительность.</p>
           </div>
             <ul class="add-plan__steps-list add-plan__steps-list--bottom">
                 <li><a class="add-plan__steps-link add-plan__steps-link--active">Даты</a></li>
@@ -316,7 +316,7 @@
             <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
                 <p class="add-plan__step-title"><span>Шаг 2.</span> Маршрут</p>
-                <p class="add-plan__desc">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                <p class="add-plan__desc add-plan__desc--shorter">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               </div>
               <ul class="add-plan__steps-list add-plan__steps-list--bottom">
                 <li><a href="#step1" class="add-plan__steps-link">Даты</a></li>
@@ -522,7 +522,7 @@
               <div class="add-plan__intro">
                   <div class="add-plan__intro-wrapper">
                 <p class="add-plan__step-title"><span>Шаг 3.</span> Развлечения</p>
-                <p class="add-plan__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <p class="add-plan__desc add-plan__desc--short">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               </div>
               <ul class="add-plan__steps-list add-plan__steps-list--bottom">
                   <li><a href="#step1" class="add-plan__steps-link">Даты</a></li>
@@ -563,11 +563,11 @@
       <div class="container page-footer__container">
         <a href="index.html" class="page-footer__logo" aria-label="Главная">
 
-            <picture>
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img src="img/logo-mobile-blue@1x.png" width="270" height="110" alt="Главная" class="page-footer__logo-img">
-          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+      <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="270" height="110" alt="Главная" class="page-footer__logo-img">
+      </picture>
 
         </a>
           <ul class="page-footer__social-list social social--footer">
@@ -613,6 +613,7 @@
     </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

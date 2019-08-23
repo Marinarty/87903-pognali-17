@@ -9,6 +9,7 @@
     content: "";
 
     position: absolute;
+    display: block;
     width: 8px;
     height: 8px;
     top: 17px;
@@ -20,11 +21,32 @@
 
   &--empty::before,
   &--add::before {
-    width: 8px;
-    height: 8px;
+    // width: 8px;
+    // height: 8px;
 
     border: solid 1px #cbced9;
     background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 10px;
+    top: 47px;
+    right: 50px;
+
+    background-image: url("../img/small-arrow.svg");
+    background-size: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+  &:last-child::after {
+    display: none;
   }
 }
 
@@ -169,7 +191,9 @@
       top: 0;
       right: 135px;
 
-      background-color: #d6d9e6;
+      // background-color: #d6d9e6;
+      background: linear-gradient(to bottom, #d6d9e6 80%, rgba(255, 255, 255, 0.2) 100%);
+
     }
 
     &::after {
@@ -183,7 +207,7 @@
       width: 100%;
 
       // background: transparent;
-      background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
+      // background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.2) 90%);
 
       z-index: 10;
     }
@@ -244,6 +268,10 @@
     top: 26px;
   }
 
+  .countries-select__item::after {
+    display: none;
+  }
+
   .countries-select__item--empty::before {
     background-color: @white;
   }
@@ -279,5 +307,9 @@
 
   .countries-select::before {
     left: 777px;
+  }
+
+  .countries-select {
+    padding-bottom: 120px;
   }
 }
