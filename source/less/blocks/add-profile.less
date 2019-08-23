@@ -1,6 +1,6 @@
 .add-profile {
   position: relative;
-  margin-top: -40px;
+  // margin-top: -40px;
 
   color: #444444;
 
@@ -9,6 +9,19 @@
   border-bottom-left-radius: 25px;
 
   z-index: 3;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: @blue;
+    top: 0;
+  }
 }
 
 .add-profile__container {
