@@ -25,14 +25,19 @@
   text-transform: uppercase;
 }
 
+.header__logo__img {
+  display: block;
+}
+
 .header__logo {
   display: block;
   width: 100px;
   height: 19px;
   margin-top: 10px;
+}
 
-  background-image: url("../img/logo-mobile-white@1x.png");
-  background-repeat: no-repeat;
+.header__logo--blue {
+  display: none;
 }
 
 .header__menu-btn {
@@ -71,8 +76,12 @@
   background-color: @white;
 }
 
-.header--menu-open .header__logo {
-  background-image: url("../img/logo-mobile-blue@1x.png");
+.header--menu-open .header__logo--blue {
+  display: block;
+}
+
+.header--menu-open .header__logo--white {
+  display: none;
 }
 
 .header--menu-open .header__menu-btn {

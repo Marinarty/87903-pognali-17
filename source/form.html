@@ -12,12 +12,27 @@
 <body>
   <header class="header header--dark">
     <div class="header__container container">
-    <a class="header__logo" aria-label="Главная"></a>
+        <a href="index.html" class="header__logo header__logo--white" aria-label="Главная">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+                <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Главная" class="header__logo-img">
+          </picture>
+        </a>
+
+
+        <a class="header__logo header__logo--blue" aria-label="Главная">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Главная" class="header__logo-img">
+          </picture>
+        </a>
     <button class="header__menu-btn" type="button" aria-label="Открыть/Закрыть меню">Меню</button>
     <nav class="header__nav nav">
       <ul class="nav__item site-list">
         <li class="site-list__item">
-          <a href="#" class="site-list__link"><span class="site-list__hover site-list__hover--about">О сервисе</span></a>
+          <a href="index.html" class="site-list__link"><span class="site-list__hover site-list__hover--about">О сервисе</span></a>
         </li>
         <li class="site-list__item">
           <a href="form.html" class="site-list__link"><span class="site-list__hover site-list__hover--destinations">Направления</span></a>
