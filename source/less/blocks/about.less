@@ -50,7 +50,7 @@
 
   .about__container {
     background-image: url("../img/about-tablet@1x.png"), url("../img/rectangle.svg");
-    background-position: right, top left;
+    background-position: right 10px bottom 87px, top left;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/about-tablet@2x.png"), url("../img/rectangle.svg");
@@ -59,9 +59,10 @@
   }
 
   .about__wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 85px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -77,7 +78,8 @@
   }
 
   .about__desc--bold {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    margin-top: 8px;
 
     font-size: 21px;
     line-height: 25px;
