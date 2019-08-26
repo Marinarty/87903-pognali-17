@@ -42,7 +42,7 @@
   background-image: url("../img/filter.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 15px;
+  background-size: 15px 15px;
 }
 
 .country-filter__wrapper {
@@ -58,7 +58,7 @@
 }
 
 .country-filter__letters {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   position: relative;
   width: 225px;
@@ -71,6 +71,10 @@
   background-color: @white;
   border-right: solid 1px #cbced9;
   border-bottom: solid 1px #cbced9;
+}
+
+.country-filter__letters--open {
+  display: flex;
 }
 
 .country-filter__btn {
@@ -89,7 +93,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 17px;
+  background-size: 17px 20px;
 
   cursor: pointer;
 
@@ -99,7 +103,7 @@
 
   &--close {
     background-image: url("../img/close.svg");
-    background-size: 12px;
+    background-size: 12px 12px;
     display: none;
   }
 
@@ -151,7 +155,7 @@
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 12px;
+  background-size: 12px 12px;
 }
 
 .country-filter__close:active span {
@@ -246,7 +250,7 @@
     padding-right: 70px;
     text-align: left;
 
-    background-size: 17px;
+    background-size: 17px 17px;
   }
 
   .country-filter__continents {
@@ -334,7 +338,7 @@
   .country-filter__close span {
     padding-left: 40px;
 
-    background-size: 20px;
+    background-size: 20px 20px;
   }
 }
 
@@ -348,7 +352,7 @@
     font-size: 20px;
     line-height: 24px;
 
-    background-size: 23px;
+    background-size: 23px 23px;
   }
 
   .country-filter__letters {
