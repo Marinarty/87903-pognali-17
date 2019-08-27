@@ -134,19 +134,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .calendar {
+    margin-top: 43px;
+    margin-bottom: 45px;
+  }
+
   .calendar__date {
     font-size: 36px;
     line-height: 36px;
   }
 
   .calendar__btn {
-    background-size: 15px;
+    width: 40px;
+
+    background-size: 35px 35px;
   }
 
   .calendar__wrapper {
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
+    padding-right: 0;
+    padding-left: 10px;
   }
 
   .calendar__full-version {
@@ -154,10 +163,16 @@
     vertical-align: bottom;
   }
 
-  .calendar__numbers .calendar__date,
-  .calendar__numbers .calendar__days {
+  .calendar__numbers .calendar__date {
     height: 70px;
  }
+
+ .calendar__numbers .calendar__days {
+  height: 30px;
+
+  font-weight: 400;
+}
+
 
  .calendar__numbers .calendar__days {
    font-size: 18px;

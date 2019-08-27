@@ -25,7 +25,7 @@
     position: absolute;
     display: block;
     top: 55px;
-    left: 32px;
+    left: 30px;
     padding-top: 2px;
     width: 50px;
 
@@ -45,7 +45,7 @@
     position: absolute;
     display: block;
     top: 16px;
-    right: 28px;
+    right: 32px;
 
     font-family: "Blogger Sans", "Arial", sans-serif;
     font-size: 38px;
@@ -213,12 +213,16 @@
 
 @media (min-width: @tablet-width) {
   .user-info {
-    padding-top: 80px;
+    padding-top: 85px;
   }
 
   .user-info__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .user-info__inner-wrapper {
+    margin: 0;
   }
 
   .user-info__input-wrapper {
@@ -238,6 +242,7 @@
     width: 94px;
     height: 94px;
     margin: 0;
+    margin-right: 5px;
 
     order: 3;
   }
@@ -265,6 +270,7 @@
     font-size: 20px;
     line-height: 18px;
     font-weight: 500;
+    letter-spacing: 2px;
 
     transform: translateX(-50%);
   }
@@ -277,13 +283,17 @@
   }
 
   .user-info__hashtags textarea {
+    padding-top: 30px;
+    padding-bottom: 15px;
+
     font-size: 20px;
     line-height: 24px;
   }
 
   .user-info__change-photo {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 52px;
+    margin-bottom: 54px;
 
     font-size: 20px;
     line-height: 18px;
@@ -296,7 +306,13 @@
   }
 
   .user-info__level {
+    margin-left: 0;
     order: 1;
+  }
+
+  .user-info__level svg {
+    width: 100px;
+    height: 100px;
   }
 
   .user-info__transports svg {
