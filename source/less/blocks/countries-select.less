@@ -209,19 +209,6 @@
 
       background: linear-gradient(to bottom, #d6d9e6 80%, rgba(255, 255, 255, 0.2) 100%);
     }
-
-    &::after {
-      content: "";
-
-      display: block;
-      height: 10%;
-      left: 0;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-
-      z-index: 10;
-    }
   }
 
   .countries-select__item {
@@ -317,14 +304,26 @@
   }
 
   .countries-select__item::before {
-    left: 770px;
+    left: 766px;
   }
 
   .countries-select::before {
-    left: 777px;
+    left: 773px;
+
+    background:#d6d9e6 ;
+
+  }
+
+  .countries-select__flag-wrapper {
+    margin-left: 82px;
+  }
+
+  .countries-select__delete {
+    margin-left: auto;
   }
 
   .countries-select {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
+    padding-top: 64px;
   }
 }

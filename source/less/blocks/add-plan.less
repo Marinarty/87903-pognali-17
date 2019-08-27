@@ -279,11 +279,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .add-plan {
+    margin-top: -55px;
+
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .add-plan__steps-wrapper {
+    width: 100%;
+    padding-left: 130px;
+  }
+
   .add-plan__step {
     width: 1320px;
     padding: 100px 160px;
+    padding-bottom: 110px;
 
     border-radius: 60px;
+  }
+
+  .add-plan__step-title {
+    margin-bottom: 33px;
+  }
+
+  .add-plan__desc {
+    margin-top: 0;
+    margin-bottom: 56px;
   }
 
   .add-plan__step-title span {
@@ -300,13 +322,14 @@
 
   .add-plan__steps-list--bottom .add-plan__steps-link {
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 20px;
+    padding-left: 32px;
+    margin-bottom: 28px;
     display: block;
 
     font-size: 20px;
     line-height: 14px;
     color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
 
     &::before {
       content: "";
@@ -316,7 +339,7 @@
       width: 5px;
       height: 5px;
       top: 5px;
-      left: 0;
+      left: -9px;
 
       background-color: rgba(128, 130, 133, 0.3);
       border-radius: 50%;
@@ -363,10 +386,11 @@
 
   .add-plan__next {
     width: 285px;
+    background-position: top 50% right 38px;
   }
 
   .add-plan__next--back {
-    background-position: top 50% left 110px;
+    background-position: top 50% left 100px;
   }
 
   .add-plan__desc--shorter {
@@ -378,6 +402,23 @@
   }
 
   .add-plan__btns-wrapper--step-2 {
-    margin-top: -70px;
+    position: relative;
+
+    &::before {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 226px;
+
+    background: linear-gradient(to bottom, #d6d9e6 10%, rgba(255, 255, 255, 0.2) 100%);
+    }
+  }
+
+  .add-plan__step--step2 {
+    margin-bottom: 38px;
   }
 }

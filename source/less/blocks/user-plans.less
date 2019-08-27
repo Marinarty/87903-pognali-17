@@ -162,19 +162,36 @@
 }
 
 @media (min-width: @desktop-width) {
+  .user-plans {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding-bottom: 60px;
+  }
+
   .user-plans__item {
+    padding-left: 41px;
+    padding-bottom: 40px;
+    padding-top: 37px;
+    padding-right: 26px;
+    margin-bottom: 17px;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-plans__wrapper {
+    padding-right: 0;
+    padding-left: 65px;
   }
 
   .user-plans__destinations {
-    width: 560px;
+    width: 583px;
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 0;
   }
 
   .user-plans__number {
-    margin-right: 20px;
+    margin-right: 38px;
   }
 
   .user-plans__inner-wrapper::before {
