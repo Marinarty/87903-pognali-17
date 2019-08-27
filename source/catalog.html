@@ -94,12 +94,19 @@
 
         <button class="country-filter__btn country-filter__btn--close" aria-label="Открыть/Закрыть">Свернуть</button>
 
-
         <ul class="country-filter__continents continents-list">
-          <li class="continents-list__item continents-list__item--active">Европа</li>
-          <li class="continents-list__item">Азия</li>
-          <li class="continents-list__item">Америка</li>
-          <li class="continents-list__item">Острова</li>
+          <li class="continents-list__item">
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupEurope" checked><label for="groupEurope">Европа</label>
+          </li>
+          <li class="continents-list__item">
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupAsia"><label for="groupAsia">Азия</label>
+          </li>
+          <li class="continents-list__item">
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupAmerica"><label for="groupAmerica">Америка</label>
+          </li>
+          <li class="continents-list__item">
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupIslands"><label for="groupIslands">Острова</label>
+          </li>
         </ul>
 
       <div class="country-filter__wrapper">
