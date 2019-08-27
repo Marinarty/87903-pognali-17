@@ -212,11 +212,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .level {
+    padding-right: 0;
+  }
+
   .level__price-controls {
     width: 100%;
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
 
   .level__range-controls {
@@ -231,7 +235,11 @@
   }
 
   .level__range-bar {
-    width: 125px;
-    left: 55px;
+    width: 120px;
+    left: 57px;
+  }
+
+  .level__range-toggle--min {
+    left: 30%;
   }
 }
