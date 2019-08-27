@@ -237,6 +237,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .country-filter {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
   .country-filter__title {
     display: none;
   }
@@ -261,8 +265,12 @@
   }
 
   .country-filter__container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 75px;
+    padding-bottom: 51px;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: -20px;
+    margin-bottom: 20px;
   }
 
   .country-filter__container--open .country-filter__continents {
@@ -270,8 +278,23 @@
   }
 
   .country-filter__btn {
+    width: 200px;
+    padding-right: 25px;
+
     font-size: 20px;
     line-height: 24px;
+
+    background-position: right top 11px;
+    background-size: 25px 5px;
+
+    &--close {
+      width: 160px;
+
+      background-image: url("../img/close.svg");
+      background-position: right top 6px;
+      background-size: 15px 15px;
+      display: none;
+    }
   }
 
   .country-filter__container--open .country-filter__btn {
