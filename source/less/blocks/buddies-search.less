@@ -93,8 +93,8 @@
   cursor: pointer;
 }
 
-.buddies-search__item input[type="checkbox"] + label::before,
-.buddies-search__item input[type="checkbox"]:checked + label::before {
+.buddies-search__checkbox-input + label::before,
+.buddies-search__checkbox-input:checked + label::before {
   content: "";
 
   position: absolute;
@@ -108,24 +108,24 @@
   border-radius: 4px;
 }
 
-.buddies-search__item input[type="checkbox"]:checked + label::before {
+.buddies-search__checkbox-input:checked + label::before {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 10px 10px;
   background-position: center;
 }
 
-.buddies-search__item input[type="checkbox"] + label:hover,
-.buddies-search__item input[type="checkbox"]:checked + label:hover,
-.buddies-search__item input[type="checkbox"] + label:hover::before,
-.buddies-search__item input[type="checkbox"]:checked + label:hover::before {
+.buddies-search__checkbox-input:checked + label:hover,
+.buddies-search__checkbox-input:checked:checked + label:hover,
+.buddies-search__checkbox-input:checked + label:hover::before,
+.buddies-search__checkbox-input:checked:checked + label:hover::before {
   opacity: 0.6;
 }
 
-.buddies-search__item input[type="checkbox"] + label:active,
-.buddies-search__item input[type="checkbox"]:checked + label:active,
-.buddies-search__item input[type="checkbox"] + label:active::before,
-.buddies-search__item input[type="checkbox"]:checked + label:active::before {
+.buddies-search__checkbox-input:checked + label:active,
+.buddies-search__checkbox-input:checked:checked + label:active,
+.buddies-search__checkbox-input:checked + label:active::before,
+.buddies-search__checkbox-input:checked:checked + label:active::before {
   opacity: 0.3;
 }
 
@@ -155,11 +155,11 @@
   cursor: pointer;
 }
 
-.buddies-search__transport input[type="checkbox"] + label svg {
+.buddies-search__checkbox-transport + label svg {
   fill: rgba(0, 0, 0, 0.15);
 }
 
-.buddies-search__transport input[type="checkbox"]:checked + label svg {
+.buddies-search__checkbox-transport:checked + label svg {
   fill: @mid-blue;
 }
 
@@ -235,13 +235,13 @@
   }
 
 
-  .buddies-search__item input[type="checkbox"] + label::before,
-  .buddies-search__item input[type="checkbox"]:checked + label::before {
+  .buddies-search__checkbox-input + label::before,
+  .buddies-search__checkbox-input:checked + label::before {
     width: 24px;
     height: 24px;
   }
 
-  .buddies-search__item input[type="checkbox"]:checked + label::before {
+  .buddies-search__checkbox-input:checked + label::before {
     background-size: 12px 12px;
   }
 
