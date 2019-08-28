@@ -42,7 +42,7 @@ gulp.task("images", function () {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml())
-    .pipe(gulp.dest("source"));
+    .pipe(gulp.dest("build"));
 });
 
 
