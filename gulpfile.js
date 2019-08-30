@@ -12,7 +12,6 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
-var posthtml = require("gulp-posthtml");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -41,7 +40,6 @@ gulp.task("images", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml())
     .pipe(gulp.dest("build"));
 });
 

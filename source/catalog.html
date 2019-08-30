@@ -84,16 +84,20 @@
         <button class="country-filter__btn country-filter__btn--close" aria-label="Открыть/Закрыть">Свернуть</button>
         <ul class="country-filter__continents continents-list">
           <li class="continents-list__item">
-            <input class="continents-list__button" type="radio" name="countries-group" id="groupEurope" checked=""><label for="groupEurope">Европа</label>
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupEurope" checked="">
+            <label for="groupEurope">Европа</label>
           </li>
           <li class="continents-list__item">
-            <input class="continents-list__button" type="radio" name="countries-group" id="groupAsia"><label for="groupAsia">Азия</label>
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupAsia">
+            <label for="groupAsia">Азия</label>
           </li>
           <li class="continents-list__item">
-            <input class="continents-list__button" type="radio" name="countries-group" id="groupAmerica"><label for="groupAmerica">Америка</label>
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupAmerica">
+            <label for="groupAmerica">Америка</label>
           </li>
           <li class="continents-list__item">
-            <input class="continents-list__button" type="radio" name="countries-group" id="groupIslands"><label for="groupIslands">Острова</label>
+            <input class="continents-list__button" type="radio" name="countries-group" id="groupIslands">
+            <label for="groupIslands">Острова</label>
           </li>
         </ul>
         <div class="country-filter__wrapper">
@@ -811,7 +815,7 @@
         <div class="buddies-search__container">
           <h2 class="buddies-search__title">Подберите идеального попутчика</h2>
           <form method="post" action="https://htmlacademy.ru/echo" class="buddies-search__filter">
-            <div class="buddies__search-global-wrapper">
+            <div class="buddies-search__global-wrapper">
               <div class="buddies-search__item">
                 <button class="buddies-search__filter-btn" type="button" aria-label="Свернуть/Развернуть">Хобби<span class="buddies-search__hidden">:</span></button>
                 <div class="buddies-search__inner-wrapper">
@@ -900,8 +904,10 @@
                 <button class="buddies-search__filter-btn" type="button" aria-label="Свернуть/Развернуть">Левел<span class="buddies-search__hidden">:</span></button>
                 <div class="buddies-search__inner-wrapper">
                   <div class="level__price-controls">
-                    <input class="level__price level__price--from" type="text" name="level-from" value="30">
-                    <input class="level__price level__price--till" type="text" name="level-till" value="100">
+                    <input class="level__price level__price--from" id="from" type="text" name="level-from" value="30">
+                    <label class="visually-hidden" for="from">Цена от</label>
+                    <input class="level__price level__price--till" id="till" type="text" name="level-till" value="100">
+                    <label class="visually-hidden" for="till">Цена до</label>
                   </div>
                   <div class="level__range-controls">
                     <div class="level__range-scale">

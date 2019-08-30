@@ -24,8 +24,8 @@
 
     position: absolute;
     display: block;
-    top: 55px;
-    left: 30px;
+    top: 65px;
+    left: 28px;
     padding-top: 2px;
     width: 50px;
 
@@ -44,7 +44,7 @@
 
     position: absolute;
     display: block;
-    top: 16px;
+    top: 25px;
     right: 32px;
 
     font-family: "Blogger Sans", "Arial", sans-serif;
@@ -56,12 +56,20 @@
 }
 
 .user-info__level svg {
-  width: 108px;
-  height: 108px;
+  width: 105px;
+  height: 105px;
 }
 
-.user-info__level .buddies__circle {
+.user-info__circle-bg {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.user-info__circle {
+  fill: none;
   stroke-width: 1;
+  stroke: @dark-orange;
+  stroke-linecap: round;
 }
 
 .user-info__photo {
@@ -254,6 +262,7 @@
   .user-info__transports {
     position: relative;
     width: 310px;
+    height: 95px;
     justify-content: center;
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -284,7 +293,7 @@
 
   .user-info__hashtags textarea {
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
 
     font-size: 20px;
     line-height: 24px;
@@ -292,7 +301,7 @@
 
   .user-info__change-photo {
     padding: 20px;
-    margin-top: 52px;
+    margin-top: 40px;
     margin-bottom: 54px;
 
     font-size: 20px;
@@ -312,10 +321,12 @@
 
   .user-info__level::before {
     left: 30px;
+    top: 22px;
   }
 
   .user-info__level::after {
     left: 25px;
+    top: 60px;
   }
 
   .user-info__level svg {
@@ -351,7 +362,7 @@
 
   .user-info__change-photo {
     position: absolute;
-    top: -63px;
+    top: -53px;
     right: 157px;
     width: 190px;
     padding: 15px;
@@ -368,7 +379,7 @@
 
   .user-info__level {
     position: absolute;
-    top: -156px;
+    top: -160px;
     right: 390px;
 
     z-index: 10;
