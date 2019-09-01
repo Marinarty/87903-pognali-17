@@ -4,7 +4,7 @@ var letterButtons = document.querySelectorAll('.country-filter__letter-btn');
 var countryGroups = document.querySelectorAll('.country-filter__letters');
 var groupButtons = document.querySelectorAll('.continents-list input');
 
-filter.classListe.remove('country-filter__container--open');
+filter.classList.remove('country-filter__container--open');
 filterBtns[1].classList.remove('country-filter__btn--hidden');
 
 groupButtons.forEach(function(item, index) {
