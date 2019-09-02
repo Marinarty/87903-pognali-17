@@ -1,7 +1,7 @@
 .add-plan {
   padding-top: 10px;
   margin-top: -25px;
-  padding-bottom: 65px;
+  padding-bottom: 70px;
 
   color: @mid-blue;
 
@@ -63,7 +63,7 @@
     width: 5px;
     height: 5px;
     top: 50%;
-    left: 0;
+    left: -4px;
 
     background-color: rgba(128, 130, 133, 0.3);
     border-radius: 50%;
@@ -148,6 +148,14 @@
   padding-bottom: 8px;
 }
 
+.trip-details__inner-wrapper--buddies {
+  padding-top: 5px;
+}
+
+.add-plan__desc--shorter {
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .add-plan {
     padding-bottom: 40px;
@@ -195,8 +203,8 @@
   }
 
   .add-plan__next {
-    width: 55%;
-    padding: 25px 30px;
+    width: 53%;
+    padding: 26px 30px;
 
     color: @mid-blue;
 
@@ -228,7 +236,7 @@
     text-align: right;
 
     background-image: url("../img/triangle-arrow-left.svg");
-    background-position: top 50% left 30px;
+    background-position: top 50% left 34px;
 
     &:active {
       color: rgba(29, 46, 91, 1);
@@ -249,7 +257,7 @@
     border-radius: 20px;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
-    background-position: top 50% right 30px;
+    background-position: top 50% right 38px;
     background-size: 10px 20px;
 
     &:active {
@@ -260,11 +268,12 @@
 
   .add-plan__desc--shorter {
     width: 430px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   .add-plan__desc--short {
     margin-bottom: 35px;
+    margin-top: -4px;
   }
 
   .add-plan__step--two-buttons {
@@ -292,8 +301,7 @@
 
   .add-plan__step {
     width: 1320px;
-    padding: 100px 160px;
-    padding-bottom: 110px;
+    padding: 97px 160px 110px;
 
     border-radius: 60px;
   }
@@ -321,7 +329,7 @@
 
   .add-plan__steps-list--bottom .add-plan__steps-link {
     position: relative;
-    padding-left: 32px;
+    padding-left: 36px;
     margin-bottom: 28px;
     display: block;
 
@@ -385,13 +393,13 @@
 
   .add-plan__next {
     width: 285px;
-    background-position: top 50% right 38px;
+    background-position: top 50% right 34px;
   }
 
   .add-plan__next--back {
     margin-left: auto;
 
-    background-position: top 50% left 100px;
+    background-position: top 50% left 104px;
   }
 
   .add-plan__desc--shorter {
@@ -424,6 +432,7 @@
   }
 
   .add-plan__step--step2 {
-    margin-bottom: 38px;
+    margin-bottom: 44px;
+    padding-top: 100px;
   }
 }
