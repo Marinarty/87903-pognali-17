@@ -1,12 +1,11 @@
 .buddies {
   background-color: #edeff6;
-  padding-bottom: 80px;
+  padding-bottom: 88px;
 }
 
 .buddies__item {
   position: relative;
-  padding: 15px 20px;
-  padding-bottom: 75px;
+  padding: 15px 19px 75px;
   margin-bottom: 10px;
 
   font-size: 15px;
@@ -32,7 +31,7 @@
   display: block;
 
   margin-left: 85px;
-  margin-right: 40px;
+  margin-right: 41px;
   margin-bottom: 30px;
 
   text-decoration: none;
@@ -114,6 +113,8 @@
 
 .buddies__hashtags {
   width: 200px;
+  padding-left: 6px;
+  margin-bottom: 12px;
 }
 
 .buddies__heart {
@@ -195,16 +196,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 7px;
 }
 
 .buddies__flags {
-  margin-right: 10px;
+  margin-right: 14px;
+  margin-left: 6px;
 }
 
 .buddies__wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2px;
 }
 
 .buddies__text {
@@ -213,7 +217,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
-  margin-left: -10px;
+  margin-left: -2px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -228,6 +232,8 @@
 
 .buddies__transport {
   .nolist();
+
+  margin-left: 6px;
 }
 
 .buddies__circular-chart {
@@ -253,6 +259,7 @@
 .buddies__level {
   position: relative;
   margin-left: auto;
+  margin-right: -12px;
 
   &::before {
     content: "";
@@ -265,7 +272,7 @@
     font-weight: 700;
     color: #1d2e5b;
     top: 40px;
-    right: 15px;
+    right: 21px;
   }
 }
 
@@ -289,6 +296,8 @@
   padding-left: 33px;
   display: block;
   margin: 18px auto;
+  margin-top: 16px;
+  margin-bottom: 21px;
 
   font-size: 17px;
   line-height: 30px;
@@ -377,13 +386,30 @@
   }
 }
 
+.buddies__item--demin .buddies__countries-main-wrapper {
+  margin-bottom: 17px;
+}
+
+.buddies__item--smolov .buddies__countries-main-wrapper {
+  margin-bottom: 14px;
+}
+
+.buddies__item--rogovaya .buddies__countries-wrapper {
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.buddies__item--rogovaya .buddies__countries-main-wrapper {
+  margin-bottom: 14px;
+}
+
 @media (min-width: @tablet-width) {
   .buddies__item {
     display: flex;
     flex-wrap: wrap;
     padding: 35px;
     padding-bottom: 20px;
-    margin-bottom: 38px;
+    margin-bottom: 42px;
   }
 
   .buddies__photo {
@@ -429,7 +455,7 @@
 
   .buddies__countries-wrapper {
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-bottom: 0;
   }
 
@@ -441,6 +467,7 @@
   .buddies__transport {
     display: flex;
     flex-direction: column;
+    margin: -5px 0 0 0;
   }
 
   .buddies__wrapper {
@@ -461,6 +488,7 @@
   .buddies__name {
     display: inline-block;
     margin: 0;
+    margin-top: -5px;
 
     font-size: 30px;
     line-height: 30px;
@@ -512,6 +540,7 @@
   .buddies__heart {
     width: 50px;
     height: 50px;
+    margin-right: 5px;
   }
 
   .buddies__heart svg {
@@ -520,7 +549,11 @@
   }
 
   .buddies__level {
+    position: absolute;
+    bottom: -4px;
+    right: -1px;
     margin-top: auto;
+    margin-right: 0;
   }
 
   .buddies__level::after {
@@ -550,8 +583,8 @@
   .buddies__show-more {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 40px;
-    margin-bottom: 50px;
+    padding-left: 50px;
+    margin-bottom: 46px;
 
     background-size: 25px 25px;
   }
@@ -574,7 +607,7 @@
   }
 
   .buddies__arrows {
-    width: 80px;
+    width: 74px;
     padding: 0;
   }
 
@@ -584,6 +617,32 @@
 
   .buddies {
     padding-bottom: 60px;
+  }
+
+  .buddies__flags {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 24px;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .buddies__transports {
+    margin-right: 13px;
+  }
+
+  .buddies__item--demin .buddies__countries-main-wrapper,
+  .buddies__item--rogovaya .buddies__countries-main-wrapper {
+    margin-bottom: 0;
+  }
+
+  .buddies__item--smolov .buddies__countries-main-wrapper {
+    margin-bottom: 3px;
+  }
+
+  .buddies__item--smolov .buddies__countries-wrapper {
+    margin-right: 27px;
   }
 }
 
@@ -629,7 +688,7 @@
 
   .buddies__name::before {
     top: 13px;
-    left: -15px;
+    left: -22px;
   }
 
   .buddies__photo {
@@ -658,8 +717,8 @@
   .buddies__info {
     width: 33%;
     padding-bottom: 45px;
-    padding-top: 45px;
-    padding-left: 30px;
+    padding-top: 49px;
+    padding-left: 26px;
   }
 
   .buddies__heart {
@@ -671,7 +730,7 @@
     margin-top: 0;
     padding-bottom: 100px;
     padding-top: 45px;
-    padding-left: 40px;
+    padding-left: 45px;
 
     &::before {
       display: none;
@@ -681,11 +740,11 @@
   .buddies__countries-wrapper {
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .buddies__country {
-    margin-left: 15px;
+    margin-left: 8px;
   }
 
   .buddies__countries-main-wrapper {
@@ -705,13 +764,12 @@
   .buddies__transport {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: 40px;
+    margin-right: 90px;
+    margin-bottom: 8px;
   }
 
   .buddies__show-more {
-    margin: 19px 36%;
-    margin-bottom: 68px;
-    margin-top: 60px;
+    margin: 64px 36.5% 68px;
     padding-left: 50px;
 
     background-size: 27px 27px;
@@ -722,10 +780,14 @@
   }
 
   .buddies__pages {
-    width: 45%;
+    width: 48%;
   }
 
   .buddies__pagination-wrapper {
     margin-bottom: 78px;
+  }
+
+  .buddies__item--rogovaya .buddies__countries-wrapper {
+    margin-top: 2px;
   }
 }

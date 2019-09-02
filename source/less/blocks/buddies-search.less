@@ -1,7 +1,7 @@
 .buddies-search {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 26px;
+  padding-bottom: 28px;
   margin-top: -25px;
 
   background-color: @light-grey;
@@ -12,7 +12,7 @@
   padding-top: 26px;
   padding-left: 26px;
   padding-right: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 
   color: @mid-blue;
 
@@ -64,8 +64,14 @@
 .buddies-search__inner-wrapper {
   display: none;
   flex-direction: column;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.buddies-search__transport .buddies-search__inner-wrapper,
+.buddies-search__item--level .buddies-search__inner-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .buddies-search__filter-btn--swipe + .buddies-search__inner-wrapper {
@@ -91,7 +97,7 @@
 
 .buddies-search__item label {
   position: relative;
-  padding-left: 30px;
+  padding-left: 26px;
 
   font-size: 15px;
   line-height: 15px;
@@ -198,9 +204,13 @@
   display: none;
 }
 
+.buddies-search__global-wrapper {
+  margin-bottom: 10px;
+}
+
 @media (min-width: @tablet-width) {
   .buddies-search {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .buddies-search__container {
@@ -299,6 +309,7 @@
 
   .buddies-search__transport .buddies-search__inner-wrapper {
     padding: 0;
+    margin-left: -10px;
   }
 
   .buddies-search__show {
@@ -312,10 +323,10 @@
   }
 
   .buddies-search__global-wrapper {
-    padding-top: 20px;
+    padding-top: 23px;
     padding-bottom: 30px;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     border-bottom: 1px solid #f3c72b;
     border-top: 1px solid #f3c72b;
@@ -342,7 +353,7 @@
     flex-grow: 0;
     display: none;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 5px;
   }
 
@@ -406,6 +417,7 @@
 
   .buddies-search__global-wrapper {
     margin: 0;
+    margin-bottom: 6px;
 
     border: none;
   }
@@ -420,5 +432,14 @@
 
   .buddies-search__transport .buddies-search__inner-wrapper {
     margin-top: 12px;
+    margin-left: 0;
+  }
+
+  .buddies-search__item label {
+    padding-left: 39px;
+  }
+
+  .buddies-search__transport {
+    margin-bottom: 10px;
   }
 }
