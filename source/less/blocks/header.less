@@ -384,4 +384,38 @@
   .header--scroll .header__nav::before {
     background-color: @mid-blue;
   }
+
+  .header--menu-open .header__social-links,
+  .header--menu-open .header__logo--blue {
+    display: none;
+  }
+
+  .header--menu-open .header__contacts {
+    padding-left: 0;
+    margin-top: 0;
+    order: 3;
+  }
+
+  .header--menu-open .header__logo--white {
+    display: inline-block;
+    order: 1;
+  }
+
+  .header--menu-open .header__logo {
+    background-image: none;
+  }
+
+  .header--menu-open .header__nav {
+    width: 50%;
+    order: 2;
+  }
+
+  .header--menu-open .header__login-btn {
+    margin-left: 0;
+    order: 4;
+  }
+
+  .header--menu-open .header__nav {
+    margin: 0;
+  }
 }
